@@ -1,0 +1,20 @@
+# Glory Boxing Manager - Cursor AI Rules
+
+## Project Context
+- Boxing management simulation game
+- Tech stack: Next.js 14, Supabase, Tailwind, ShadCN, OpenAI/OpenRouter
+- Database: PostgreSQL with Realtime subscriptions
+- AI Features: Voice generation, portrait creation, match commentary
+
+## Code Patterns
+- Use Supabase Edge Functions for AI integrations
+- Store media (audio/images) in Supabase Storage
+- Use Zustand for game state management
+- Implement real-time updates for match results
+- Follow ShadCN component patterns for UI
+
+## Database Schema Focus
+- fighters table (stats, portraits, voice_profile)
+- matches table (results, commentary_audio)
+- press_quotes table (text, audio_url)
+- Use proper foreign keys and RLS policies

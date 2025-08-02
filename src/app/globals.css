@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Glory Boxing Manager */
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  /* Custom slider styles */
+  .slider {
+    @apply appearance-none bg-gray-700 rounded-lg;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 bg-red-500 rounded-full cursor-pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    @apply w-4 h-4 bg-red-500 rounded-full cursor-pointer border-0;
+  }
+  
+  /* Custom checkbox styles */
+  input[type="checkbox"] {
+    @apply appearance-none w-4 h-4 border-2 border-gray-600 rounded;
+  }
+  
+  input[type="checkbox"]:checked {
+    @apply bg-blue-600 border-blue-600;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    content: '✓';
+    @apply text-white text-xs font-bold flex items-center justify-center;
+  }
+  
+  /* Custom select styles */
+  select {
+    @apply appearance-none bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+  }
+  
+  /* Custom input styles */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"] {
+    @apply bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white placeholder-gray-400;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus {
+    @apply outline-none ring-2 ring-blue-500 border-blue-500;
+  }
+  
+  /* Boxing ring animation */
+  .ring-glow {
+    animation: ringGlow 2s ease-in-out infinite;
+  }
+  
+  @keyframes ringGlow {
+    0%, 100% {
+      box-shadow: 0 0 5px #DC2626;
+    }
+    50% {
+      box-shadow: 0 0 20px #DC2626, 0 0 30px #DC2626;
+    }
+  }
+  
+  /* Punch animation */
+  .punch {
+    animation: punch 0.3s ease-in-out;
+  }
+  
+  @keyframes punch {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Bell animation */
+  .bell {
+    animation: bell 1s ease-in-out;
+  }
+  
+  @keyframes bell {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  /* Fighter card hover effects */
+  .fighter-card {
+    @apply transition-all duration-300;
+  }
+  
+  .fighter-card:hover {
+    @apply transform scale-105 shadow-lg;
+  }
+  
+  /* Status indicators */
+  .status-champion {
+    @apply bg-red-900 text-red-200;
+  }
+  
+  .status-contender {
+    @apply bg-yellow-900 text-yellow-200;
+  }
+  
+  .status-prospect {
+    @apply bg-blue-900 text-blue-200;
+  }
+  
+  .status-amateur {
+    @apply bg-green-900 text-green-200;
+  }
+  
+  .status-legend {
+    @apply bg-purple-900 text-purple-200;
+  }
+  
+  .status-retired {
+    @apply bg-gray-700 text-gray-300;
+  }
+  
+  /* Progress bars */
+  .progress-bar {
+    @apply w-full bg-gray-700 rounded-full h-2;
+  }
+  
+  .progress-fill {
+    @apply h-2 rounded-full transition-all duration-300;
+  }
+  
+  .progress-excellent {
+    @apply bg-green-500;
+  }
+  
+  .progress-good {
+    @apply bg-blue-500;
+  }
+  
+  .progress-average {
+    @apply bg-yellow-500;
+  }
+  
+  .progress-poor {
+    @apply bg-red-500;
+  }
+  
+  /* Modal backdrop blur */
+  .modal-backdrop {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+}
+
+@layer utilities {
+  /* Text gradients */
+  .text-gradient-red {
+    background: linear-gradient(135deg, #DC2626, #EF4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-blue {
+    background: linear-gradient(135deg, #1E40AF, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #F59E0B, #FCD34D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Glass morphism effect */
+  .glass {
+    background: rgba(31, 41, 55, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+  }
+  
+  /* Animated backgrounds */
+  .bg-gradient-animated {
+    background: linear-gradient(-45deg, #1F2937, #374151, #4B5563, #1F2937);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+} 
