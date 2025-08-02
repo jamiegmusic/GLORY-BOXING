@@ -293,7 +293,7 @@ const FightersTab = () => {
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span className="text-gray-400 text-sm">Record:</span>
-                <span className="text-white font-medium">{fighter.record}</span>
+                <span className="text-white font-medium">{`${fighter.record_wins}-${fighter.record_losses}-${fighter.record_draws}`}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-400 text-sm">Nationality:</span>

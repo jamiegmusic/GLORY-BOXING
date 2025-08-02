@@ -74,4 +74,22 @@ export const GET_MATCH = gql`
       result
     }
   }
+`;
+
+export const SCHEDULE_MATCH = gql`
+  mutation ScheduleMatch($fighterAId: Int!, $fighterBId: Int!, $venue: String!, $date: String!) {
+    scheduleMatch(fighterAId: $fighterAId, fighterBId: $fighterBId, venue: $venue, date: $date) {
+      id
+      fighterA {
+        id
+        name
+      }
+      fighterB {
+        id
+        name
+      }
+      venue
+      date
+    }
+  }
 `; 

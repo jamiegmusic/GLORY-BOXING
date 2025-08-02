@@ -26,7 +26,7 @@ const CommentaryGenerator: React.FC<CommentaryGeneratorProps> = ({ fightData }) 
   // Sample fight data for demonstration
   const sampleFightData: FightData = {
     fightId: 'usyk_bivol_2024',
-    eventName: 'Glory Boxing Championship',
+          eventName: 'Glory Management Championship',
     venue: 'Madison Square Garden',
     date: '2024-01-10',
     time: '22:00',
@@ -310,7 +310,7 @@ const CommentaryGenerator: React.FC<CommentaryGeneratorProps> = ({ fightData }) 
     if (!response) return;
     
     const content = `
-GLORY BOXING - FIGHT COMMENTARY
+        GLORY MANAGEMENT - FIGHT COMMENTARY
 ================================
 
 FIGHT SUMMARY:

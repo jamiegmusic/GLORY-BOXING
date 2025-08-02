@@ -177,6 +177,10 @@ export interface Match {
   crowd_reaction?: number
   media_coverage_rating?: number
   
+  // Additional properties for enhanced functionality
+  venue?: Venue
+  officials?: string[]
+  
   created_at: string
   updated_at: string
 }
@@ -658,6 +662,9 @@ export interface Injury {
   type?: string
   recovery_date?: string
   impact_on_performance?: number
+  treatment_required?: string[]
+  medical_clearance_required?: boolean
+  notes?: string
   
   // Long-term effects
   affects_punching_power: boolean
@@ -964,6 +971,19 @@ export interface Celebrity {
   energy: number
   stress: number
   reputation: number
+  
+  // Additional properties for enhanced functionality
+  nickname?: string
+  fan_base_size?: number
+  media_sentiment?: string
+  secondary_industries?: CelebrityIndustryValue[]
+  career_stage?: string
+  industry_focus?: string
+  marketability_score?: number
+  social_media_presence?: number
+  brand_endorsements?: string[]
+  audition_history?: string[]
+  casting_preferences?: string[]
   
   // Industry-specific skills
   acting_skills: {

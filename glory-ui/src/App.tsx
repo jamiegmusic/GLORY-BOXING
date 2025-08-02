@@ -150,7 +150,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="py-6">
-          <h1 className="text-3xl font-bold text-white mb-2 gradient-text">Glory Boxing Manager</h1>
+          <h1 className="text-3xl font-bold text-white mb-2 gradient-text">Glory Management</h1>
           <p className="text-gray-400">Professional Boxing Management Simulation</p>
         </div>
 

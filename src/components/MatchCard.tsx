@@ -39,19 +39,19 @@ const MatchCard: React.FC<MatchCardProps> = ({
           <div className="flex items-center space-x-2 mb-2">
             <Users className="w-5 h-5 text-gray-500" />
             <h3 className="text-lg font-semibold text-gray-900">
-              {match.fighter_a} vs {match.fighter_b}
+              {match.fighter_a_name} vs {match.fighter_b_name}
             </h3>
           </div>
           
           <div className="flex items-center text-gray-600 mb-1">
             <MapPin className="w-4 h-4 mr-1" />
-            <span className="text-sm">{match.venue}</span>
+            <span className="text-sm">{match.venue_name}</span>
           </div>
           
           <div className="flex items-center text-gray-500">
             <Calendar className="w-4 h-4 mr-1" />
             <span className="text-sm">
-              {new Date(match.date).toLocaleDateString()} at {new Date(match.date).toLocaleTimeString()}
+              {new Date(match.match_date).toLocaleDateString()} at {new Date(match.match_date).toLocaleTimeString()}
             </span>
           </div>
         </div>

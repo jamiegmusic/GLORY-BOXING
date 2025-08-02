@@ -366,7 +366,7 @@ const MultiplayerDashboard: React.FC<MultiplayerDashboardProps> = ({
         <div className="flex-1 p-4 overflow-y-auto">
           <div className="space-y-2">
             <div className="text-center text-sm text-gray-500 py-4">
-              Welcome to Glory Boxing Manager Global Chat!
+              Welcome to Glory Management Global Chat!
             </div>
             {/* Chat messages would be rendered here */}
           </div>

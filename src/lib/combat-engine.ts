@@ -127,7 +127,7 @@ export class GloryCombatEngine {
       method: finalResult.method,
       round: finalResult.round,
       timeInRound: finalResult.timeInRound || '0:00',
-      rounds: currentRound - 1,
+      rounds_completed: currentRound - 1,
       roundData,
       analysis,
       prediction,
@@ -144,6 +144,16 @@ export class GloryCombatEngine {
     previousRounds: RoundData[]
   ): Promise<RoundData> {
     const roundData: RoundData = {
+      round_number: roundNumber,
+      fighter_a_score: 0,
+      fighter_b_score: 0,
+      fighter_a_punches: 0,
+      fighter_b_punches: 0,
+      fighter_a_power_shots: 0,
+      fighter_b_power_shots: 0,
+      knockdowns: [],
+      round_winner: 'EVEN',
+      round_notes: [],
       round: roundNumber,
       duration: 180, // 3 minutes
       events: [],
@@ -163,7 +173,6 @@ export class GloryCombatEngine {
         totalPower: { fighterA: 0, fighterB: 0 },
         knockdowns: { fighterA: 0, fighterB: 0 }
       },
-      knockdowns: [],
       commentary: '',
       analysis: ''
     }
@@ -417,8 +426,8 @@ export class GloryCombatEngine {
             fighter: event.fighter,
             round: event.round,
             timeInRound: event.timeInRound || '0:00',
-            damage: event.damage,
-            type: event.damage > 25 ? 'knockdown' : 'flash'
+            type: event.damage > 25 ? 'knockdown' : 'flash',
+            recovery_time: Math.floor(Math.random() * 10) + 5
           })
         }
       }

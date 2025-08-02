@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import { Fighter } from '../../lib/supabase';
-import { WeightClass } from '../../lib/unified-types';
 import { Card } from '../ui/card';
 import { Select } from '../ui/select';
+
+// Define weight classes as array for component use
+const WEIGHT_CLASSES = [
+  'heavyweight', 'cruiserweight', 'light_heavyweight', 'super_middleweight',
+  'middleweight', 'super_welterweight', 'welterweight', 'super_lightweight',
+  'lightweight', 'super_featherweight', 'featherweight', 'super_bantamweight',
+  'bantamweight', 'super_flyweight', 'flyweight'
+] as const;
 
 interface FighterRosterProps {
   fighters: Fighter[];
@@ -78,20 +85,18 @@ export const FighterRoster: React.FC<FighterRosterProps> = ({
         </div>
         
         <Select
-          label="Weight Class"
           value={selectedWeightClass}
           onChange={(e) => setSelectedWeightClass(e.target.value)}
         >
           <option value="">All Weight Classes</option>
-          {Object.entries(WeightClass).map(([key, value]) => (
-            <option key={value} value={value}>
-              {key.replace('_', ' ').toUpperCase()}
+          {WEIGHT_CLASSES.map((weightClass) => (
+            <option key={weightClass} value={weightClass}>
+              {weightClass.replace('_', ' ').toUpperCase()}
             </option>
           ))}
         </Select>
 
         <Select
-          label="Sort By"
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
         >

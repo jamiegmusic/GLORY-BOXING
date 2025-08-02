@@ -207,18 +207,15 @@ const CreateFighterTab: React.FC<CreateFighterTabProps> = ({ className }) => {
                   <Label htmlFor="weight_class">Weight Class</Label>
                   <Select
                     value={formData.weight_class}
-                    onValueChange={(value) => updateField('weight_class', value)}
+                    onChange={(e) => updateField('weight_class', e.target.value)}
+                    className={cn(errors.weight_class && "border-destructive")}
                   >
-                    <SelectTrigger className={cn(errors.weight_class && "border-destructive")}>
-                      <SelectValue placeholder="Select weight class" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {weightClasses.map((weightClass) => (
-                        <SelectItem key={weightClass} value={weightClass}>
-                          {weightClass}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
+                    <option value="">Select weight class</option>
+                    {weightClasses.map((weightClass) => (
+                      <option key={weightClass} value={weightClass}>
+                        {weightClass}
+                      </option>
+                    ))}
                   </Select>
                   {errors.weight_class && (
                     <p className="text-sm text-destructive">{errors.weight_class}</p>

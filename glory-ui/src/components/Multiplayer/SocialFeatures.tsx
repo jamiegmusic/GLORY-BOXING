@@ -314,7 +314,7 @@ const SocialFeatures: React.FC<SocialFeaturesProps> = ({
               ))
             ) : (
               <div className="text-center text-sm text-gray-500 py-4">
-                Welcome to Glory Boxing Manager Global Chat!
+                Welcome to Glory Management Global Chat!
               </div>
             )}
           </div>

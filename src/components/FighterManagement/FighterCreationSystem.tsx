@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import { Fighter } from '../../lib/supabase';
-import { WeightClass, Stance } from '../../lib/unified-types';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Select } from '../ui/select';
 import { Slider } from '../ui/slider';
 import { Card } from '../ui/card';
 import { supabase } from '../../lib/supabase';
+
+// Define weight classes and stances as arrays for component use
+const WEIGHT_CLASSES = [
+  'heavyweight', 'cruiserweight', 'light_heavyweight', 'super_middleweight',
+  'middleweight', 'super_welterweight', 'welterweight', 'super_lightweight',
+  'lightweight', 'super_featherweight', 'featherweight', 'super_bantamweight',
+  'bantamweight', 'super_flyweight', 'flyweight'
+] as const;
+
+const STANCES = ['orthodox', 'southpaw', 'switch'] as const;
 
 interface FighterCreationSystemProps {
   onFighterCreated: (fighter: Fighter) => void;
@@ -22,8 +31,8 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
     nickname: '',
     age: 25,
     nationality: 'British',
-    weight_class: WeightClass.WELTERWEIGHT,
-    stance: Stance.ORTHODOX,
+    weight_class: 'welterweight',
+    stance: 'orthodox',
     hometown: 'London',
     height_cm: 175,
     reach_cm: 180,
@@ -98,8 +107,8 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
 
     const nationalities = ['British', 'American', 'Mexican', 'Irish', 'Cuban', 'Puerto Rican'];
     const hometowns = ['London', 'New York', 'Los Angeles', 'Chicago', 'Miami', 'Manchester'];
-    const weightClasses = Object.values(WeightClass);
-    const stances = Object.values(Stance);
+    const weightClasses = WEIGHT_CLASSES;
+    const stances = STANCES;
 
     const randomName = names[Math.floor(Math.random() * names.length)];
     const randomNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
@@ -225,7 +234,6 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
             />
 
             <Select
-              label="Weight Class"
               value={fighterData.weight_class}
               onChange={(e) => handleInputChange('weight_class', e.target.value)}
             >
@@ -237,7 +245,6 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
             </Select>
 
             <Select
-              label="Stance"
               value={fighterData.stance}
               onChange={(e) => handleInputChange('stance', e.target.value)}
             >

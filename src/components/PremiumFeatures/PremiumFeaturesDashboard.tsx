@@ -118,7 +118,7 @@ export default function PremiumFeaturesDashboard({
       <div className="bg-gray-900 border-b border-gray-700 p-6">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-white">Glory Boxing Manager</h1>
+            <h1 className="text-3xl font-bold text-white">Glory Management</h1>
             <p className="text-gray-400">Premium Features Dashboard</p>
           </div>
           

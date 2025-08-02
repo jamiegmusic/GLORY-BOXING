@@ -35,17 +35,17 @@ const RankingCard: React.FC<RankingCardProps> = ({ ranking, index, onViewFighter
   }
 
   return (
-    <div className={`rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 border ${getRankBackground(ranking.rank)}`}>
+    <div className={`rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 border ${getRankBackground(ranking.rank_position)}`}>
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center space-x-3">
-          <div className={`text-2xl font-bold ${getRankColor(ranking.rank)}`}>
-            {ranking.rank}
+          <div className={`text-2xl font-bold ${getRankColor(ranking.rank_position)}`}>
+            {ranking.rank_position}
           </div>
           
-          {ranking.rank <= 3 && (
+          {ranking.rank_position <= 3 && (
             <Medal className={`w-5 h-5 ${
-              ranking.rank === 1 ? 'text-yellow-500' :
-              ranking.rank === 2 ? 'text-gray-400' :
+              ranking.rank_position === 1 ? 'text-yellow-500' :
+              ranking.rank_position === 2 ? 'text-gray-400' :
               'text-amber-500'
             }`} />
           )}
@@ -95,7 +95,7 @@ const RankingCard: React.FC<RankingCardProps> = ({ ranking, index, onViewFighter
         </div>
       </div>
 
-      {ranking.rank === 1 && (
+      {ranking.rank_position === 1 && (
         <div className="mt-3 flex items-center space-x-1">
           <Trophy className="w-4 h-4 text-yellow-500" />
           <span className="text-xs font-medium text-yellow-700">Champion</span>

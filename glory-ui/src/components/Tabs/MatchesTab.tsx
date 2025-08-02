@@ -207,20 +207,20 @@ const MatchesTab = () => {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="text-xl font-semibold">
-                    {match.fighter_a.name} vs {match.fighter_b.name}
+                    {match.fighter_a_name} vs {match.fighter_b_name}
                   </h3>
                   {match.result ? (
                     <p className="text-green-400 font-medium mt-1">{match.result}</p>
                   ) : (
                     <p className="text-yellow-400 font-medium mt-1">Scheduled</p>
                   )}
-                  <p className="text-gray-400 text-sm mt-1">{match.date} • {match.venue}</p>
+                  <p className="text-gray-400 text-sm mt-1">{match.match_date} • {match.venue_name}</p>
                   <div className="mt-2 flex space-x-2">
                     <span className="bg-blue-600 text-blue-100 px-2 py-1 rounded text-xs font-medium">
-                      {match.fighter_a.weight_class}
+                      {match.fighter_a?.weight_class || 'Unknown'}
                     </span>
                     <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded text-xs font-medium">
-                      {match.fighter_a.record} vs {match.fighter_b.record}
+                      {match.fighter_a?.record || '0-0'} vs {match.fighter_b?.record || '0-0'}
                     </span>
                   </div>
                 </div>
@@ -238,18 +238,18 @@ const MatchesTab = () => {
                 <div className="mt-4 space-y-4 border-t border-gray-700 pt-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <h4 className="font-semibold mb-2 text-blue-400">{match.fighter_a.name}</h4>
-                      <p className="text-sm text-gray-300">Weight Class: {match.fighter_a.weight_class}</p>
-                      <p className="text-sm text-gray-300">Record: {match.fighter_a.record}</p>
-                      {match.fighter_a.nationality && (
+                      <h4 className="font-semibold mb-2 text-blue-400">{match.fighter_a_name}</h4>
+                      <p className="text-sm text-gray-300">Weight Class: {match.fighter_a?.weight_class || 'Unknown'}</p>
+                      <p className="text-sm text-gray-300">Record: {match.fighter_a?.record || '0-0'}</p>
+                      {match.fighter_a?.nationality && (
                         <p className="text-sm text-gray-300">Nationality: {match.fighter_a.nationality}</p>
                       )}
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2 text-red-400">{match.fighter_b.name}</h4>
-                      <p className="text-sm text-gray-300">Weight Class: {match.fighter_b.weight_class}</p>
-                      <p className="text-sm text-gray-300">Record: {match.fighter_b.record}</p>
-                      {match.fighter_b.nationality && (
+                      <h4 className="font-semibold mb-2 text-red-400">{match.fighter_b_name}</h4>
+                      <p className="text-sm text-gray-300">Weight Class: {match.fighter_b?.weight_class || 'Unknown'}</p>
+                      <p className="text-sm text-gray-300">Record: {match.fighter_b?.record || '0-0'}</p>
+                      {match.fighter_b?.nationality && (
                         <p className="text-sm text-gray-300">Nationality: {match.fighter_b.nationality}</p>
                       )}
                     </div>

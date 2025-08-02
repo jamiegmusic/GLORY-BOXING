@@ -93,7 +93,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
-        <div className="text-white text-xl">Loading Glory Boxing Manager...</div>
+        <div className="text-white text-xl">Loading Glory Management...</div>
       </div>
     )
   }

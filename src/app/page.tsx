@@ -276,7 +276,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
-        <div className="text-white text-xl">Loading Glory Boxing Manager...</div>
+        <div className="text-white text-xl">Loading Glory Management...</div>
       </div>
     )
   }
@@ -289,7 +289,7 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Target className="w-8 h-8 text-red-500 mr-3" />
-              <h1 className="text-2xl font-bold text-white">Glory Boxing Manager</h1>
+              <h1 className="text-2xl font-bold text-white">Glory Management</h1>
             </div>
             {gameState && (
               <div className="flex items-center space-x-6 text-white">
@@ -422,7 +422,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="space-y-3">
-                  <p className="text-gray-300">Welcome to Glory Boxing Manager! Start by managing your fighters and building your boxing empire.</p>
+                  <p className="text-gray-300">Welcome to Glory Management! Start by managing your fighters and building your boxing empire.</p>
                   <p className="text-gray-300">Click "Advance Week" to progress your game and generate revenue.</p>
                 </div>
               </div>

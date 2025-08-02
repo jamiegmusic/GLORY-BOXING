@@ -249,7 +249,7 @@ export class HealthMonitoringSystem {
     const injury: Injury = {
       id: `injury-${Date.now()}`,
       fighter_id: fighter.id,
-      type: injuryType,
+      injury_type: injuryType,
       severity: this.getSeverityNumber(severity),
       occurred_date: new Date().toISOString(),
       recovery_date: new Date(Date.now() + recoveryTime * 24 * 60 * 60 * 1000).toISOString(),
@@ -257,6 +257,13 @@ export class HealthMonitoringSystem {
       treatment_required: injuryAssessment.treatmentRequired,
       medical_clearance_required: injuryAssessment.medicalClearanceRequired,
       notes: `Simulated ${severity} ${injuryType} injury`,
+      recovery_weeks: Math.ceil(recoveryTime / 7),
+      is_recovered: false,
+      affects_punching_power: false,
+      affects_speed: false,
+      affects_defense: false,
+      affects_stamina: false,
+      affects_chin: false,
       created_at: new Date().toISOString()
     }
 

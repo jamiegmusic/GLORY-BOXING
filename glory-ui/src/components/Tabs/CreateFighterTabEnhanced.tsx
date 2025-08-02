@@ -317,18 +317,15 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                       <Label htmlFor="weight_class">Weight Class</Label>
                       <Select
                         value={formData.weight_class}
-                        onValueChange={(value) => updateField('weight_class', value)}
+                        onChange={(e) => updateField('weight_class', e.target.value)}
+                        className={cn(errors.weight_class && "border-destructive")}
                       >
-                        <SelectTrigger className={cn(errors.weight_class && "border-destructive")}>
-                          <SelectValue placeholder="Select weight class" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {weightClasses.map((weightClass) => (
-                            <SelectItem key={weightClass} value={weightClass}>
-                              {weightClass}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
+                        <option value="">Select weight class</option>
+                        {weightClasses.map((weightClass) => (
+                          <option key={weightClass} value={weightClass}>
+                            {weightClass}
+                          </option>
+                        ))}
                       </Select>
                       {errors.weight_class && (
                         <p className="text-sm text-destructive">{errors.weight_class}</p>
@@ -434,18 +431,14 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                     <Label htmlFor="voice_profile">Voice Profile</Label>
                     <Select
                       value={formData.voice_profile}
-                      onValueChange={(value) => updateField('voice_profile', value)}
+                      onChange={(e) => updateField('voice_profile', e.target.value)}
                     >
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select voice type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {voiceTypes.map((voiceType) => (
-                          <SelectItem key={voiceType} value={voiceType}>
-                            {voiceType.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
+                      <option value="">Select voice type</option>
+                      {voiceTypes.map((voiceType) => (
+                        <option key={voiceType} value={voiceType}>
+                          {voiceType.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                        </option>
+                      ))}
                     </Select>
                   </div>
 
@@ -498,18 +491,15 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                       <Label htmlFor="ai_weight_class">Weight Class</Label>
                       <Select
                         value={formData.weight_class}
-                        onValueChange={(value) => updateField('weight_class', value)}
+                        onChange={(e) => updateField('weight_class', e.target.value)}
+                        className={cn(errors.weight_class && "border-destructive")}
                       >
-                        <SelectTrigger className={cn(errors.weight_class && "border-destructive")}>
-                          <SelectValue placeholder="Select weight class" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {weightClasses.map((weightClass) => (
-                            <SelectItem key={weightClass} value={weightClass}>
-                              {weightClass}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
+                        <option value="">Select weight class</option>
+                        {weightClasses.map((weightClass) => (
+                          <option key={weightClass} value={weightClass}>
+                            {weightClass}
+                          </option>
+                        ))}
                       </Select>
                       {errors.weight_class && (
                         <p className="text-sm text-destructive">{errors.weight_class}</p>
@@ -528,18 +518,14 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         <div className="space-y-3">
                           <Select
                             value={formData.mugshot_url}
-                            onValueChange={(value) => updateField('mugshot_url', value)}
+                            onChange={(e) => updateField('mugshot_url', e.target.value)}
                           >
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select style" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              {mugshotStyles.map((style) => (
-                                <SelectItem key={style} value={style}>
-                                  {style.charAt(0).toUpperCase() + style.slice(1)}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
+                            <option value="">Select style</option>
+                            {mugshotStyles.map((style) => (
+                              <option key={style} value={style}>
+                                {style.charAt(0).toUpperCase() + style.slice(1)}
+                              </option>
+                            ))}
                           </Select>
                           <Button
                             onClick={handleGenerateAiMugshot}
@@ -570,18 +556,14 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         <div className="space-y-3">
                           <Select
                             value={formData.voice_profile}
-                            onValueChange={(value) => updateField('voice_profile', value)}
+                            onChange={(e) => updateField('voice_profile', e.target.value)}
                           >
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select voice type" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              {voiceTypes.map((voiceType) => (
-                                <SelectItem key={voiceType} value={voiceType}>
-                                  {voiceType.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
+                            <option value="">Select voice type</option>
+                            {voiceTypes.map((voiceType) => (
+                              <option key={voiceType} value={voiceType}>
+                                {voiceType.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                              </option>
+                            ))}
                           </Select>
                           <Button
                             onClick={handleGenerateAiVoice}

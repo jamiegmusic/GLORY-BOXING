@@ -10,20 +10,20 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Glory Boxing Manager - From Amateur to Glory',
+  title: 'Glory Management - From Amateur to Glory',
   description: 'The ultimate boxing management simulation game. Take fighters from amateur status to championship glory while dealing with the gritty realities of the boxing business.',
   keywords: 'boxing, management, game, simulation, fighter, promoter, championship',
-  authors: [{ name: 'Glory Boxing Team' }],
+      authors: [{ name: 'Glory Management Team' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'Glory Boxing Manager',
+    title: 'Glory Management',
     description: 'The ultimate boxing management simulation game',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Glory Boxing Manager',
+    title: 'Glory Management',
     description: 'The ultimate boxing management simulation game',
   },
 }

@@ -13,7 +13,7 @@ export const GameHeader: React.FC<GameHeaderProps> = ({ gameState }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Target className="w-8 h-8 text-red-500 mr-3" />
-            <h1 className="text-2xl font-bold text-white">Glory Boxing Manager</h1>
+            <h1 className="text-2xl font-bold text-white">Glory Management</h1>
           </div>
           {gameState && (
             <div className="flex items-center space-x-6 text-white">

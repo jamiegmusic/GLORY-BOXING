@@ -30,7 +30,7 @@ const EnhancedAICommentary: React.FC<EnhancedAICommentaryProps> = ({ fightData }
   // Sample fight data for demonstration
   const sampleFightData: FightData = {
     fightId: 'usyk_bivol_2024',
-    eventName: 'Glory Boxing Championship',
+          eventName: 'Glory Management Championship',
     venue: 'Madison Square Garden',
     date: '2024-01-10',
     time: '22:00',
@@ -261,7 +261,7 @@ const EnhancedAICommentary: React.FC<EnhancedAICommentaryProps> = ({ fightData }
     if (!commentaryResponse) return
     
     const content = `
-GLORY BOXING - ENHANCED AI COMMENTARY
+        GLORY MANAGEMENT - ENHANCED AI COMMENTARY
 =====================================
 
 FIGHT SUMMARY:

@@ -501,7 +501,6 @@ export const TournamentSystem: React.FC<TournamentSystemProps> = () => {
                 />
 
                 <Select
-                  label="Weight Class"
                   value={weightClass}
                   onChange={(e) => setWeightClass(e.target.value)}
                 >
@@ -537,7 +536,6 @@ export const TournamentSystem: React.FC<TournamentSystemProps> = () => {
                 />
 
                 <Select
-                  label="Participants"
                   value={maxParticipants}
                   onChange={(e) => setMaxParticipants(parseInt(e.target.value))}
                 >
@@ -597,7 +595,7 @@ export const TournamentSystem: React.FC<TournamentSystemProps> = () => {
               <Button
                 onClick={createTournament}
                 disabled={selectedFighters.length !== maxParticipants}
-                variant="primary"
+                variant="default"
               >
                 Create Tournament
               </Button>
@@ -659,7 +657,7 @@ export const TournamentSystem: React.FC<TournamentSystemProps> = () => {
                             {!match.winner_id && match.fighter1_id && match.fighter2_id && (
                               <Button
                                 onClick={() => simulateTournamentMatch(match)}
-                                variant="primary"
+                                variant="default"
                                 className="flex items-center space-x-2"
                               >
                                 <Play className="w-4 h-4" />

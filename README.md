@@ -1,4 +1,4 @@
-# 🥊 Glory Boxing Manager
+# 🥊 Glory Management
 
 A comprehensive boxing management simulation game built with React, TypeScript, and Supabase. Experience the thrill of managing fighters, scheduling fights, and building your boxing empire with AI-powered commentary and realistic fight simulation.
 

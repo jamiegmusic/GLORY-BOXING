@@ -1,7 +1,7 @@
 {
-  "name": "glory-boxing-manager",
+  "name": "glory-management",
   "version": "1.0.0",
-  "description": "Comprehensive Boxing Management Game - From Amateur to Glory",
+  "description": "Glory Management - Boxing management simulation game",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
