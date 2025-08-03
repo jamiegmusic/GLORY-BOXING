@@ -82,10 +82,27 @@ export const usePress = () => {
     return pressConferences.find(c => c.match_id === matchId)
   }
 
-  const generateAIPressQuestions = async (matchId: string, fighterA: string, fighterB: string) => {
+  const generateAIPressQuestions = async (matchId: string, fighterA: string, fighterB: string, pressConferenceId?: string) => {
     try {
+      // Create a default press conference if none provided
+      let conferenceId = pressConferenceId
+      if (!conferenceId) {
+        const conference = await createPressConference({
+          match_id: matchId,
+          event_name: `${fighterA} vs ${fighterB} Press Conference`,
+          conference_date: new Date().toISOString(),
+          participants: [fighterA, fighterB],
+          highlights: [],
+          controversies: [],
+          ai_generated_quotes: [],
+          media_reactions: []
+        })
+        conferenceId = conference?.id
+      }
+
       const questions = [
         {
+          press_conference_id: conferenceId || '',
           match_id: matchId,
           question: `How do you feel about facing ${fighterB} in this upcoming fight?`,
           target: fighterA,
@@ -94,6 +111,7 @@ export const usePress = () => {
           journalist: 'AI Sports Reporter'
         },
         {
+          press_conference_id: conferenceId || '',
           match_id: matchId,
           question: `What's your strategy going into this fight against ${fighterA}?`,
           target: fighterB,
@@ -102,6 +120,7 @@ export const usePress = () => {
           journalist: 'AI Sports Reporter'
         },
         {
+          press_conference_id: conferenceId || '',
           match_id: matchId,
           question: 'How do you think the crowd will react to this matchup?',
           target: 'both',

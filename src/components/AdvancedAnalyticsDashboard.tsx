@@ -82,7 +82,7 @@ const AdvancedAnalyticsDashboard: React.FC<AdvancedAnalyticsDashboardProps> = ({
 
     const totalFights = matches.length
     const totalFighters = filteredFighters.length
-    const activeFighters = filteredFighters.filter(f => f.status !== 'retired').length
+    const activeFighters = filteredFighters.filter(f => f.career_stage !== 'retired').length
 
     const avgRecord = filteredFighters.reduce((sum, f) => {
       const totalFights = f.record_wins + f.record_losses + f.record_draws
@@ -123,7 +123,7 @@ const AdvancedAnalyticsDashboard: React.FC<AdvancedAnalyticsDashboardProps> = ({
       merchandise: financialMetrics.merchandiseRevenue
     }
 
-    const fighterSalaries = fighters.reduce((sum, f) => sum + (f.contract?.base_salary || 0), 0)
+    const fighterSalaries = fighters.reduce((sum, f) => sum + (f.current_contract_value || 0), 0)
     const avgFighterSalary = fighterSalaries / fighters.length
 
     const topEarners = fighters

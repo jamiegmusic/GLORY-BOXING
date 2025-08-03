@@ -6,9 +6,7 @@ export const initSentry = () => {
     environment: process.env.NODE_ENV,
     tracesSampleRate: 1.0,
     integrations: [
-      new Sentry.BrowserTracing({
-        tracePropagationTargets: ['localhost', 'your-domain.com'],
-      }),
+      // BrowserTracing is automatically included in newer versions
     ],
   });
 };
@@ -31,12 +29,20 @@ export const trackAPIPerformance = (
   duration: number,
   statusCode: number
 ) => {
-  Sentry.metrics.increment('api.requests', 1, {
-    tags: { endpoint, status: statusCode.toString() },
-  });
+  // Use Sentry's performance monitoring instead of metrics
+  const transaction = Sentry.getCurrentHub().getScope()?.getTransaction();
+  if (transaction) {
+    transaction.setTag('endpoint', endpoint);
+    transaction.setTag('status', statusCode.toString());
+    transaction.setMeasurement('api.duration', duration, 'millisecond');
+  }
   
-  Sentry.metrics.distribution('api.duration', duration, {
-    tags: { endpoint },
+  // Add breadcrumb for API performance
+  Sentry.addBreadcrumb({
+    category: 'api',
+    message: `API call to ${endpoint}`,
+    data: { duration, statusCode },
+    level: 'info',
   });
 };
 

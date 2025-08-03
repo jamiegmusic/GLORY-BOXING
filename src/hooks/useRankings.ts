@@ -26,9 +26,17 @@ export const useRankings = () => {
 
   const addFighter = async (fighter: Omit<Ranking, 'id'>) => {
     try {
+      // Ensure required fields have default values
+      const fighterWithDefaults = {
+        record_wins: 0,
+        record_losses: 0,
+        record_draws: 0,
+        ...fighter
+      }
+      
       const { data, error } = await supabase
         .from('rankings')
-        .insert(fighter)
+        .insert(fighterWithDefaults)
         .select()
 
       if (error) throw error

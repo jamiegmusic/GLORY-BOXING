@@ -80,13 +80,13 @@ export class RatingSystem {
 
   private trackRatingEvent(event: string, properties: Record<string, any>) {
     // Track with analytics service
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', event, properties);
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', event, properties);
     }
     
     // Track with Vercel Analytics
-    if (typeof window !== 'undefined' && window.va) {
-      window.va.track(event, properties);
+    if (typeof window !== 'undefined' && (window as any).va) {
+      (window as any).va.track(event, properties);
     }
   }
 

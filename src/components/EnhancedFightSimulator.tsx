@@ -119,7 +119,7 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
     const baseRevenue = 1000000 // Base revenue for a fight
     const popularityMultiplier = 1 + (avgPopularity / 100)
     const titleFightMultiplier = match.belt ? 1.5 : 1.0
-    const excitementMultiplier = 1 + (result.rating / 10)
+    const excitementMultiplier = 1 + ((result.fight_rating || result.rating || 0) / 10)
 
     const totalRevenue = Math.round(baseRevenue * popularityMultiplier * titleFightMultiplier * excitementMultiplier)
 
@@ -130,7 +130,7 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
     const merchandiseRevenue = Math.round(totalRevenue * 0.1)
 
     // Calculate expenses
-    const fighterPurses = (fighterA.contract?.base_salary || 0) + (fighterB.contract?.base_salary || 0)
+    const fighterPurses = (fighterA.current_contract_value || 0) + (fighterB.current_contract_value || 0)
     const venueCosts = 200000
     const productionCosts = 150000
     const marketingCosts = Math.round(totalRevenue * 0.1)
@@ -359,7 +359,7 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">Winner</h4>
-              <p className="text-2xl font-bold text-green-600">{fightResult.winner}</p>
+              <p className="text-2xl font-bold text-green-600">{fightResult.winner?.name}</p>
               <p className="text-sm text-gray-600 mt-1">
                 {fightResult.timeInRound} in round {fightResult.round}
               </p>
@@ -373,7 +373,7 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
                     <Star
                       key={i}
                       className={`w-5 h-5 ${
-                        i < Math.floor(fightResult.rating / 2)
+                        i < Math.floor((fightResult.fight_rating || fightResult.rating || 0) / 2)
                           ? 'text-yellow-500 fill-current'
                           : 'text-gray-300'
                       }`}
