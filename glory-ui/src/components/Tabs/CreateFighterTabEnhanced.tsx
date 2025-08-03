@@ -1,3 +1,4 @@
+import type { Fighter } from '@/lib/unified-types';
 import React, { useState, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -305,7 +306,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         id="name"
                         placeholder="Enter fighter's full name"
                         value={formData.name}
-                        onChange={(e) => updateField('name', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('name', e.target.value)}
                         className={cn(errors.name && "border-destructive")}
                       />
                       {errors.name && (
@@ -317,7 +318,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                       <Label htmlFor="weight_class">Weight Class</Label>
                       <Select
                         value={formData.weight_class}
-                        onChange={(e) => updateField('weight_class', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('weight_class', e.target.value)}
                         className={cn(errors.weight_class && "border-destructive")}
                       >
                         <option value="">Select weight class</option>
@@ -341,7 +342,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         id="record"
                         placeholder="0-0-0"
                         value={formData.record}
-                        onChange={(e) => updateField('record', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('record', e.target.value)}
                       />
                       <p className="text-xs text-muted-foreground">
                         Format: Wins-Losses-Draws
@@ -354,7 +355,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         id="nationality"
                         placeholder="e.g., USA, Mexico, UK"
                         value={formData.nationality}
-                        onChange={(e) => updateField('nationality', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('nationality', e.target.value)}
                       />
                     </div>
                   </div>
@@ -367,7 +368,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                       type="number"
                       placeholder="Enter age"
                       value={formData.age}
-                      onChange={(e) => updateField('age', e.target.value)}
+                      onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('age', e.target.value)}
                       className={cn(errors.age && "border-destructive")}
                     />
                     {errors.age && (
@@ -431,7 +432,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                     <Label htmlFor="voice_profile">Voice Profile</Label>
                     <Select
                       value={formData.voice_profile}
-                      onChange={(e) => updateField('voice_profile', e.target.value)}
+                      onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('voice_profile', e.target.value)}
                     >
                       <option value="">Select voice type</option>
                       {voiceTypes.map((voiceType) => (
@@ -479,7 +480,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         id="ai_name"
                         placeholder="Enter fighter's name for AI generation"
                         value={formData.name}
-                        onChange={(e) => updateField('name', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('name', e.target.value)}
                         className={cn(errors.name && "border-destructive")}
                       />
                       {errors.name && (
@@ -491,7 +492,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                       <Label htmlFor="ai_weight_class">Weight Class</Label>
                       <Select
                         value={formData.weight_class}
-                        onChange={(e) => updateField('weight_class', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('weight_class', e.target.value)}
                         className={cn(errors.weight_class && "border-destructive")}
                       >
                         <option value="">Select weight class</option>
@@ -518,7 +519,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         <div className="space-y-3">
                           <Select
                             value={formData.mugshot_url}
-                            onChange={(e) => updateField('mugshot_url', e.target.value)}
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('mugshot_url', e.target.value)}
                           >
                             <option value="">Select style</option>
                             {mugshotStyles.map((style) => (
@@ -556,7 +557,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
                         <div className="space-y-3">
                           <Select
                             value={formData.voice_profile}
-                            onChange={(e) => updateField('voice_profile', e.target.value)}
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('voice_profile', e.target.value)}
                           >
                             <option value="">Select voice type</option>
                             {voiceTypes.map((voiceType) => (
@@ -683,7 +684,7 @@ const CreateFighterTabEnhanced: React.FC<CreateFighterTabEnhancedProps> = ({ cla
               </div>
             ) : (
               <div className="space-y-4">
-                {recentFighters.map((fighter) => (
+                {recentFighters.map((fighter: Fighter) => (
                   <div key={fighter.id} className="flex items-center gap-4 p-4 border rounded-lg">
                     <Avatar className="h-12 w-12">
                       <AvatarImage src={fighter.mugshot_url} />

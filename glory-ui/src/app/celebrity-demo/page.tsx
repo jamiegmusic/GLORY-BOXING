@@ -217,7 +217,7 @@ const CelebrityDemoPage: React.FC = () => {
                     {Object.entries(selectedCelebrity.acting_skills).map(([skill, value]) => (
                       <div key={skill} className="text-center">
                         <p className="text-sm text-gray-400 capitalize">{skill.replace('_', ' ')}</p>
-                        <p className="text-lg font-bold text-white">{value}</p>
+                        <p className="text-lg font-bold text-white">{String(value)}</p>
                       </div>
                     ))}
                   </div>
@@ -231,7 +231,7 @@ const CelebrityDemoPage: React.FC = () => {
                     {Object.entries(selectedCelebrity.music_skills).map(([skill, value]) => (
                       <div key={skill} className="text-center">
                         <p className="text-sm text-gray-400 capitalize">{skill.replace('_', ' ')}</p>
-                        <p className="text-lg font-bold text-white">{value}</p>
+                        <p className="text-lg font-bold text-white">{String(value)}</p>
                       </div>
                     ))}
                   </div>
@@ -245,7 +245,7 @@ const CelebrityDemoPage: React.FC = () => {
                     {Object.entries(selectedCelebrity.sports_skills).map(([skill, value]) => (
                       <div key={skill} className="text-center">
                         <p className="text-sm text-gray-400 capitalize">{skill.replace('_', ' ')}</p>
-                        <p className="text-lg font-bold text-white">{value}</p>
+                        <p className="text-lg font-bold text-white">{String(value)}</p>
                       </div>
                     ))}
                   </div>
@@ -259,7 +259,7 @@ const CelebrityDemoPage: React.FC = () => {
                     {Object.entries(selectedCelebrity.social_media_skills).map(([skill, value]) => (
                       <div key={skill} className="text-center">
                         <p className="text-sm text-gray-400 capitalize">{skill.replace('_', ' ')}</p>
-                        <p className="text-lg font-bold text-white">{value}</p>
+                        <p className="text-lg font-bold text-white">{String(value)}</p>
                       </div>
                     ))}
                   </div>
@@ -273,7 +273,7 @@ const CelebrityDemoPage: React.FC = () => {
                     {Object.entries(selectedCelebrity.business_skills).map(([skill, value]) => (
                       <div key={skill} className="text-center">
                         <p className="text-sm text-gray-400 capitalize">{skill.replace('_', ' ')}</p>
-                        <p className="text-lg font-bold text-white">{value}</p>
+                        <p className="text-lg font-bold text-white">{String(value)}</p>
                       </div>
                     ))}
                   </div>
@@ -288,7 +288,7 @@ const CelebrityDemoPage: React.FC = () => {
                     {Object.entries(selectedCelebrity.personality_traits).map(([trait, value]) => (
                       <div key={trait} className="text-center">
                         <p className="text-sm text-gray-400 capitalize">{trait.replace('_', ' ')}</p>
-                        <p className="text-lg font-bold text-white">{value}</p>
+                        <p className="text-lg font-bold text-white">{String(value)}</p>
                       </div>
                     ))}
                   </div>

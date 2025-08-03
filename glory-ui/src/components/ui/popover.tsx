@@ -36,7 +36,9 @@ export const Popover: React.FC<PopoverProps> = ({ children }) => {
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
           if (child.type === PopoverTrigger) {
-            return React.cloneElement(child, { onClick: () => setIsOpen(!isOpen) });
+            return React.cloneElement(child as React.ReactElement<any>, { 
+              onClick: () => setIsOpen(!isOpen) 
+            });
           }
           if (child.type === PopoverContent && isOpen) {
             return child;

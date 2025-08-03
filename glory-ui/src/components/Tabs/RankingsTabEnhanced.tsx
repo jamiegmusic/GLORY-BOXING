@@ -176,7 +176,7 @@ const RankingsTabEnhanced: React.FC<RankingsTabEnhancedProps> = ({ className }) 
                   id="search"
                   placeholder="Search fighters..."
                   value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
                   className="pl-10"
                 />
               </div>
@@ -257,10 +257,10 @@ const RankingsTabEnhanced: React.FC<RankingsTabEnhancedProps> = ({ className }) 
 
         <TabsContent value="grid" className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredFighters.map((fighter) => {
+            {filteredFighters.map((fighter: Fighter) => {
               const fighterRankings = getFighterRankings(fighter.id);
               const bestRanking = fighterRankings.length > 0 
-                ? fighterRankings.reduce((min, r) => r.rank < min.rank ? r : min)
+                ? fighterRankings.reduce((min: number, r: any) => r.rank < min.rank ? r : min)
                 : null;
 
               return (
@@ -304,7 +304,7 @@ const RankingsTabEnhanced: React.FC<RankingsTabEnhancedProps> = ({ className }) 
                         <div className="space-y-1">
                           <p className="text-xs font-medium text-muted-foreground">Rankings:</p>
                           <div className="flex flex-wrap gap-1">
-                            {fighterRankings.slice(0, 3).map((ranking) => (
+                            {fighterRankings.slice(0, 3).map((ranking: any) => (
                               <Badge key={ranking.id} variant="secondary" className="text-xs">
                                 {ranking.organization} #{ranking.rank}
                               </Badge>
@@ -338,7 +338,7 @@ const RankingsTabEnhanced: React.FC<RankingsTabEnhancedProps> = ({ className }) 
                 {filteredFighters.map((fighter, index) => {
                   const fighterRankings = getFighterRankings(fighter.id);
                   const bestRanking = fighterRankings.length > 0 
-                    ? fighterRankings.reduce((min, r) => r.rank < min.rank ? r : min)
+                    ? fighterRankings.reduce((min: number, r: any) => r.rank < min.rank ? r : min)
                     : null;
 
                   return (
@@ -373,7 +373,7 @@ const RankingsTabEnhanced: React.FC<RankingsTabEnhancedProps> = ({ className }) 
 
                         {fighterRankings.length > 0 && (
                           <div className="flex flex-wrap gap-1 mt-2">
-                            {fighterRankings.map((ranking) => (
+                            {fighterRankings.map((ranking: any) => (
                               <Badge key={ranking.id} variant="outline" className="text-xs">
                                 {ranking.organization} #{ranking.rank}
                               </Badge>

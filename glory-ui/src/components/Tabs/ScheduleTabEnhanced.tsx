@@ -211,7 +211,7 @@ const ScheduleTabEnhanced: React.FC<ScheduleTabEnhancedProps> = ({ className }) 
                     id="venue"
                     placeholder="Enter venue name"
                     value={formData.venue}
-                    onChange={(e) => updateField('venue', e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('venue', e.target.value)}
                     className={cn(errors.venue && "border-destructive")}
                   />
                   {errors.venue && (
@@ -278,7 +278,7 @@ const ScheduleTabEnhanced: React.FC<ScheduleTabEnhancedProps> = ({ className }) 
                     <Switch
                       id="title_fight"
                       checked={formData.title_fight}
-                      onCheckedChange={(checked) => updateField('title_fight', checked)}
+                      onCheckedChange={(checked: boolean) => updateField('title_fight', checked)}
                     />
                     <Label htmlFor="title_fight" className="text-sm">
                       Championship bout
@@ -294,7 +294,7 @@ const ScheduleTabEnhanced: React.FC<ScheduleTabEnhancedProps> = ({ className }) 
                   id="notes"
                   placeholder="Add any additional notes about the match..."
                   value={formData.notes}
-                  onChange={(e) => updateField('notes', e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => updateField('notes', e.target.value)}
                   rows={3}
                 />
               </div>
@@ -346,7 +346,7 @@ const ScheduleTabEnhanced: React.FC<ScheduleTabEnhancedProps> = ({ className }) 
               </div>
             ) : (
               <div className="space-y-4">
-                {upcomingMatches.map((match) => {
+                {upcomingMatches.map((match: Match) => {
                   const fighterA = getFighterById(match.fighter_a_id);
                   const fighterB = getFighterById(match.fighter_b_id);
                   

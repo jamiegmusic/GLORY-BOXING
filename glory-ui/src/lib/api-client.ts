@@ -1,8 +1,8 @@
-import { Fighter, Match } from './unified-types';
+import type { Fighter, Match } from './unified-types';
 
 const API_BASE_URL = 'http://127.0.0.1:8000';
 
-export { Fighter, Match };
+export type { Fighter, Match };
 
 export const apiClient = {
   // Fighter endpoints

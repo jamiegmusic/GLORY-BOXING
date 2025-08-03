@@ -210,7 +210,9 @@ const MatchesTab = () => {
                     {match.fighter_a_name} vs {match.fighter_b_name}
                   </h3>
                   {match.result ? (
-                    <p className="text-green-400 font-medium mt-1">{match.result}</p>
+                    <p className="text-green-400 font-medium mt-1">
+                      Winner: {match.result.winner} ({match.result.method})
+                    </p>
                   ) : (
                     <p className="text-yellow-400 font-medium mt-1">Scheduled</p>
                   )}

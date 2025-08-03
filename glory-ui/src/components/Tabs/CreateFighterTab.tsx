@@ -1,3 +1,4 @@
+import type { Fighter } from '@/lib/unified-types';
 import React, { useState, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -195,7 +196,7 @@ const CreateFighterTab: React.FC<CreateFighterTabProps> = ({ className }) => {
                     id="name"
                     placeholder="Enter fighter's full name"
                     value={formData.name}
-                    onChange={(e) => updateField('name', e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('name', e.target.value)}
                     className={cn(errors.name && "border-destructive")}
                   />
                   {errors.name && (
@@ -207,7 +208,7 @@ const CreateFighterTab: React.FC<CreateFighterTabProps> = ({ className }) => {
                   <Label htmlFor="weight_class">Weight Class</Label>
                   <Select
                     value={formData.weight_class}
-                    onChange={(e) => updateField('weight_class', e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('weight_class', e.target.value)}
                     className={cn(errors.weight_class && "border-destructive")}
                   >
                     <option value="">Select weight class</option>
@@ -231,7 +232,7 @@ const CreateFighterTab: React.FC<CreateFighterTabProps> = ({ className }) => {
                     id="record"
                     placeholder="0-0-0"
                     value={formData.record}
-                    onChange={(e) => updateField('record', e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('record', e.target.value)}
                   />
                   <p className="text-xs text-muted-foreground">
                     Format: Wins-Losses-Draws
@@ -244,7 +245,7 @@ const CreateFighterTab: React.FC<CreateFighterTabProps> = ({ className }) => {
                     id="nationality"
                     placeholder="e.g., USA, Mexico, UK"
                     value={formData.nationality}
-                    onChange={(e) => updateField('nationality', e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('nationality', e.target.value)}
                   />
                 </div>
               </div>
@@ -257,7 +258,7 @@ const CreateFighterTab: React.FC<CreateFighterTabProps> = ({ className }) => {
                   type="number"
                   placeholder="Enter age"
                   value={formData.age}
-                  onChange={(e) => updateField('age', e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('age', e.target.value)}
                   className={cn(errors.age && "border-destructive")}
                 />
                 {errors.age && (
@@ -366,7 +367,7 @@ const CreateFighterTab: React.FC<CreateFighterTabProps> = ({ className }) => {
               </div>
             ) : (
               <div className="space-y-4">
-                {recentFighters.map((fighter) => (
+                {recentFighters.map((fighter: Fighter) => (
                   <div key={fighter.id} className="flex items-center gap-4 p-4 border rounded-lg">
                     <Avatar className="h-12 w-12">
                       <AvatarImage src={fighter.mugshot_url} />

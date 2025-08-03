@@ -123,7 +123,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
   };
 
   const recentConferences = pressConferences
-    .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+    .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
     .slice(0, 5);
 
   const upcomingMatches = matches
@@ -207,7 +207,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                         <SelectValue placeholder="Select a press conference" />
                       </SelectTrigger>
                       <SelectContent>
-                        {pressConferences.map((conference) => {
+                        {pressConferences.map((conference: any) => {
                           const match = getMatchForConference(conference);
                           const { fighterA, fighterB } = match ? getFightersForMatch(match) : {};
                           
@@ -238,7 +238,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                       id="question"
                       placeholder="Enter your press question..."
                       value={formData.question}
-                      onChange={(e) => updateField('question', e.target.value)}
+                      onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('question', e.target.value)}
                       className={cn(errors.question && "border-destructive")}
                       rows={4}
                     />
@@ -259,7 +259,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                         id="target"
                         placeholder="Specific fighter or topic"
                         value={formData.target}
-                        onChange={(e) => updateField('target', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('target', e.target.value)}
                       />
                     </div>
 
@@ -311,7 +311,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                         id="journalist"
                         placeholder="Your name or outlet"
                         value={formData.journalist}
-                        onChange={(e) => updateField('journalist', e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateField('journalist', e.target.value)}
                       />
                     </div>
                   </div>
@@ -366,7 +366,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                   </div>
                 ) : (
                   <div className="space-y-4">
-                    {upcomingMatches.map((match) => {
+                    {upcomingMatches.map((match: Match) => {
                       const { fighterA, fighterB } = getFightersForMatch(match);
                       
                       return (
@@ -423,7 +423,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                 </div>
               ) : (
                 <div className="space-y-6">
-                  {recentConferences.map((conference) => {
+                  {recentConferences.map((conference: any) => {
                     const match = getMatchForConference(conference);
                     const { fighterA, fighterB } = match ? getFightersForMatch(match) : {};
                     
@@ -469,7 +469,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                           <div className="mb-4">
                             <h4 className="font-medium mb-2">Highlights</h4>
                             <div className="space-y-1">
-                              {conference.highlights.map((highlight, index) => (
+                              {conference.highlights.map((highlight: string, index: number) => (
                                 <p key={index} className="text-sm text-muted-foreground">
                                   • {highlight}
                                 </p>
@@ -485,7 +485,7 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                               Controversies
                             </h4>
                             <div className="space-y-1">
-                              {conference.controversies.map((controversy, index) => (
+                              {conference.controversies.map((controversy: any, index: number) => (
                                 <p key={index} className="text-sm text-destructive">
                                   • {controversy}
                                 </p>

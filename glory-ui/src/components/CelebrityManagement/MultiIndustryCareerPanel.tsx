@@ -278,7 +278,7 @@ const MultiIndustryCareerPanel: React.FC<MultiIndustryCareerPanelProps> = ({
               <option value="">Choose a skill...</option>
               {Object.entries(skills).map(([skill, value]) => (
                 <option key={skill} value={skill}>
-                  {skill.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())} ({value})
+                  {skill.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())} ({String(value)})
                 </option>
               ))}
             </select>
@@ -314,7 +314,7 @@ const MultiIndustryCareerPanel: React.FC<MultiIndustryCareerPanelProps> = ({
                 <span className="text-sm font-medium capitalize">
                   {skill.replace('_', ' ')}
                 </span>
-                <span className="text-sm font-bold">{value}</span>
+                <span className="text-sm font-bold">{String(value)}</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <div 

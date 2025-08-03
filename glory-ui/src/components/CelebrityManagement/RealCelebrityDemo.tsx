@@ -213,7 +213,7 @@ const RealCelebrityDemo: React.FC = () => {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {REAL_CELEBRITIES.map((celebrity) => (
+              {REAL_CELEBRITIES.map((celebrity: any) => (
                 <Button
                   key={celebrity.name}
                   variant="outline"
@@ -231,7 +231,7 @@ const RealCelebrityDemo: React.FC = () => {
 
       {/* Celebrity Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {celebrities.map((celebrity) => (
+        {celebrities.map((celebrity: any) => (
           <Card 
             key={celebrity.id} 
             className={`cursor-pointer transition-all hover:shadow-lg ${
@@ -342,7 +342,7 @@ const RealCelebrityDemo: React.FC = () => {
                       {Object.entries(selectedCelebrity.acting_skills).map(([skill, value]) => (
                         <div key={skill} className="flex justify-between">
                           <span className="text-sm capitalize">{skill.replace('_', ' ')}</span>
-                          <span className="text-sm font-medium">{value}</span>
+                          <span className="text-sm font-medium">{String(value)}</span>
                         </div>
                       ))}
                     </div>
@@ -356,7 +356,7 @@ const RealCelebrityDemo: React.FC = () => {
                       {Object.entries(selectedCelebrity.music_skills).map(([skill, value]) => (
                         <div key={skill} className="flex justify-between">
                           <span className="text-sm capitalize">{skill.replace('_', ' ')}</span>
-                          <span className="text-sm font-medium">{value}</span>
+                          <span className="text-sm font-medium">{String(value)}</span>
                         </div>
                       ))}
                     </div>
@@ -370,7 +370,7 @@ const RealCelebrityDemo: React.FC = () => {
                       {Object.entries(selectedCelebrity.sports_skills).map(([skill, value]) => (
                         <div key={skill} className="flex justify-between">
                           <span className="text-sm capitalize">{skill.replace('_', ' ')}</span>
-                          <span className="text-sm font-medium">{value}</span>
+                          <span className="text-sm font-medium">{String(value)}</span>
                         </div>
                       ))}
                     </div>
@@ -384,7 +384,7 @@ const RealCelebrityDemo: React.FC = () => {
                       {Object.entries(selectedCelebrity.social_media_skills).map(([skill, value]) => (
                         <div key={skill} className="flex justify-between">
                           <span className="text-sm capitalize">{skill.replace('_', ' ')}</span>
-                          <span className="text-sm font-medium">{value}</span>
+                          <span className="text-sm font-medium">{String(value)}</span>
                         </div>
                       ))}
                     </div>
@@ -398,7 +398,7 @@ const RealCelebrityDemo: React.FC = () => {
                       {Object.entries(selectedCelebrity.business_skills).map(([skill, value]) => (
                         <div key={skill} className="flex justify-between">
                           <span className="text-sm capitalize">{skill.replace('_', ' ')}</span>
-                          <span className="text-sm font-medium">{value}</span>
+                          <span className="text-sm font-medium">{String(value)}</span>
                         </div>
                       ))}
                     </div>
@@ -422,7 +422,7 @@ const RealCelebrityDemo: React.FC = () => {
                       {Object.entries(selectedCelebrity.personality_traits).map(([trait, value]) => (
                         <div key={trait} className="flex justify-between">
                           <span className="text-sm capitalize">{trait.replace('_', ' ')}</span>
-                          <span className="text-sm font-medium">{value}</span>
+                          <span className="text-sm font-medium">{String(value)}</span>
                         </div>
                       ))}
                     </div>
