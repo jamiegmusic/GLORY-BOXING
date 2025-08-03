@@ -4,54 +4,48 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './glory-ui/src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      colors: {
-        boxing: {
-          red: '#DC2626',
-          blue: '#1E40AF',
-          gold: '#F59E0B',
-          silver: '#6B7280',
-          bronze: '#CD7F32',
-          ring: '#1F2937',
-          canvas: '#F3F4F6',
-        },
-        fighter: {
-          amateur: '#10B981',
-          prospect: '#3B82F6',
-          contender: '#F59E0B',
-          champion: '#DC2626',
-          legend: '#7C3AED',
-          retired: '#6B7280',
-        }
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      fontFamily: {
-        'boxing': ['Orbitron', 'monospace'],
-        'display': ['Bebas Neue', 'cursive'],
+      colors: {
+        sepia: {
+          50: '#fdf8f6',
+          100: '#f2e8e5',
+          200: '#eaddd7',
+          300: '#e0cec7',
+          400: '#d2bab0',
+          500: '#bfa094',
+          600: '#a18072',
+          700: '#977669',
+          800: '#846358',
+          900: '#704947',
+        },
       },
       animation: {
-        'punch': 'punch 0.3s ease-in-out',
-        'bell': 'bell 1s ease-in-out',
-        'glow': 'glow 2s ease-in-out infinite',
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-in': 'slideIn 0.3s ease-out',
+        shimmer: 'shimmer 2s linear infinite',
       },
       keyframes: {
-        punch: {
-          '0%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(10px)' },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideIn: {
+          '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0)' },
         },
-        bell: {
-          '0%': { transform: 'rotate(0deg)' },
-          '25%': { transform: 'rotate(10deg)' },
-          '75%': { transform: 'rotate(-10deg)' },
-          '100%': { transform: 'rotate(0deg)' },
+        shimmer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
         },
-        glow: {
-          '0%, 100%': { boxShadow: '0 0 5px #DC2626' },
-          '50%': { boxShadow: '0 0 20px #DC2626, 0 0 30px #DC2626' },
-        }
-      }
+      },
     },
   },
   plugins: [],

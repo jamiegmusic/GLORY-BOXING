@@ -92,15 +92,21 @@ useDreamworld() hook provides:
 - 🟪 Epic
 - 🟧 Legendary
 
-## 🎮 Demo Available
+## 🎮 Demos & Pages Available
 
-Access the fully functional demo at: `/dreamworld-demo`
+### 1. **Dreamworld Dashboard** 
+Access at: `/dreamworld`
+- Full Football Manager-style interface
+- Zustand state management
+- All dreamworld features
+- Sepia-themed 1920s aesthetics
 
-Features in demo:
-- Three trigger types (knockout, breakdown, injury)
-- Full dreamworld experience
-- Legacy unlock system
-- Integration examples
+### 2. **Dreamworld Demo**
+Access at: `/dreamworld-demo`
+- Trigger demonstrations
+- Legacy unlock examples
+- Integration guide
+- Test all entry points
 
 ## 🔧 Integration Steps
 
