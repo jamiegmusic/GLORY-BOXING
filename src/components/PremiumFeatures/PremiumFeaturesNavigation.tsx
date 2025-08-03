@@ -4,7 +4,7 @@ import {
   Archive, 
   Trophy, 
   Building2, 
-  Museum, 
+  Building2 as Museum, 
   Accessibility, 
   Activity, 
   Coins, 

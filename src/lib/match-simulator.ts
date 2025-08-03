@@ -228,4 +228,7 @@ export class MatchSimulator {
 
     return baseEffectiveness * (1 + confidenceModifier * 0.3 + motivationModifier * 0.2)
   }
-} 
+}
+
+// Export alias for backward compatibility
+export { MatchSimulator as EnhancedMatchSimulator } 

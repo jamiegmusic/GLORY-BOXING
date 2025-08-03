@@ -129,7 +129,7 @@ const TrainingCampPanel: React.FC = () => {
                 </div>
                 <div className="space-y-2 text-sm">
                   <p><strong>Duration:</strong> {Math.ceil((camp.endDate.getTime() - camp.startDate.getTime()) / (1000 * 60 * 60 * 24))} days</p>
-                  <p><strong>Budget:</strong> ${camp.budget.toLocaleString()}</p>
+                  <p><strong>Budget:</strong> £{camp.budget.toLocaleString()}</p>
                   <p><strong>Staff:</strong> {camp.staffCount} members</p>
                   <p><strong>Facilities:</strong> {camp.facilities.length} available</p>
                 </div>
@@ -169,7 +169,7 @@ const TrainingCampPanel: React.FC = () => {
                 </div>
                 <div className="space-y-1 text-sm">
                   <p><strong>Experience:</strong> {member.experience} years</p>
-                  <p><strong>Salary:</strong> ${member.salary.toLocaleString()}/month</p>
+                  <p><strong>Salary:</strong> £{member.salary.toLocaleString()}/month</p>
                   <p><strong>Availability:</strong> {member.availability} hrs/week</p>
                   <p><strong>Specialties:</strong> {member.specialties.join(', ')}</p>
                 </div>
@@ -204,7 +204,7 @@ const TrainingCampPanel: React.FC = () => {
                 <div className="space-y-1 text-sm">
                   <p><strong>Style:</strong> {partner.style}</p>
                   <p><strong>Experience:</strong> {partner.experience} years</p>
-                  <p><strong>Compensation:</strong> ${partner.compensation}/session</p>
+                  <p><strong>Compensation:</strong> £{partner.compensation}/session</p>
                   <p><strong>Availability:</strong> {partner.availability} hrs/week</p>
                 </div>
               </div>

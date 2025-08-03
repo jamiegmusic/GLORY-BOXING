@@ -388,11 +388,11 @@ const MultiIndustryCareerPanel: React.FC<MultiIndustryCareerPanelProps> = ({
               </div>
               <div>
                 <span className="text-gray-500">Budget:</span>
-                <div className="font-medium">${project.budget.toLocaleString()}</div>
+                <div className="font-medium">£{project.budget.toLocaleString()}</div>
               </div>
               <div>
                 <span className="text-gray-500">Revenue Potential:</span>
-                <div className="font-medium">${project.revenue_potential.toLocaleString()}</div>
+                <div className="font-medium">£{project.revenue_potential.toLocaleString()}</div>
               </div>
               <div>
                 <span className="text-gray-500">Risk:</span>
@@ -431,7 +431,7 @@ const MultiIndustryCareerPanel: React.FC<MultiIndustryCareerPanelProps> = ({
             <div className="flex items-center justify-between mb-2">
               <h4 className="font-semibold">{opportunity.title}</h4>
               <span className="text-lg font-bold text-green-600">
-                ${opportunity.value.toLocaleString()}
+                £{opportunity.value.toLocaleString()}
               </span>
             </div>
             
@@ -620,7 +620,7 @@ const MultiIndustryCareerPanel: React.FC<MultiIndustryCareerPanelProps> = ({
           </div>
           <div className="text-right">
             <div className="text-2xl font-bold text-green-600">
-              ${(celebrity.net_worth || 0).toLocaleString()}
+              £{(celebrity.net_worth || 0).toLocaleString()}
             </div>
             <div className="text-sm text-gray-500">Net Worth</div>
           </div>

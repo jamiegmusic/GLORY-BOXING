@@ -18,6 +18,7 @@
     "db:migrate": "supabase db push"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.7",
     "@hookform/resolvers": "^3.3.0",
     "@sentry/nextjs": "^10.0.0",
     "@supabase/auth-helpers-nextjs": "^0.8.0",
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
+    "cypress": "^14.5.3",
     "eslint": "^8.51.0",
     "eslint-config-next": "^14.0.0"
   },

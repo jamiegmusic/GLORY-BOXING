@@ -320,7 +320,7 @@ const WeightManagementPanel: React.FC = () => {
                       
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                         <div>
-                          <span className="font-medium">Financial Penalty:</span> ${negotiation.financialPenalty.toLocaleString()}
+                          <span className="font-medium">Financial Penalty:</span> £{negotiation.financialPenalty.toLocaleString()}
                         </div>
                         <div>
                           <span className="font-medium">Stamina Impact:</span> -{impact.staminaReduction}%

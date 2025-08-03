@@ -63,7 +63,7 @@ const InteractiveCutScene: React.FC<InteractiveCutSceneProps> = ({
       descriptions.push(`Reputation ${consequence.reputation > 0 ? '+' : ''}${consequence.reputation}`)
     }
     if (consequence.money) {
-      descriptions.push(`Money ${consequence.money > 0 ? '+' : ''}$${Math.abs(consequence.money).toLocaleString()}`)
+      descriptions.push(`Money ${consequence.money > 0 ? '+' : ''}£${Math.abs(consequence.money).toLocaleString()}`)
     }
     
     return descriptions.join(', ')

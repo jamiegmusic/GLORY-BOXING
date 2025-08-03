@@ -25,7 +25,8 @@ import {
   Shield,
   Eye,
   Camera,
-  Play
+  Play,
+  X
 } from 'lucide-react'
 import { supabase, Fighter, GameState, Fight } from '@/lib/supabase'
 import FighterPsychologyPanel from '@/components/FighterManagement/FighterPsychologyPanel'
@@ -69,6 +70,7 @@ export default function Home() {
   const [showAdvancedFightEngine, setShowAdvancedFightEngine] = useState(false)
   const [selectedFight, setSelectedFight] = useState<Fight | null>(null)
   const [showCommentary, setShowCommentary] = useState(false)
+  const [showEnhancedSimulator, setShowEnhancedSimulator] = useState(false)
 
   useEffect(() => {
     loadGameData()
@@ -77,23 +79,136 @@ export default function Home() {
   const loadGameData = async () => {
     try {
       // Load fighters
-      const { data: fightersData } = await supabase
+      const { data: fightersData, error: fightersError } = await supabase
         .from('fighters')
         .select('*')
         .order('created_at', { ascending: false })
 
-      if (fightersData) {
+      if (fightersError) {
+        console.warn('Could not load fighters from database, using mock data:', fightersError)
+        // Load mock fighters for development
+        const mockFighters: Fighter[] = [
+          {
+            id: '1',
+            name: 'Anthony Joshua',
+            nickname: 'AJ',
+            age: 34,
+            weight_class: 'heavyweight',
+            nationality: 'British',
+            country: 'United Kingdom',
+            hometown: 'Watford',
+            height_cm: 198,
+            reach_cm: 208,
+            stance: 'orthodox',
+            record_wins: 26,
+            record_losses: 3,
+            record_draws: 0,
+            knockouts: 23,
+            total_rounds_fought: 189,
+            punching_power: 92,
+            speed: 78,
+            defense: 75,
+            stamina: 80,
+            chin: 72,
+            heart: 85,
+            ring_iq: 78,
+            adaptability: 76,
+            mental_toughness: 80,
+            recovery_time: 75,
+            experience: 85,
+            morale: 80,
+            career_stage: 'champion',
+            career_earnings: 75000000,
+            current_contract_value: 10000000,
+            popularity: 85,
+            ranking: 3,
+            injury_status: 'healthy',
+            cumulative_damage: {},
+            health_risk_assessment: 15,
+            concussion_protocol_active: false,
+            is_injured: false,
+            injury_severity: 0,
+            injury_recovery_weeks: 0,
+            is_available: true,
+            skill_improvement_rate: 1.0,
+            last_training_date: new Date().toISOString(),
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          },
+          {
+            id: '2',
+            name: 'Tyson Fury',
+            nickname: 'The Gypsy King',
+            age: 35,
+            weight_class: 'heavyweight',
+            nationality: 'British',
+            country: 'United Kingdom', 
+            hometown: 'Manchester',
+            height_cm: 206,
+            reach_cm: 216,
+            stance: 'orthodox',
+            record_wins: 34,
+            record_losses: 0,
+            record_draws: 1,
+            knockouts: 24,
+            total_rounds_fought: 245,
+            punching_power: 88,
+            speed: 72,
+            defense: 82,
+            stamina: 85,
+            chin: 90,
+            heart: 95,
+            ring_iq: 88,
+            adaptability: 90,
+            mental_toughness: 92,
+            recovery_time: 80,
+            experience: 95,
+            morale: 90,
+            career_stage: 'champion',
+            career_earnings: 120000000,
+            current_contract_value: 15000000,
+            popularity: 90,
+            ranking: 1,
+            injury_status: 'healthy',
+            cumulative_damage: {},
+            health_risk_assessment: 20,
+            concussion_protocol_active: false,
+            is_injured: false,
+            injury_severity: 0,
+            injury_recovery_weeks: 0,
+            is_available: true,
+            skill_improvement_rate: 1.0,
+            last_training_date: new Date().toISOString(),
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }
+        ]
+        setFighters(mockFighters)
+      } else if (fightersData) {
         setFighters(fightersData)
       }
 
       // Load game state
-      const { data: gameStateData } = await supabase
+      const { data: gameStateData, error: gameStateError } = await supabase
         .from('game_state')
         .select('*')
         .limit(1)
         .single()
 
-      if (gameStateData) {
+      if (gameStateError) {
+        console.warn('Could not load game state, using default:', gameStateError)
+        // Create default game state
+        const defaultGameState: GameState = {
+          id: '1',
+          game_week: 1,
+          total_money: 100000,
+          reputation: 50,
+          promoter_licenses: ['bbbc'],
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
+        }
+        setGameState(defaultGameState)
+      } else if (gameStateData) {
         setGameState(gameStateData)
       }
 
@@ -594,13 +709,12 @@ export default function Home() {
               className="space-y-6"
             >
               <div className="flex items-center justify-between">
-                <h2 className="text-3xl font-bold text-white">Events & Schedule</h2>
+                <h2 className="text-3xl font-bold text-white">Event Management</h2>
                 <button
                   onClick={() => setShowFightScheduler(!showFightScheduler)}
-                  className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
+                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors"
                 >
-                  <Calendar className="w-4 h-4" />
-                  <span>Schedule Fight</span>
+                  Schedule Fight
                 </button>
               </div>
 
@@ -608,7 +722,56 @@ export default function Home() {
                 <FightScheduler onFightCreated={handleFightCreated} />
               )}
 
-              <FightManager />
+              {/* Scheduled Fights */}
+              <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                <h3 className="text-xl font-semibold text-white mb-4">Scheduled Fights</h3>
+                {fights.length === 0 ? (
+                  <p className="text-gray-400">No fights scheduled. Click "Schedule Fight" to create one.</p>
+                ) : (
+                  <div className="space-y-4">
+                    {fights.map(fight => {
+                      const fighter1 = fighters.find(f => f.id === fight.fighter_a)
+                      const fighter2 = fighters.find(f => f.id === fight.fighter_b)
+                      
+                      return (
+                        <div key={fight.id} className="bg-gray-700 rounded-lg p-4">
+                          <div className="flex items-center justify-between">
+                            <div>
+                              <h4 className="text-lg font-semibold text-white">{fight.event_name}</h4>
+                              <p className="text-gray-300">
+                                {fighter1?.name} vs {fighter2?.name}
+                              </p>
+                              <p className="text-sm text-gray-400">
+                                {new Date(fight.fight_date).toLocaleDateString()} • {fight.venue}
+                              </p>
+                            </div>
+                            <div className="flex space-x-2">
+                              {fight.status === 'scheduled' && fighter1 && fighter2 && (
+                                <button
+                                  onClick={() => {
+                                    setSelectedFight({
+                                      ...fight,
+                                      fighter_a_data: fighter1,
+                                      fighter_b_data: fighter2
+                                    } as any)
+                                    setShowEnhancedSimulator(true)
+                                  }}
+                                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+                                >
+                                  Simulate Fight
+                                </button>
+                              )}
+                              {fight.status === 'completed' && (
+                                <span className="text-green-400 font-medium">Completed</span>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
+              </div>
             </motion.div>
           )}
 
@@ -949,10 +1112,85 @@ export default function Home() {
                   onClick={() => setShowPortraitGenerator(false)}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Close
+                  <X className="w-6 h-6" />
                 </button>
               </div>
-              <PortraitGenerator />
+              <PortraitGenerator fighters={fighters} />
+            </div>
+          </div>
+        )}
+
+        {showEnhancedSimulator && selectedFight && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-gray-800 rounded-lg p-6 max-w-6xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-xl font-semibold text-white">Fight Simulation</h3>
+                <button
+                  onClick={() => {
+                    setShowEnhancedSimulator(false)
+                    setSelectedFight(null)
+                  }}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+              <EnhancedFightSimulator
+                match={selectedFight as any}
+                fighters={[
+                  (selectedFight as any).fighter_a_data,
+                  (selectedFight as any).fighter_b_data
+                ]}
+                onSimulationComplete={async (result) => {
+                  // Update fight status in database
+                  const { error } = await supabase
+                    .from('fights')
+                    .update({ 
+                      status: 'completed',
+                      winner_id: result.winner_id,
+                      result_type: result.result_type,
+                      round_ended: result.round_ended
+                    })
+                    .eq('id', selectedFight.id)
+
+                  if (!error) {
+                    // Update local state
+                    setFights(prev => prev.map(f => 
+                      f.id === selectedFight.id 
+                        ? { ...f, status: 'completed', winner_id: result.winner_id }
+                        : f
+                    ))
+
+                    // Update fighter records
+                    const winnerId = result.winner_id
+                    const loserId = result.loser_id
+                    
+                    await updateFighter(winnerId, {
+                      record_wins: fighters.find(f => f.id === winnerId)!.record_wins + 1,
+                      career_earnings: fighters.find(f => f.id === winnerId)!.career_earnings + result.total_revenue * 0.4
+                    })
+                    
+                    await updateFighter(loserId, {
+                      record_losses: fighters.find(f => f.id === loserId)!.record_losses + 1,
+                      career_earnings: fighters.find(f => f.id === loserId)!.career_earnings + result.total_revenue * 0.2
+                    })
+
+                    // Update game state with revenue
+                    if (gameState) {
+                      setGameState({
+                        ...gameState,
+                        total_money: gameState.total_money + result.total_revenue * 0.3
+                      })
+                    }
+                  }
+
+                  setShowEnhancedSimulator(false)
+                  setSelectedFight(null)
+                }}
+                onFinancialUpdate={(metrics) => {
+                  console.log('Financial update:', metrics)
+                }}
+              />
             </div>
           </div>
         )}

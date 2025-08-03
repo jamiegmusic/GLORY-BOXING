@@ -322,7 +322,7 @@ const TournamentManager: React.FC<TournamentManagerProps> = ({
           <div className="grid grid-cols-2 gap-4 text-sm mb-3">
             <div className="flex items-center gap-1">
               <DollarSign className="w-4 h-4 text-green-500" />
-              <span>Prize: ${tournament.prizePool.toLocaleString()}</span>
+              <span>Prize: £{tournament.prizePool.toLocaleString()}</span>
             </div>
             <div className="flex items-center gap-1">
               <Users className="w-4 h-4 text-blue-500" />

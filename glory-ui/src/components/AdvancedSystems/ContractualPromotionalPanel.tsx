@@ -183,10 +183,10 @@ const ContractualPromotionalPanel: React.FC = () => {
                         <span className="font-medium">Fights:</span> {contract.fightCount}
                       </div>
                       <div>
-                        <span className="font-medium">Base Purse:</span> ${contract.basePurse.toLocaleString()}
+                        <span className="font-medium">Base Purse:</span> £{contract.basePurse.toLocaleString()}
                       </div>
                       <div>
-                        <span className="font-medium">Win Bonus:</span> ${contract.winBonus.toLocaleString()}
+                        <span className="font-medium">Win Bonus:</span> £{contract.winBonus.toLocaleString()}
                       </div>
                     </div>
                   </div>
@@ -295,7 +295,7 @@ const ContractualPromotionalPanel: React.FC = () => {
                         <span className="font-medium">Revenue Split:</span> {deal.revenueSplit.promoter}% / {deal.revenueSplit.broadcaster}%
                       </div>
                       <div>
-                        <span className="font-medium">Min Guarantee:</span> ${deal.minimumGuarantee.toLocaleString()}
+                        <span className="font-medium">Min Guarantee:</span> £{deal.minimumGuarantee.toLocaleString()}
                       </div>
                       <div>
                         <span className="font-medium">Exclusivity:</span> {deal.exclusivityPeriod} months

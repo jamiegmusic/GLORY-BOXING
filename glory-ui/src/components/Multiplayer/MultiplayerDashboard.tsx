@@ -187,7 +187,7 @@ const MultiplayerDashboard: React.FC<MultiplayerDashboardProps> = ({
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <p className="text-gray-500">Prize Pool</p>
-                    <p className="font-semibold">${tournament.prizePool.toLocaleString()}</p>
+                    <p className="font-semibold">£{tournament.prizePool.toLocaleString()}</p>
                   </div>
                   <div>
                     <p className="text-gray-500">Participants</p>
@@ -285,7 +285,7 @@ const MultiplayerDashboard: React.FC<MultiplayerDashboardProps> = ({
                   {entry.wins}W - {entry.losses}L - {entry.draws}D
                 </td>
                 <td className="px-4 py-3 text-sm">{entry.winRate.toFixed(1)}%</td>
-                <td className="px-4 py-3 text-sm">${entry.totalEarnings.toLocaleString()}</td>
+                <td className="px-4 py-3 text-sm">£{entry.totalEarnings.toLocaleString()}</td>
               </tr>
             ))}
           </tbody>

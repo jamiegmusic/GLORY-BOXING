@@ -336,7 +336,7 @@ const TrainingCampManager: React.FC<TrainingCampManagerProps> = ({ fighter, onUp
                               />
                               <span className="text-gray-300 text-sm">{staff.label}</span>
                             </div>
-                            <span className="text-gray-400 text-sm">${staff.cost.toLocaleString()}</span>
+                            <span className="text-gray-400 text-sm">£{staff.cost.toLocaleString()}</span>
                           </label>
                         ))}
                       </div>
@@ -352,11 +352,11 @@ const TrainingCampManager: React.FC<TrainingCampManagerProps> = ({ fighter, onUp
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                       <div>
                         <span className="text-gray-300">Daily Cost:</span>
-                        <span className="text-white font-bold ml-2">${calculateDailyCost().toLocaleString()}</span>
+                        <span className="text-white font-bold ml-2">£{calculateDailyCost().toLocaleString()}</span>
                       </div>
                       <div>
                         <span className="text-gray-300">Total Cost:</span>
-                        <span className="text-white font-bold ml-2">${calculateTotalCost().toLocaleString()}</span>
+                        <span className="text-white font-bold ml-2">£{calculateTotalCost().toLocaleString()}</span>
                       </div>
                       <div>
                         <span className="text-gray-300">Improvement Rate:</span>

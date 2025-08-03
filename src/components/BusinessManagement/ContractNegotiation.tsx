@@ -213,11 +213,11 @@ const ContractNegotiation: React.FC<ContractNegotiationProps> = ({ fighter, onNe
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-gray-800 rounded-lg p-4 border border-gray-700">
               <h3 className="text-white font-semibold mb-2">Fighter Value</h3>
-              <div className="text-2xl font-bold text-green-400">${getFighterValue().toLocaleString()}</div>
+              <div className="text-2xl font-bold text-green-400">£{getFighterValue().toLocaleString()}</div>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 border border-gray-700">
               <h3 className="text-white font-semibold mb-2">Career Earnings</h3>
-              <div className="text-2xl font-bold text-blue-400">${fighter.career_earnings.toLocaleString()}</div>
+              <div className="text-2xl font-bold text-blue-400">£{fighter.career_earnings.toLocaleString()}</div>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 border border-gray-700">
               <h3 className="text-white font-semibold mb-2">Record</h3>
@@ -353,7 +353,7 @@ const ContractNegotiation: React.FC<ContractNegotiationProps> = ({ fighter, onNe
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
                 <span className="text-gray-300">Total Contract Value:</span>
-                <div className="text-2xl font-bold text-green-400">${calculateContractValue().toLocaleString()}</div>
+                <div className="text-2xl font-bold text-green-400">£{calculateContractValue().toLocaleString()}</div>
               </div>
               <div>
                 <span className="text-gray-300">Negotiation Difficulty:</span>
@@ -362,7 +362,7 @@ const ContractNegotiation: React.FC<ContractNegotiationProps> = ({ fighter, onNe
               <div>
                 <span className="text-gray-300">Per Fight Average:</span>
                 <div className="text-2xl font-bold text-blue-400">
-                  ${Math.round(calculateContractValue() / contractTerms.fights_committed).toLocaleString()}
+                  £{Math.round(calculateContractValue() / contractTerms.fights_committed).toLocaleString()}
                 </div>
               </div>
             </div>

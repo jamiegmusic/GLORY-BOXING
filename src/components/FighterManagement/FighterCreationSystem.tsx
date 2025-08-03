@@ -160,6 +160,7 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
 
     setLoading(true);
     try {
+      // Try to save to database first
       const { data, error } = await supabase
         .from('fighters')
         .insert({
@@ -170,12 +171,29 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
         .select()
         .single();
 
-      if (error) throw error;
-
-      onFighterCreated(data);
+      if (error) {
+        console.warn('Could not save to database, creating local fighter:', error);
+        // Create fighter locally if database is unavailable
+        const localFighter = {
+          ...fighterData,
+          id: `local_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
+        };
+        onFighterCreated(localFighter as Fighter);
+      } else {
+        onFighterCreated(data);
+      }
     } catch (error) {
       console.error('Error creating fighter:', error);
-      alert('Failed to create fighter. Please try again.');
+      // Still create fighter locally as fallback
+      const localFighter = {
+        ...fighterData,
+        id: `local_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
+      };
+      onFighterCreated(localFighter as Fighter);
     } finally {
       setLoading(false);
     }

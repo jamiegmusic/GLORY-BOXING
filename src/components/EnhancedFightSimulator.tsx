@@ -249,7 +249,7 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
               <div className="mt-3 pt-3 border-t border-gray-200">
                 <div className="flex items-center space-x-1 text-sm text-gray-600 mb-2">
                   <DollarSign className="w-4 h-4" />
-                  <span>Market Value: ${marketAnalysis[index].fighterValue.toLocaleString()}</span>
+                  <span>Market Value: £{marketAnalysis[index].fighterValue.toLocaleString()}</span>
                 </div>
                 <div className="flex items-center space-x-1 text-sm text-gray-600">
                   <TrendingUp className="w-4 h-4" />
@@ -413,16 +413,16 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-white p-3 rounded-lg shadow">
               <p className="text-sm text-gray-600">Total Revenue</p>
-              <p className="text-lg font-bold text-green-600">${financialMetrics.totalRevenue.toLocaleString()}</p>
+              <p className="text-lg font-bold text-green-600">£{financialMetrics.totalRevenue.toLocaleString()}</p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow">
               <p className="text-sm text-gray-600">Total Expenses</p>
-              <p className="text-lg font-bold text-red-600">${financialMetrics.totalExpenses.toLocaleString()}</p>
+              <p className="text-lg font-bold text-red-600">£{financialMetrics.totalExpenses.toLocaleString()}</p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow">
               <p className="text-sm text-gray-600">Net Profit</p>
               <p className={`text-lg font-bold ${financialMetrics.netProfit >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                ${financialMetrics.netProfit.toLocaleString()}
+                £{financialMetrics.netProfit.toLocaleString()}
               </p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow">
@@ -436,19 +436,19 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
           <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-white p-3 rounded-lg shadow">
               <p className="text-sm text-gray-600">Ticket Sales</p>
-              <p className="text-lg font-bold text-blue-600">${financialMetrics.ticketRevenue.toLocaleString()}</p>
+              <p className="text-lg font-bold text-blue-600">£{financialMetrics.ticketRevenue.toLocaleString()}</p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow">
               <p className="text-sm text-gray-600">PPV Revenue</p>
-              <p className="text-lg font-bold text-purple-600">${financialMetrics.ppvRevenue.toLocaleString()}</p>
+              <p className="text-lg font-bold text-purple-600">£{financialMetrics.ppvRevenue.toLocaleString()}</p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow">
               <p className="text-sm text-gray-600">Sponsorship</p>
-              <p className="text-lg font-bold text-orange-600">${financialMetrics.sponsorshipRevenue.toLocaleString()}</p>
+              <p className="text-lg font-bold text-orange-600">£{financialMetrics.sponsorshipRevenue.toLocaleString()}</p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow">
               <p className="text-sm text-gray-600">Merchandise</p>
-              <p className="text-lg font-bold text-indigo-600">${financialMetrics.merchandiseRevenue.toLocaleString()}</p>
+              <p className="text-lg font-bold text-indigo-600">£{financialMetrics.merchandiseRevenue.toLocaleString()}</p>
             </div>
           </div>
         </div>

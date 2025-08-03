@@ -376,9 +376,9 @@ const AdvancedAnalyticsDashboard: React.FC<AdvancedAnalyticsDashboardProps> = ({
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-purple-600 font-medium">Market Value</p>
-              <p className="text-2xl font-bold text-purple-900">
-                ${analyticsData.marketAnalytics.avgMarketValue.toLocaleString()}
-              </p>
+                              <p className="text-3xl font-bold text-purple-900">
+                  £{analyticsData.marketAnalytics.avgMarketValue.toLocaleString()}
+                </p>
             </div>
             <Trophy className="w-8 h-8 text-purple-600" />
           </div>
@@ -459,17 +459,17 @@ const AdvancedAnalyticsDashboard: React.FC<AdvancedAnalyticsDashboardProps> = ({
             <div className="mt-4">
               <h4 className="text-sm font-medium text-gray-700 mb-2">Revenue Breakdown</h4>
               <div className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span>Ticket Sales</span>
-                  <span className="font-medium">${analyticsData.financialAnalytics.revenueBreakdown.ticketSales.toLocaleString()}</span>
+                <div className="flex justify-between items-center py-2 border-b border-gray-600">
+                  <span className="text-gray-400">Ticket Sales</span>
+                  <span className="font-medium">£{analyticsData.financialAnalytics.revenueBreakdown.ticketSales.toLocaleString()}</span>
                 </div>
-                <div className="flex justify-between text-sm">
-                  <span>PPV Sales</span>
-                  <span className="font-medium">${analyticsData.financialAnalytics.revenueBreakdown.ppvSales.toLocaleString()}</span>
+                <div className="flex justify-between items-center py-2 border-b border-gray-600">
+                  <span className="text-gray-400">PPV Sales</span>
+                  <span className="font-medium">£{analyticsData.financialAnalytics.revenueBreakdown.ppvSales.toLocaleString()}</span>
                 </div>
-                <div className="flex justify-between text-sm">
-                  <span>Sponsorship</span>
-                  <span className="font-medium">${analyticsData.financialAnalytics.revenueBreakdown.sponsorship.toLocaleString()}</span>
+                <div className="flex justify-between items-center py-2 border-b border-gray-600">
+                  <span className="text-gray-400">Sponsorship</span>
+                  <span className="font-medium">£{analyticsData.financialAnalytics.revenueBreakdown.sponsorship.toLocaleString()}</span>
                 </div>
               </div>
             </div>
@@ -525,7 +525,7 @@ const AdvancedAnalyticsDashboard: React.FC<AdvancedAnalyticsDashboardProps> = ({
           <div className="space-y-4">
             <div className="flex justify-between items-center">
               <span className="text-sm text-gray-600">Total Market Value</span>
-              <span className="font-semibold">${analyticsData.marketAnalytics.totalMarketValue.toLocaleString()}</span>
+              <span className="font-semibold">£{analyticsData.marketAnalytics.totalMarketValue.toLocaleString()}</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-sm text-gray-600">Real-world Rankings</span>
@@ -543,7 +543,7 @@ const AdvancedAnalyticsDashboard: React.FC<AdvancedAnalyticsDashboardProps> = ({
                       </span>
                       {item.fighter.name}
                     </span>
-                    <span className="font-medium">${item.marketValue.toLocaleString()}</span>
+                    <span className="font-medium">£{item.marketValue.toLocaleString()}</span>
                   </div>
                 ))}
               </div>

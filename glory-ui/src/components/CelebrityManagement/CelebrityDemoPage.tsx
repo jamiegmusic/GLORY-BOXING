@@ -327,7 +327,7 @@ const CelebrityDemoPage: React.FC = () => {
                         </div>
                         <div className="text-right">
                           <div className="text-sm font-bold text-green-600">
-                            ${(celebrity.net_worth || 0).toLocaleString()}
+                            £{(celebrity.net_worth || 0).toLocaleString()}
                           </div>
                           <div className="text-xs text-gray-500">Net Worth</div>
                         </div>
@@ -387,7 +387,7 @@ const CelebrityDemoPage: React.FC = () => {
               <div>
                 <p className="text-sm font-medium text-gray-600">Total Net Worth</p>
                 <p className="text-2xl font-bold text-green-600">
-                  ${celebrities.reduce((sum, c) => sum + (c.net_worth || 0), 0).toLocaleString()}
+                  £{celebrities.reduce((sum, c) => sum + (c.net_worth || 0), 0).toLocaleString()}
                 </p>
               </div>
               <TrendingUp className="w-8 h-8 text-green-500" />

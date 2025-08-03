@@ -88,13 +88,14 @@ const RealCelebrityDemo: React.FC = () => {
 
   const formatNetWorth = (netWorth: number) => {
     if (netWorth >= 1000000000) {
-      return `$${(netWorth / 1000000000).toFixed(1)}B`;
+      return `£${(netWorth / 1000000000).toFixed(1)}B`;
     } else if (netWorth >= 1000000) {
-      return `$${(netWorth / 1000000).toFixed(1)}M`;
+      return `£${(netWorth / 1000000).toFixed(1)}M`;
     } else if (netWorth >= 1000) {
-      return `$${(netWorth / 1000).toFixed(1)}K`;
+      return `£${(netWorth / 1000).toFixed(1)}K`;
+    } else {
+      return `£${netWorth}`;
     }
-    return `$${netWorth}`;
   };
 
   const getSkillDisplay = (celebrity: Celebrity) => {

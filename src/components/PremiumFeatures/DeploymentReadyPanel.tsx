@@ -17,7 +17,7 @@ import {
   Wifi,
   HardDrive,
   Cpu,
-  Memory,
+  MemoryStick as Memory,
   Network,
   Lock
 } from 'lucide-react';

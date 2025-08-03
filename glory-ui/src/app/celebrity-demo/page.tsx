@@ -41,13 +41,14 @@ const CelebrityDemoPage: React.FC = () => {
 
   const formatNetWorth = (netWorth: number) => {
     if (netWorth >= 1000000000) {
-      return `$${(netWorth / 1000000000).toFixed(1)}B`;
+      return `£${(netWorth / 1000000000).toFixed(1)}B`;
     } else if (netWorth >= 1000000) {
-      return `$${(netWorth / 1000000).toFixed(1)}M`;
+      return `£${(netWorth / 1000000).toFixed(1)}M`;
     } else if (netWorth >= 1000) {
-      return `$${(netWorth / 1000).toFixed(1)}K`;
+      return `£${(netWorth / 1000).toFixed(1)}K`;
+    } else {
+      return `£${netWorth}`;
     }
-    return `$${netWorth}`;
   };
 
   return (
@@ -83,7 +84,7 @@ const CelebrityDemoPage: React.FC = () => {
           <Card className="bg-gray-800 border-gray-700">
             <CardContent className="p-4">
               <div className="text-center">
-                <p className="text-2xl font-bold text-purple-400">$200B+</p>
+                <p className="text-2xl font-bold text-purple-400">£200B+</p>
                 <p className="text-sm text-gray-400">Total Net Worth</p>
               </div>
             </CardContent>
@@ -192,19 +193,33 @@ const CelebrityDemoPage: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">Personal Information</h3>
                   <div className="space-y-2 text-gray-300">
-                    <p><strong>Nationality:</strong> {selectedCelebrity.nationality}</p>
-                    <p><strong>Hometown:</strong> {selectedCelebrity.hometown}</p>
-                    <p><strong>Fan Base:</strong> {selectedCelebrity.fan_base_size?.toLocaleString() || 0}</p>
-                    <p><strong>Media Sentiment:</strong> {selectedCelebrity.media_sentiment}</p>
+                    {/* <p><strong>Nationality:</strong> {selectedCelebrity?.nationality || 'N/A'}</p>
+                    <p><strong>Hometown:</strong> {selectedCelebrity?.hometown || 'N/A'}</p>
+                    <p><strong>Fan Base:</strong> {selectedCelebrity?.fan_base_size?.toLocaleString() || 0}</p>
+                    <p><strong>Media Sentiment:</strong> {selectedCelebrity?.media_sentiment || 'N/A'}</p> */}
+                    <p><strong>Age:</strong> {selectedCelebrity?.age || 'N/A'}</p>
+                    <p><strong>Net Worth:</strong> {formatNetWorth(selectedCelebrity?.net_worth || 0)}</p>
                   </div>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">Health & Wellness</h3>
-                  <div className="space-y-2 text-gray-300">
-                    <p><strong>Physical Health:</strong> {selectedCelebrity.physical_health}%</p>
-                    <p><strong>Mental Health:</strong> {selectedCelebrity.mental_health}%</p>
-                    <p><strong>Energy Level:</strong> {selectedCelebrity.energy_level}%</p>
-                    <p><strong>Stress Level:</strong> {selectedCelebrity.stress_level}%</p>
+                  <div className="space-y-2">
+                    {/* <div>
+                      <p className="text-gray-400 text-sm">Physical Health</p>
+                      <Progress value={selectedCelebrity?.physical_health || 0} max={100} className="h-2" />
+                    </div>
+                    <div>
+                      <p className="text-gray-400 text-sm">Mental Health</p>
+                      <Progress value={selectedCelebrity?.mental_health || 0} max={100} className="h-2" />
+                    </div>
+                    <div>
+                      <p className="text-gray-400 text-sm">Stress Level</p>
+                      <Progress value={selectedCelebrity?.stress_level || 0} max={100} className="h-2" />
+                    </div>
+                    <div>
+                      <p className="text-gray-400 text-sm">Energy Level</p>
+                      <Progress value={selectedCelebrity?.energy_level || 0} max={100} className="h-2" />
+                    </div> */}
                   </div>
                 </div>
               </div>

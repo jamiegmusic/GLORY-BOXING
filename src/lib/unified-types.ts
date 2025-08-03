@@ -17,6 +17,7 @@ export interface Fighter {
   age: number
   weight_class: string
   nationality?: string
+  country?: string
   hometown?: string
   
   // Physical Attributes
@@ -295,6 +296,9 @@ export interface Ranking {
   quality_wins: number
   last_fight_date?: string
   activity_score: number
+  record_wins?: number
+  record_losses?: number
+  record_draws?: number
   
   // Real-World Integration
   real_world_ranking?: number
@@ -309,7 +313,9 @@ export interface Ranking {
 export interface Title {
   id: string
   organization: string
+  belt?: string
   weight_class: string
+  champion?: string
   champion_id?: string
   champion_name?: string
   date_won?: string
@@ -365,6 +371,7 @@ export interface MediaReaction {
 export interface PressQuestion {
   id: string
   press_conference_id: string
+  match_id?: string
   question: string
   target?: string
   category?: string

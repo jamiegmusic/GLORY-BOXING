@@ -186,25 +186,32 @@ const App: React.FC = () => {
                 )}
               >
                 <div className="p-6">
-                {(() => {
-                  const Component = tab.component;
-                  
-                  // Handle components with different prop requirements
-                  if (tab.name === 'WebSocket') {
-                    return <Component userId={currentUserId} />;
-                  } else if (tab.name === 'Matchmaking') {
-                    return <Component currentUserId={currentUserId} currentUsername="Player" />;
-                  } else if (tab.name === 'Fighters' || tab.name === 'Schedule' || 
-                             tab.name === 'Matches' || tab.name === 'Press' ||
-                             tab.name === 'Weight Management' || tab.name === 'Training Camps' ||
-                             tab.name === 'Contracts & Promo') {
-                    // Core components and some advanced systems that don't need user props
-                    return <Component />;
-                  } else {
-                    // Advanced components that need user props
-                    return <Component currentUserId={currentUserId} currentUsername="Player" />;
-                  }
-                })()}
+                  {(() => {
+                    const Component = tab.component as any;
+                    
+                    // Handle components with different prop requirements
+                    if (tab.name === 'WebSocket') {
+                      return <Component userId={currentUserId} />;
+                    } else if (tab.name === 'Matchmaking') {
+                      return <Component currentUserId={currentUserId} currentUsername="Player" />;
+                    } else if (tab.name === 'Fighters' || tab.name === 'Schedule' || 
+                               tab.name === 'Matches' || tab.name === 'Press' ||
+                               tab.name === 'Weight Management' || tab.name === 'Training Camps' ||
+                               tab.name === 'Contracts & Promo') {
+                      // Core components and some advanced systems that don't need user props
+                      return <Component />;
+                    } else if (tab.name === 'Analytics' || tab.name === 'Advanced Analytics') {
+                      return <Component 
+                        fighters={mockFighters}
+                        matches={mockMatches}
+                        gameState={mockGameState}
+                        financialMetrics={mockFinancialMetrics}
+                      />;
+                    } else {
+                      // Advanced components that need user props
+                      return <Component currentUserId={currentUserId} currentUsername="Player" />;
+                    }
+                  })()}
                 </div>
               </Tab.Panel>
             ))}
