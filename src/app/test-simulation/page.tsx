@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { EnhancedMatchSimulator } from '@/lib/match-simulator';
+import { MatchSimulator } from '@/lib/match-simulator';
 import CommentaryPanel from '../../../glory-ui/src/components/CommentaryPanel';
 
 export default function TestSimulationPage() {
@@ -11,6 +11,7 @@ export default function TestSimulationPage() {
   const [isGeneratingCommentary, setIsGeneratingCommentary] = useState(false);
 
   const testFighterA = {
+    id: 'test-fighter-a',
     name: 'Carl Froch',
     record: '33-2-0',
     stats: {
@@ -23,6 +24,7 @@ export default function TestSimulationPage() {
   };
 
   const testFighterB = {
+    id: 'test-fighter-b',
     name: 'Tony Bellew',
     record: '30-3-1',
     stats: {
@@ -38,13 +40,23 @@ export default function TestSimulationPage() {
     setIsSimulating(true);
     
     // Simulate the match
-    const simulator = new EnhancedMatchSimulator(
+    const testFight = {
+      id: 'test-fight-1',
+      fighter1_id: testFighterA.id,
+      fighter2_id: testFighterB.id,
+      venue_name: 'O2 Arena, London',
+      weight_class: 'Light Heavyweight',
+      title_bout: true,
+      rounds: 12,
+      status: 'scheduled' as const,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    };
+    
+    const simulator = new MatchSimulator(
       testFighterA,
       testFighterB,
-      'O2 Arena, London',
-      'Light Heavyweight',
-      true,
-      'WBC Light Heavyweight'
+      testFight
     );
     
     const result = simulator.simulateMatch();

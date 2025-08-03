@@ -5,7 +5,11 @@ import { Button } from '../ui/button';
 import { Card } from '../ui/card';
 import { Calendar, MapPin, Users, Trophy, DollarSign, Play, Eye } from 'lucide-react';
 
-interface FightManagerProps {}
+interface FightManagerProps {
+  fights?: Fight[];
+  fighters?: Fighter[];
+  onFightSelect?: (fight: Fight) => void;
+}
 
 export const FightManager: React.FC<FightManagerProps> = () => {
   const [fights, setFights] = useState<Fight[]>([]);

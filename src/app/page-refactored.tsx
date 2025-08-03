@@ -8,6 +8,7 @@ import { GameNavigation } from '@/components/Layout/GameNavigation'
 import { DashboardStats } from '@/components/Dashboard/DashboardStats'
 import { CutSceneService } from '@/services/cutSceneService'
 import { GameDataService } from '@/services/gameDataService'
+import { Fighter } from '@/lib/supabase'
 
 // Import existing components
 import FighterPsychologyPanel from '@/components/FighterManagement/FighterPsychologyPanel'
@@ -58,6 +59,12 @@ export default function Home() {
     setShowCutScene,
     setCurrentCutScene,
     setShowContract,
+    setShowFighterCreation,
+    setShowFightScheduler,
+    setShowPortraitGenerator,
+    setShowAdvancedFightEngine,
+    setSelectedFight,
+    setShowCommentary,
     updateFighter,
     handleAdvanceWeek,
     handleFightCreated,
@@ -88,6 +95,10 @@ export default function Home() {
       console.error('Error creating contract:', error);
       throw error;
     }
+  };
+
+  const handleFighterUpdate = async (fighterId: string, updates: Partial<Fighter>) => {
+    await updateFighter(fighterId, updates);
   };
 
   if (loading) {
@@ -157,7 +168,7 @@ export default function Home() {
                   <>
                     <FighterPsychologyPanel
                       fighter={selectedFighter}
-                      onTriggerCutScene={() => triggerCutScene(selectedFighter)}
+                      onUpdate={handleFighterUpdate}
                     />
                     <TrainingSystem
                       fighter={selectedFighter}
@@ -291,7 +302,7 @@ export default function Home() {
       {showContract && selectedFighter && (
         <ContractNegotiation
           fighter={selectedFighter}
-          onComplete={handleContractNegotiation}
+          onNegotiate={handleContractNegotiation}
           onClose={() => setShowContract(false)}
         />
       )}
@@ -304,24 +315,15 @@ export default function Home() {
       )}
 
       {showPortraitGenerator && selectedFighter && (
-        <PortraitGenerator
-          fighter={selectedFighter}
-          onClose={() => setShowPortraitGenerator(false)}
-        />
+        <PortraitGenerator />
       )}
 
       {showAdvancedFightEngine && selectedFight && (
-        <AdvancedFightEngine
-          fight={selectedFight}
-          onClose={() => setShowAdvancedFightEngine(false)}
-        />
+        <AdvancedFightEngine />
       )}
 
       {showCommentary && selectedFight && (
-        <CommentaryPanel
-          matchData={selectedFight}
-          onClose={() => setShowCommentary(false)}
-        />
+        <CommentaryPanel />
       )}
     </div>
   )

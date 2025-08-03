@@ -192,8 +192,8 @@ const CelebrityDemoPage: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">Personal Information</h3>
                   <div className="space-y-2 text-gray-300">
-                    <p><strong>Nationality:</strong> {selectedCelebrity.nationality}</p>
-                    <p><strong>Hometown:</strong> {selectedCelebrity.hometown}</p>
+                    <p><strong>Nationality:</strong> {selectedCelebrity.nationality || 'Unknown'}</p>
+                    <p><strong>Hometown:</strong> {selectedCelebrity.hometown || 'Unknown'}</p>
                     <p><strong>Fan Base:</strong> {selectedCelebrity.fan_base_size?.toLocaleString() || 0}</p>
                     <p><strong>Media Sentiment:</strong> {selectedCelebrity.media_sentiment}</p>
                   </div>
@@ -201,10 +201,10 @@ const CelebrityDemoPage: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">Health & Wellness</h3>
                   <div className="space-y-2 text-gray-300">
-                    <p><strong>Physical Health:</strong> {selectedCelebrity.physical_health}%</p>
-                    <p><strong>Mental Health:</strong> {selectedCelebrity.mental_health}%</p>
-                    <p><strong>Energy Level:</strong> {selectedCelebrity.energy_level}%</p>
-                    <p><strong>Stress Level:</strong> {selectedCelebrity.stress_level}%</p>
+                    <p><strong>Physical Health:</strong> {selectedCelebrity.physical_health || 0}%</p>
+                    <p><strong>Mental Health:</strong> {selectedCelebrity.mental_health || 0}%</p>
+                    <p><strong>Energy Level:</strong> {selectedCelebrity.energy_level || 0}%</p>
+                    <p><strong>Stress Level:</strong> {selectedCelebrity.stress_level || 0}%</p>
                   </div>
                 </div>
               </div>

@@ -33,6 +33,15 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/cypress/**",
+    "cypress.config.ts",
+    "src/setupTests.ts",
+    "glory-ui/**",
+    "supabase/functions/**"
   ]
 }

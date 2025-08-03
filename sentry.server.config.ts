@@ -27,8 +27,7 @@ Sentry.init({
   
   // Integrations
   integrations: [
-    // Automatically instrument Node.js libraries and frameworks
-    ...Sentry.autoDiscoverNodePerformanceMonitoringIntegrations(),
+    // Default integrations will be added automatically
   ],
   
   // ProfilesSampleRate is relative to TracesSampleRate
@@ -42,7 +41,7 @@ Sentry.init({
   ],
   
   // Filter transactions
-  beforeTransaction(transaction) {
+  beforeSendTransaction(transaction) {
     // Don't send transactions for health checks
     if (transaction.transaction === 'GET /api/health') {
       return null;

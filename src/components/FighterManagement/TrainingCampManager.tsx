@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Dumbbell, Users, Utensils, Shield, Zap, DollarSign, Calendar, Target, TrendingUp, Chef } from 'lucide-react'
+import { Dumbbell, Users, Utensils, Shield, Zap, DollarSign, Calendar, Target, TrendingUp, Chef, Brain } from 'lucide-react'
 import { Fighter, TrainingCamp } from '@/lib/supabase'
 
 interface TrainingCampManagerProps {

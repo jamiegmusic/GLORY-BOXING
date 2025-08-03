@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Play, Pause, SkipBack, SkipForward, Volume2, Settings } from 'lucide-react'
-import { Fighter, Fight } from '@/lib/supabase'
+import { Fighter, Fight, supabase } from '@/lib/supabase'
 
 interface FightAction {
   type: 'punch' | 'defense' | 'movement'

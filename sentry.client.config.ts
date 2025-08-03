@@ -56,7 +56,7 @@ Sentry.init({
   ],
   
   // Filter transactions
-  beforeTransaction(transaction) {
+  beforeSendTransaction(transaction) {
     // Don't send transactions for health checks
     if (transaction.transaction === '/api/health') {
       return null;
