@@ -40,7 +40,7 @@ export const useRankings = () => {
     }
   }
 
-  const updateRanking = async (id: number, updates: Partial<Ranking>) => {
+  const updateRanking = async (id: string, updates: Partial<Ranking>) => {
     try {
       const { data, error } = await supabase
         .from('rankings')

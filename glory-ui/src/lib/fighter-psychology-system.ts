@@ -227,7 +227,7 @@ export class FighterPsychologySystem extends EventEmitter {
     if (!pattern) return adjustments;
 
     // Analyze current state and determine adjustments
-    if (currentState.confidence < 5 && currentState.anxiety > 6) {
+    if (currentState.currentConfidence < 5 && currentState.currentAnxiety > 6) {
       adjustments.push({
         type: AdjustmentType.DEFENSIVE_TO_AGGRESSIVE,
         reason: 'Low confidence and high anxiety - switching to defensive mode',
@@ -236,7 +236,7 @@ export class FighterPsychologySystem extends EventEmitter {
       });
     }
 
-    if (currentState.aggression > 8 && round > 6) {
+    if (currentState.currentAggression > 8 && round > 6) {
       adjustments.push({
         type: AdjustmentType.AGGRESSIVE_TO_DEFENSIVE,
         reason: 'High aggression in later rounds - conserving energy',

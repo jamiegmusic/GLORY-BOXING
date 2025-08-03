@@ -122,19 +122,32 @@ export class GloryCombatEngine {
     // Generate comprehensive fight analysis
     const analysis = this.generateFightAnalysis(roundData, fighterA, fighterB, finalResult)
 
-    return {
+    const result: FightResult = {
+      match,
       winner: finalResult.winner,
+      loser: finalResult.winner === fighterA ? fighterB : fighterA,
       method: finalResult.method,
-      round: finalResult.round,
-      timeInRound: finalResult.timeInRound || '0:00',
       rounds_completed: currentRound - 1,
+      total_punches: this.calculateTotalPunches(roundData),
+      knockdowns: this.calculateTotalKnockdowns(roundData),
+      fight_rating: this.calculateFightRating(roundData, finalResult),
+      crowd_reaction: 8,
+      media_coverage: 7,
+      round: finalResult.round,
       roundData,
-      analysis,
-      prediction,
-      statistics: this.calculateFightStatistics(roundData),
-      highlights: this.extractFightHighlights(roundData),
+      fighterA,
+      fighterB,
+      timeInRound: finalResult.timeInRound || '0:00',
       rating: this.calculateFightRating(roundData, finalResult)
     }
+
+    // Store additional data separately if needed
+    ;(result as any).analysis = analysis
+    ;(result as any).prediction = prediction
+    ;(result as any).statistics = this.calculateFightStatistics(roundData)
+    ;(result as any).highlights = this.extractFightHighlights(roundData)
+
+    return result
   }
 
   private async simulateRound(
@@ -425,6 +438,7 @@ export class GloryCombatEngine {
           knockdowns.push({
             fighter: event.fighter,
             round: event.round,
+            time: event.timeInRound || '0:00',
             timeInRound: event.timeInRound || '0:00',
             type: event.damage > 25 ? 'knockdown' : 'flash',
             recovery_time: Math.floor(Math.random() * 10) + 5
@@ -685,6 +699,18 @@ export class GloryCombatEngine {
     }
 
     return analysis
+  }
+
+  private calculateTotalPunches(roundData: RoundData[]): number {
+    return roundData.reduce((total, round) => {
+      return total + round.fighter_a_punches + round.fighter_b_punches
+    }, 0)
+  }
+
+  private calculateTotalKnockdowns(roundData: RoundData[]): number {
+    return roundData.reduce((total, round) => {
+      return total + (round.knockdowns?.length || 0)
+    }, 0)
   }
 
   private generateFightAnalysis(

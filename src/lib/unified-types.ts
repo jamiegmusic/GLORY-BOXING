@@ -102,6 +102,7 @@ export interface Fighter {
   
   // Additional properties for real-world integration
   last_updated?: string
+  country?: string  // Fighter's country of origin
   
   created_at: string
   updated_at: string
@@ -296,6 +297,11 @@ export interface Ranking {
   last_fight_date?: string
   activity_score: number
   
+  // Fighter Record
+  record_wins: number
+  record_losses: number
+  record_draws: number
+  
   // Real-World Integration
   real_world_ranking?: number
   real_world_points?: number
@@ -312,6 +318,8 @@ export interface Title {
   weight_class: string
   champion_id?: string
   champion_name?: string
+  champion?: string  // Alternative champion property
+  belt?: string      // Belt/title name
   date_won?: string
   defenses: number
   mandatory_challenger_id?: string
@@ -365,6 +373,7 @@ export interface MediaReaction {
 export interface PressQuestion {
   id: string
   press_conference_id: string
+  match_id?: string  // Related match ID
   question: string
   target?: string
   category?: string
@@ -542,6 +551,7 @@ export interface OfficialRecord {
   fighter_name?: string
   weight_class?: string
   record?: string
+  wins?: number  // Number of wins
   created_at: string
 }
 
@@ -859,9 +869,11 @@ export interface FightResult {
   
   // Additional properties for enhanced combat engine
   round?: number
+  roundData?: RoundData[]
   fighterA?: Fighter
   fighterB?: Fighter
   timeInRound?: string
+  rating?: number  // Alternative rating property
 }
 
 // Contract Negotiation Types
