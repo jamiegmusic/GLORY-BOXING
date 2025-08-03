@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { ErrorBoundary } from '@/components/ErrorBoundary'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,7 +45,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {children}
+        <ErrorBoundary service="root" showDetails={process.env.NODE_ENV === 'development'}>
+          {children}
+        </ErrorBoundary>
       </body>
     </html>
   )
