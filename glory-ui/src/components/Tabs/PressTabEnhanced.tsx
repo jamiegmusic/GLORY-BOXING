@@ -201,30 +201,20 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                     <Label htmlFor="press_conference_id">Press Conference</Label>
                     <Select
                       value={formData.press_conference_id}
-                      onValueChange={(value) => updateField('press_conference_id', value)}
+                      onChange={(e) => updateField('press_conference_id', e.target.value)}
+                      className={cn(errors.press_conference_id && "border-destructive")}
                     >
-                      <SelectTrigger className={cn(errors.press_conference_id && "border-destructive")}>
-                        <SelectValue placeholder="Select a press conference" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {pressConferences.map((conference) => {
+                      <option value="">Select a press conference</option>
+                      {pressConferences.map((conference) => {
                           const match = getMatchForConference(conference);
                           const { fighterA, fighterB } = match ? getFightersForMatch(match) : {};
                           
                           return (
-                            <SelectItem key={conference.id} value={conference.id}>
-                              <div className="flex flex-col">
-                                <span className="font-medium">
-                                  {fighterA?.name} vs {fighterB?.name}
-                                </span>
-                                <span className="text-sm text-muted-foreground">
-                                  {format(new Date(conference.created_at), 'MMM dd, yyyy')}
-                                </span>
-                              </div>
-                            </SelectItem>
+                            <option key={conference.id} value={conference.id}>
+                              {fighterA?.name} vs {fighterB?.name} - {format(new Date(conference.created_at), 'MMM dd, yyyy')}
+                            </option>
                           );
                         })}
-                      </SelectContent>
                     </Select>
                     {errors.press_conference_id && (
                       <p className="text-sm text-destructive">{errors.press_conference_id}</p>
@@ -267,19 +257,14 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                       <Label htmlFor="category">Category</Label>
                       <Select
                         value={formData.category}
-                        onValueChange={(value) => updateField('category', value)}
+                        onChange={(e) => updateField('category', e.target.value)}
                       >
-                        <SelectTrigger>
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="general">General</SelectItem>
-                          <SelectItem value="fight_preparation">Fight Preparation</SelectItem>
-                          <SelectItem value="personal">Personal</SelectItem>
-                          <SelectItem value="controversy">Controversy</SelectItem>
-                          <SelectItem value="prediction">Prediction</SelectItem>
-                          <SelectItem value="career">Career</SelectItem>
-                        </SelectContent>
+                        <option value="general">General</option>
+                        <option value="fight_preparation">Fight Preparation</option>
+                        <option value="personal">Personal</option>
+                        <option value="controversy">Controversy</option>
+                        <option value="prediction">Prediction</option>
+                        <option value="career">Career</option>
                       </Select>
                     </div>
                   </div>
@@ -290,18 +275,13 @@ const PressTabEnhanced: React.FC<PressTabEnhancedProps> = ({ className }) => {
                       <Label htmlFor="importance">Importance Level</Label>
                       <Select
                         value={formData.importance.toString()}
-                        onValueChange={(value) => updateField('importance', parseInt(value))}
+                        onChange={(e) => updateField('importance', parseInt(e.target.value))}
                       >
-                        <SelectTrigger>
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="1">Low Priority</SelectItem>
-                          <SelectItem value="3">Medium Priority</SelectItem>
-                          <SelectItem value="5">Standard</SelectItem>
-                          <SelectItem value="7">High Priority</SelectItem>
-                          <SelectItem value="10">Critical</SelectItem>
-                        </SelectContent>
+                        <option value="1">Low Priority</option>
+                        <option value="3">Medium Priority</option>
+                        <option value="5">Standard</option>
+                        <option value="7">High Priority</option>
+                        <option value="10">Critical</option>
                       </Select>
                     </div>
 

@@ -1,30 +1,33 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import '@testing-library/jest-dom';
 import MultiIndustryCareerPanel from '../MultiIndustryCareerPanel';
-import { celebrityManagementEngine } from '../../../lib/celebrity-management-engine';
-import type { Celebrity, CelebrityIndustryValue } from '../../../lib/unified-types';
+import { useCelebrityProjects, useCelebrityEndorsements, useCelebrityTours, useCelebritySocialMedia } from '@/hooks/useCelebrityData';
 
-// Mock the celebrity management engine
-jest.mock('../../../lib/celebrity-management-engine', () => ({
-  celebrityManagementEngine: {
-    getCelebrityProjects: jest.fn(),
-    getCelebrityMilestones: jest.fn(),
-    generateOpportunities: jest.fn(),
-    switchPrimaryIndustry: jest.fn(),
-    trainSkill: jest.fn(),
-    createProject: jest.fn(),
-    getIndustryOpportunities: jest.fn()
+// Mock the celebrity data hooks
+vi.mock('@/hooks/useCelebrityData', () => ({
+  useCelebrityProjects: vi.fn(),
+  useCelebrityEndorsements: vi.fn(),
+  useCelebrityTours: vi.fn(),
+  useCelebritySocialMedia: vi.fn(),
+  supabase: {
+    from: vi.fn(() => ({
+      select: vi.fn().mockResolvedValue({ data: [], error: null }),
+      insert: vi.fn().mockResolvedValue({ data: [], error: null }),
+      update: vi.fn().mockResolvedValue({ data: [], error: null }),
+      delete: vi.fn().mockResolvedValue({ data: [], error: null })
+    }))
   }
 }));
 
-const mockCelebrity: Celebrity = {
+const mockCelebrity = {
   id: '1',
   name: 'Test Celebrity',
   age: 25,
   nationality: 'American',
-  primary_industry: 'acting' as CelebrityIndustryValue,
-  secondary_industries: ['music', 'social_media'] as CelebrityIndustryValue[],
+  primary_industry: 'acting' as any,
+  secondary_industries: ['music', 'social_media'] as any[],
   acting_skills: {
     dramatic_acting: 80,
     comedic_acting: 70,
@@ -53,17 +56,33 @@ const mockCelebrity: Celebrity = {
 
 describe('MultiIndustryCareerPanel', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
     
     // Setup default mock implementations
-    (celebrityManagementEngine.getCelebrityProjects as jest.Mock).mockReturnValue([]);
-    (celebrityManagementEngine.getCelebrityMilestones as jest.Mock).mockReturnValue([]);
-    (celebrityManagementEngine.generateOpportunities as jest.Mock).mockReturnValue([]);
-    (celebrityManagementEngine.getIndustryOpportunities as jest.Mock).mockReturnValue([]);
+    (useCelebrityProjects as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
+    (useCelebrityEndorsements as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
+    (useCelebrityTours as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
+    (useCelebritySocialMedia as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
   });
 
   it('renders celebrity information correctly', () => {
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -79,7 +98,7 @@ describe('MultiIndustryCareerPanel', () => {
   });
 
   it('displays celebrity stats correctly', () => {
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -95,7 +114,7 @@ describe('MultiIndustryCareerPanel', () => {
   });
 
   it('shows industry cards for primary and secondary industries', () => {
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -110,7 +129,7 @@ describe('MultiIndustryCareerPanel', () => {
   });
 
   it('allows switching between tabs', () => {
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -134,7 +153,7 @@ describe('MultiIndustryCareerPanel', () => {
   });
 
   it('displays skill training interface correctly', () => {
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -154,7 +173,7 @@ describe('MultiIndustryCareerPanel', () => {
   });
 
   it('shows acting skills when acting is primary industry', () => {
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -172,10 +191,39 @@ describe('MultiIndustryCareerPanel', () => {
   });
 
   it('allows skill training with proper validation', async () => {
-    const mockOnCelebrityUpdate = jest.fn();
-    (celebrityManagementEngine.trainSkill as jest.Mock).mockReturnValue(true);
-    (celebrityManagementEngine.getCelebrity as jest.Mock).mockReturnValue(mockCelebrity);
-    
+    const mockOnCelebrityUpdate = vi.fn();
+    // Mock the engine directly as it's not imported in this file
+    const mockEngine = {
+      trainSkill: vi.fn().mockResolvedValue(true),
+      getCelebrity: vi.fn().mockResolvedValue(mockCelebrity),
+      switchPrimaryIndustry: vi.fn().mockResolvedValue(true),
+      getCelebrityProjects: vi.fn().mockResolvedValue([]),
+      getCelebrityMilestones: vi.fn().mockResolvedValue([]),
+      generateOpportunities: vi.fn().mockResolvedValue([]),
+      getIndustryOpportunities: vi.fn().mockResolvedValue([]),
+      createProject: vi.fn().mockResolvedValue({
+        id: '2',
+        celebrity_id: '1',
+        title: 'New Project',
+        industry: 'acting' as any,
+        type: 'movie' as any,
+        status: 'planning' as any,
+        start_date: new Date(),
+        budget: 500000,
+        revenue_potential: 2000000,
+        risk_level: 'low' as any,
+        critical_success_factors: [],
+        team_members: [],
+        location: 'New York',
+        description: 'A new project',
+        created_at: new Date(),
+        updated_at: new Date()
+      })
+    };
+    vi.mock('../../../lib/celebrity-management-engine', () => ({
+      celebrityManagementEngine: mockEngine
+    }));
+
     render(
       <MultiIndustryCareerPanel
         celebrity={mockCelebrity}
@@ -199,7 +247,7 @@ describe('MultiIndustryCareerPanel', () => {
     fireEvent.click(trainButton);
 
     await waitFor(() => {
-      expect(celebrityManagementEngine.trainSkill).toHaveBeenCalledWith(
+      expect(mockEngine.trainSkill).toHaveBeenCalledWith(
         '1',
         'acting',
         'dramatic_acting',
@@ -214,7 +262,7 @@ describe('MultiIndustryCareerPanel', () => {
         id: '1',
         celebrity_id: '1',
         title: 'Test Movie',
-        industry: 'acting' as CelebrityIndustryValue,
+        industry: 'acting' as any,
         type: 'movie' as any,
         status: 'in_production' as any,
         start_date: new Date(),
@@ -230,9 +278,13 @@ describe('MultiIndustryCareerPanel', () => {
       }
     ];
 
-    (celebrityManagementEngine.getCelebrityProjects as jest.Mock).mockReturnValue(mockProjects);
+    (useCelebrityProjects as vi.Mock).mockReturnValue({
+      data: mockProjects,
+      isLoading: false,
+      error: null
+    });
     
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -255,7 +307,7 @@ describe('MultiIndustryCareerPanel', () => {
       id: '2',
       celebrity_id: '1',
       title: 'New Project',
-      industry: 'acting' as CelebrityIndustryValue,
+      industry: 'acting' as any,
       type: 'movie' as any,
       status: 'planning' as any,
       start_date: new Date(),
@@ -270,9 +322,34 @@ describe('MultiIndustryCareerPanel', () => {
       updated_at: new Date()
     };
 
-    (celebrityManagementEngine.createProject as jest.Mock).mockReturnValue(mockProject);
+    (useCelebrityProjects as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
+    (useCelebrityEndorsements as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
+    (useCelebrityTours as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
+    (useCelebritySocialMedia as vi.Mock).mockReturnValue({
+      data: [],
+      isLoading: false,
+      error: null
+    });
+    const mockEngine = {
+      createProject: vi.fn().mockResolvedValue(mockProject)
+    };
+    vi.mock('../../../lib/celebrity-management-engine', () => ({
+      celebrityManagementEngine: mockEngine
+    }));
     
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -302,7 +379,7 @@ describe('MultiIndustryCareerPanel', () => {
     fireEvent.click(screen.getByText('Create Project'));
 
     await waitFor(() => {
-      expect(celebrityManagementEngine.createProject).toHaveBeenCalled();
+      expect(mockEngine.createProject).toHaveBeenCalled();
     });
   });
 
@@ -317,9 +394,15 @@ describe('MultiIndustryCareerPanel', () => {
       }
     ];
 
-    (celebrityManagementEngine.generateOpportunities as jest.Mock).mockReturnValue(mockOpportunities);
+    // Mock the engine directly as it's not imported in this file
+    const mockEngine = {
+      generateOpportunities: vi.fn().mockResolvedValue(mockOpportunities)
+    };
+    vi.mock('../../../lib/celebrity-management-engine', () => ({
+      celebrityManagementEngine: mockEngine
+    }));
     
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -346,16 +429,22 @@ describe('MultiIndustryCareerPanel', () => {
         title: 'First Major Role',
         description: 'Achieved first major acting role',
         achieved_date: new Date(),
-        industry: 'acting' as CelebrityIndustryValue,
+        industry: 'acting' as any,
         impact_score: 85,
         rewards: [],
         created_at: new Date()
       }
     ];
 
-    (celebrityManagementEngine.getCelebrityMilestones as jest.Mock).mockReturnValue(mockMilestones);
+    // Mock the engine directly as it's not imported in this file
+    const mockEngine = {
+      getCelebrityMilestones: vi.fn().mockResolvedValue(mockMilestones)
+    };
+    vi.mock('../../../lib/celebrity-management-engine', () => ({
+      celebrityManagementEngine: mockEngine
+    }));
     
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel
@@ -373,12 +462,18 @@ describe('MultiIndustryCareerPanel', () => {
   });
 
   it('handles industry switching', async () => {
-    const mockOnCelebrityUpdate = jest.fn();
-    (celebrityManagementEngine.switchPrimaryIndustry as jest.Mock).mockReturnValue(true);
-    (celebrityManagementEngine.getCelebrity as jest.Mock).mockReturnValue({
-      ...mockCelebrity,
-      primary_industry: 'music' as CelebrityIndustryValue
-    });
+    const mockOnCelebrityUpdate = vi.fn();
+    // Mock the engine directly as it's not imported in this file
+    const mockEngine = {
+      switchPrimaryIndustry: vi.fn().mockResolvedValue(true),
+      getCelebrity: vi.fn().mockResolvedValue({
+        ...mockCelebrity,
+        primary_industry: 'music' as any
+      })
+    };
+    vi.mock('../../../lib/celebrity-management-engine', () => ({
+      celebrityManagementEngine: mockEngine
+    }));
     
     render(
       <MultiIndustryCareerPanel
@@ -391,12 +486,12 @@ describe('MultiIndustryCareerPanel', () => {
     fireEvent.click(screen.getByText('Music'));
 
     await waitFor(() => {
-      expect(celebrityManagementEngine.switchPrimaryIndustry).toHaveBeenCalledWith('1', 'music');
+      expect(mockEngine.switchPrimaryIndustry).toHaveBeenCalledWith('1', 'music');
     });
   });
 
   it('shows empty states correctly', () => {
-    const mockOnCelebrityUpdate = jest.fn();
+    const mockOnCelebrityUpdate = vi.fn();
     
     render(
       <MultiIndustryCareerPanel

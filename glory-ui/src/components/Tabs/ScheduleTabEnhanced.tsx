@@ -158,20 +158,17 @@ const ScheduleTabEnhanced: React.FC<ScheduleTabEnhancedProps> = ({ className }) 
                   <Label htmlFor="fighter_a_id">Fighter A</Label>
                   <Select
                     value={formData.fighter_a_id}
-                    onValueChange={(value) => updateField('fighter_a_id', value)}
+                    onChange={(e) => updateField('fighter_a_id', e.target.value)}
+                    className={cn(errors.fighter_a_id && "border-destructive")}
                   >
-                    <SelectTrigger className={cn(errors.fighter_a_id && "border-destructive")}>
-                      <SelectValue placeholder="Select Fighter A" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {fighters
-                        .filter(fighter => !fighter.retired)
-                        .map((fighter) => (
-                          <SelectItem key={fighter.id} value={fighter.id}>
-                            {getFighterDisplayName(fighter)}
-                          </SelectItem>
-                        ))}
-                    </SelectContent>
+                    <option value="">Select Fighter A</option>
+                    {fighters
+                      .filter(fighter => !fighter.retired)
+                      .map((fighter) => (
+                        <option key={fighter.id} value={fighter.id}>
+                          {getFighterDisplayName(fighter)}
+                        </option>
+                      ))}
                   </Select>
                   {errors.fighter_a_id && (
                     <p className="text-sm text-destructive">{errors.fighter_a_id}</p>
@@ -182,20 +179,17 @@ const ScheduleTabEnhanced: React.FC<ScheduleTabEnhancedProps> = ({ className }) 
                   <Label htmlFor="fighter_b_id">Fighter B</Label>
                   <Select
                     value={formData.fighter_b_id}
-                    onValueChange={(value) => updateField('fighter_b_id', value)}
+                    onChange={(e) => updateField('fighter_b_id', e.target.value)}
+                    className={cn(errors.fighter_b_id && "border-destructive")}
                   >
-                    <SelectTrigger className={cn(errors.fighter_b_id && "border-destructive")}>
-                      <SelectValue placeholder="Select Fighter B" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {fighters
-                        .filter(fighter => !fighter.retired && fighter.id !== formData.fighter_a_id)
-                        .map((fighter) => (
-                          <SelectItem key={fighter.id} value={fighter.id}>
-                            {getFighterDisplayName(fighter)}
-                          </SelectItem>
-                        ))}
-                    </SelectContent>
+                    <option value="">Select Fighter B</option>
+                    {fighters
+                      .filter(fighter => !fighter.retired && fighter.id !== formData.fighter_a_id)
+                      .map((fighter) => (
+                        <option key={fighter.id} value={fighter.id}>
+                          {getFighterDisplayName(fighter)}
+                        </option>
+                      ))}
                   </Select>
                   {errors.fighter_b_id && (
                     <p className="text-sm text-destructive">{errors.fighter_b_id}</p>
@@ -257,18 +251,13 @@ const ScheduleTabEnhanced: React.FC<ScheduleTabEnhancedProps> = ({ className }) 
                   <Label htmlFor="scheduled_rounds">Rounds</Label>
                   <Select
                     value={formData.scheduled_rounds.toString()}
-                    onValueChange={(value) => updateField('scheduled_rounds', parseInt(value))}
+                    onChange={(e) => updateField('scheduled_rounds', parseInt(e.target.value))}
                   >
-                    <SelectTrigger>
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="4">4 Rounds</SelectItem>
-                      <SelectItem value="6">6 Rounds</SelectItem>
-                      <SelectItem value="8">8 Rounds</SelectItem>
-                      <SelectItem value="10">10 Rounds</SelectItem>
-                      <SelectItem value="12">12 Rounds</SelectItem>
-                    </SelectContent>
+                    <option value="4">4 Rounds</option>
+                    <option value="6">6 Rounds</option>
+                    <option value="8">8 Rounds</option>
+                    <option value="10">10 Rounds</option>
+                    <option value="12">12 Rounds</option>
                   </Select>
                 </div>
 

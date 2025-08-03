@@ -184,50 +184,45 @@ const RankingsTabEnhanced: React.FC<RankingsTabEnhancedProps> = ({ className }) 
 
             <div className="space-y-2">
               <Label htmlFor="weight-class">Weight Class</Label>
-              <Select value={selectedWeightClass} onValueChange={setSelectedWeightClass}>
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Weight Classes</SelectItem>
-                  {weightClasses.map((weightClass) => (
-                    <SelectItem key={weightClass} value={weightClass}>
-                      {weightClass}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
+              <Select 
+                value={selectedWeightClass} 
+                onChange={(e) => setSelectedWeightClass(e.target.value)}
+              >
+                <option value="all">All Weight Classes</option>
+                {weightClasses.map((weightClass) => (
+                  <option key={weightClass} value={weightClass}>
+                    {weightClass}
+                  </option>
+                ))}
               </Select>
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="organization">Organization</Label>
-              <Select value={selectedOrganization} onValueChange={setSelectedOrganization}>
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Organizations</SelectItem>
-                  {organizations.map((org) => (
-                    <SelectItem key={org} value={org}>
-                      {org}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
+              <Select 
+                value={selectedOrganization} 
+                onChange={(e) => setSelectedOrganization(e.target.value)}
+              >
+                <option value="all">All Organizations</option>
+                {organizations.map((org) => (
+                  <option key={org} value={org}>
+                    {org}
+                  </option>
+                ))}
               </Select>
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="sort">Sort By</Label>
               <div className="flex gap-2">
-                <Select value={sortBy} onValueChange={(value: 'rank' | 'name' | 'record') => setSortBy(value)}>
-                  <SelectTrigger className="flex-1">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="rank">Rank</SelectItem>
-                    <SelectItem value="name">Name</SelectItem>
-                    <SelectItem value="record">Record</SelectItem>
-                  </SelectContent>
+                <Select 
+                  value={sortBy} 
+                  onChange={(e) => setSortBy(e.target.value as 'rank' | 'name' | 'record')}
+                  className="flex-1"
+                >
+                  <option value="rank">Rank</option>
+                  <option value="name">Name</option>
+                  <option value="record">Record</option>
                 </Select>
                 <Button
                   variant="outline"

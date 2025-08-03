@@ -5,26 +5,26 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { 
+import type { 
   Celebrity, 
-  CelebrityIndustryValue, 
-  celebrityManagementEngine,
-  REAL_CELEBRITIES
+  CelebrityIndustryValue
 } from '@/lib/unified-types';
+import { celebrityManagementEngine } from '@/lib/celebrity-management-engine';
+import { DEMO_CELEBRITIES } from '@/lib/celebrity-data';
 
 const CelebrityDemoPage: React.FC = () => {
   const [celebrities, setCelebrities] = useState<Celebrity[]>([]);
   const [selectedCelebrity, setSelectedCelebrity] = useState<Celebrity | null>(null);
 
   useEffect(() => {
-    loadRealCelebrities();
+    loadDemoCelebrities();
   }, []);
 
-  const loadRealCelebrities = () => {
-    const loadedCelebrities = celebrityManagementEngine.loadRealCelebrities();
-    setCelebrities(loadedCelebrities);
-    if (loadedCelebrities.length > 0) {
-      setSelectedCelebrity(loadedCelebrities[0]);
+  const loadDemoCelebrities = () => {
+    // Use the demo celebrities from celebrity-data.ts
+    setCelebrities(DEMO_CELEBRITIES);
+    if (DEMO_CELEBRITIES.length > 0) {
+      setSelectedCelebrity(DEMO_CELEBRITIES[0]);
     }
   };
 

@@ -149,17 +149,12 @@ const RealCelebrityDemo: React.FC = () => {
             <CardTitle className="text-sm">Filter by Industry</CardTitle>
           </CardHeader>
           <CardContent>
-            <Select value={selectedIndustry} onValueChange={(value) => loadCelebritiesByIndustry(value as CelebrityIndustryValue)}>
-              <SelectTrigger>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="acting">Acting</SelectItem>
-                <SelectItem value="music">Music</SelectItem>
-                <SelectItem value="sports">Sports</SelectItem>
-                <SelectItem value="social_media">Social Media</SelectItem>
-                <SelectItem value="business">Business</SelectItem>
-              </SelectContent>
+            <Select value={selectedIndustry} onChange={(e) => loadCelebritiesByIndustry(e.target.value as CelebrityIndustryValue)}>
+              <option value="acting">Acting</option>
+              <option value="music">Music</option>
+              <option value="sports">Sports</option>
+              <option value="social_media">Social Media</option>
+              <option value="business">Business</option>
             </Select>
           </CardContent>
         </Card>
@@ -180,15 +175,10 @@ const RealCelebrityDemo: React.FC = () => {
             <CardTitle className="text-sm">Net Worth Filter</CardTitle>
           </CardHeader>
           <CardContent>
-            <Select value={minNetWorth.toString()} onValueChange={(value) => loadCelebritiesByNetWorth(parseInt(value))}>
-              <SelectTrigger>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="100000000">$100M+</SelectItem>
-                <SelectItem value="500000000">$500M+</SelectItem>
-                <SelectItem value="1000000000">$1B+</SelectItem>
-              </SelectContent>
+            <Select value={minNetWorth.toString()} onChange={(e) => loadCelebritiesByNetWorth(parseInt(e.target.value))}>
+              <option value="100000000">$100M+</option>
+              <option value="500000000">$500M+</option>
+              <option value="1000000000">$1B+</option>
             </Select>
           </CardContent>
         </Card>
