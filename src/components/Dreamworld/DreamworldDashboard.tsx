@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 import { Progress } from '../ui/progress'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs'
 import { Badge } from '../ui/badge'
-import { Clock, Brain, Eye, Music, Film, Trophy, Building, Calendar, AlertTriangle } from 'lucide-react'
+import { Clock, Brain, Eye, Music, Film, Trophy, Building, Calendar, AlertTriangle, Bell } from 'lucide-react'
 import { DreamworldPlayerState, DreamworldTalent, DreamEvent, DreamworldVenue, LegacyUnlock, DreamworldUIState } from '../../types/dreamworld'
 import DreamTalentCard from './DreamTalentCard'
 import DreamEventModal from './DreamEventModal'
@@ -13,6 +13,9 @@ import DreamTimelineSlider from './DreamTimelineSlider'
 import RealityGlitchEffect from './RealityGlitchEffect'
 import DreamVenueManager from './DreamVenueManager'
 import LegacyUnlocksPanel from './LegacyUnlocksPanel'
+import { DreamworldProgressHUD } from './DreamworldProgressHUD'
+import { DreamworldNotifications, NotificationCenter } from './DreamworldNotifications'
+import { useDreamworldProgressStore } from '@/stores/dreamworldProgressStore'
 
 interface DreamworldDashboardProps {
   playerId: string;
@@ -25,6 +28,7 @@ const DreamworldDashboard: React.FC<DreamworldDashboardProps> = ({ playerId, onW
   const [currentEvent, setCurrentEvent] = useState<DreamEvent | null>(null)
   const [venues, setVenues] = useState<DreamworldVenue[]>([])
   const [legacyUnlocks, setLegacyUnlocks] = useState<LegacyUnlock[]>([])
+  const [showNotificationCenter, setShowNotificationCenter] = useState(false)
   const [uiState, setUiState] = useState<DreamworldUIState>({
     isInDreamworld: true,
     showDreamTransition: false,
@@ -32,6 +36,8 @@ const DreamworldDashboard: React.FC<DreamworldDashboardProps> = ({ playerId, onW
     showLucidMeterWarning: false,
     timelinePosition: 0
   })
+  
+  const { unreadNotifications, updateDreamTime } = useDreamworldProgressStore()
 
   useEffect(() => {
     // Initialize dreamworld session
@@ -134,6 +140,20 @@ const DreamworldDashboard: React.FC<DreamworldDashboardProps> = ({ playerId, onW
       {/* Reality glitch effects */}
       <RealityGlitchEffect glitches={playerState.reality_glitches} />
       
+      {/* Progress HUD */}
+      <div className="sticky top-0 z-30">
+        <DreamworldProgressHUD />
+      </div>
+      
+      {/* Notifications */}
+      <DreamworldNotifications />
+      
+      {/* Notification Center */}
+      <NotificationCenter 
+        isOpen={showNotificationCenter} 
+        onClose={() => setShowNotificationCenter(false)} 
+      />
+      
       {/* Main content */}
       <div className="relative z-10 p-6">
         {/* Header with HUD */}
@@ -153,6 +173,20 @@ const DreamworldDashboard: React.FC<DreamworldDashboardProps> = ({ playerId, onW
               wellnessMeter={playerState.wellness_meter}
               showWarning={uiState.showLucidMeterWarning}
             />
+            
+            <Button
+              onClick={() => setShowNotificationCenter(true)}
+              variant="outline"
+              className="vintage-button relative"
+            >
+              <Bell className="w-4 h-4" />
+              {unreadNotifications > 0 && (
+                <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs 
+                                 rounded-full flex items-center justify-center font-bold">
+                  {unreadNotifications}
+                </span>
+              )}
+            </Button>
             
             <Button
               onClick={handleWakeUp}

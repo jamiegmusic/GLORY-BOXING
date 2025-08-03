@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { Music, Trophy, Sparkles, Clock, Brain, ChevronRight } from 'lucide-react'
 import { useDreamworldQuest } from '@/hooks/useDreamworldQuest'
 import { useDreamworldStore } from '@/stores/dreamworldStore'
+import { useDreamworldProgressStore } from '@/stores/dreamworldProgressStore'
 import QuestModal from './QuestModal'
 import DreamEventModal from './DreamEventModal'
 
@@ -17,6 +18,12 @@ const JazzSingersSecretQuest: React.FC<JazzSingersSecretQuestProps> = ({ playerI
   const [showCompletionEvent, setShowCompletionEvent] = useState(false)
   
   const { lucidMeter, updateQuestInfo, completeQuest } = useDreamworldStore()
+  const { 
+    startQuest: startQuestProgress, 
+    updateQuestProgress,
+    completeQuest: completeQuestProgress,
+    addNotification 
+  } = useDreamworldProgressStore()
   
   const {
     questState,
@@ -51,16 +58,42 @@ const JazzSingersSecretQuest: React.FC<JazzSingersSecretQuestProps> = ({ playerI
 
   const handleStartQuest = async () => {
     await startQuest()
+    // Update progress store
+    startQuestProgress(
+      'jazz_singers_secret', 
+      'The Jazz Singer\'s Secret',
+      3, // total phases
+      3  // total clues
+    )
     setShowQuestModal(true)
   }
 
   const handleChoice = async (choiceId: string) => {
+    const previousPhase = questState?.current_phase
     await makeChoice(choiceId)
+    
+    // Update progress if phase completed
+    if (questState && previousPhase && questState.current_phase !== previousPhase) {
+      updateQuestProgress(
+        'jazz_singers_secret',
+        previousPhase,
+        1 // assume 1 clue found per phase
+      )
+    }
     
     // If quest completed, close modal and show reward
     if (questState?.current_phase === 'completed') {
       setShowQuestModal(false)
       setShowRewardModal(true)
+      completeQuestProgress('jazz_singers_secret')
+      
+      // Add completion notification
+      addNotification({
+        type: 'quest_complete',
+        title: 'Quest Complete!',
+        message: 'You\'ve uncovered the Jazz Singer\'s Secret!',
+        icon: '🎷'
+      })
     }
   }
 

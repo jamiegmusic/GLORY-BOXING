@@ -1,7 +1,8 @@
 'use client'
 
 import React from 'react'
-import { X, Sparkles, AlertTriangle, Eye, Moon, Zap } from 'lucide-react'
+import { X, Sparkles, AlertTriangle, Eye, Moon, Zap, Map, Book } from 'lucide-react'
+import { useDreamworldProgressStore } from '@/stores/dreamworldProgressStore'
 
 interface DreamChoice {
   text: string
@@ -18,6 +19,12 @@ interface DreamEventModalProps {
   onChoice: (choiceIndex: number) => void
   onClose?: () => void
   isOpen?: boolean
+  questContext?: {
+    questName?: string
+    phaseName?: string
+    currentPhase?: number
+    totalPhases?: number
+  }
 }
 
 const DreamEventModal: React.FC<DreamEventModalProps> = ({
@@ -28,9 +35,15 @@ const DreamEventModal: React.FC<DreamEventModalProps> = ({
   choices = [],
   onChoice,
   onClose,
-  isOpen = true
+  isOpen = true,
+  questContext
 }) => {
   if (!isOpen) return null
+  
+  // Get current quest progress from store if not provided
+  const { getCurrentQuestProgress, getCurrentChapterProgress } = useDreamworldProgressStore()
+  const questProgress = questContext || getCurrentQuestProgress()
+  const chapterProgress = getCurrentChapterProgress()
 
   // Dream type configurations
   const dreamTypeConfig = {
@@ -124,6 +137,33 @@ const DreamEventModal: React.FC<DreamEventModalProps> = ({
                 <span className="text-xl font-bold tracking-wide">{config.label}</span>
               </div>
             </div>
+
+            {/* Quest Context */}
+            {(questProgress || chapterProgress) && (
+              <div className="flex items-center justify-center gap-4 text-sm">
+                {questProgress && (
+                  <div className="flex items-center gap-2 px-3 py-1 bg-sepia-200/50 rounded-full">
+                    <Map className="w-4 h-4 text-sepia-600" />
+                    <span className="text-sepia-700 font-medium">
+                      {questProgress.questName || questProgress.questName}
+                    </span>
+                    {questProgress.currentPhase && questProgress.totalPhases && (
+                      <span className="text-sepia-600">
+                        ({questProgress.currentPhase}/{questProgress.totalPhases})
+                      </span>
+                    )}
+                  </div>
+                )}
+                {chapterProgress && (
+                  <div className="flex items-center gap-2 px-3 py-1 bg-purple-200/50 rounded-full">
+                    <Book className="w-4 h-4 text-purple-600" />
+                    <span className="text-purple-700 font-medium">
+                      {chapterProgress.chapterName}
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Impact Score */}
             <div className="flex justify-center">
