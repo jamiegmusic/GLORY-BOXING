@@ -11,7 +11,7 @@ import {
   DollarSign,
   Building,
   Home,
-  ChartLineUp,
+  ChartLine,
   Star,
   MessageSquare,
   Calendar,

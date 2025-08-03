@@ -451,26 +451,33 @@ const CareerPlanner: React.FC<CareerPlannerProps> = ({
           <div className="bg-white rounded-lg shadow-sm border p-6">
             <h3 className="text-lg font-semibold mb-4">Career Timeline</h3>
             <div className="space-y-4">
-              {[...careerGoals, ...milestones].sort((a, b) => 
-                new Date(a.deadline || a.achieved_date).getTime() - new Date(b.deadline || b.achieved_date).getTime()
-              ).map((item, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="w-4 h-4 rounded-full bg-blue-500 mt-2"></div>
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-semibold">
-                        {'title' in item ? item.title : item.milestone_type}
-                      </h4>
-                      <span className="text-sm text-gray-500">
-                        {new Date(item.deadline || item.achieved_date).toLocaleDateString()}
-                      </span>
+              {[...careerGoals, ...milestones].sort((a, b) => {
+                const aDate = 'deadline' in a ? a.deadline : a.achieved_date;
+                const bDate = 'deadline' in b ? b.deadline : b.achieved_date;
+                return new Date(aDate).getTime() - new Date(bDate).getTime();
+              }).map((item, index) => {
+                const isGoal = 'deadline' in item;
+                const date = isGoal ? item.deadline : item.achieved_date;
+                
+                return (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="w-4 h-4 rounded-full bg-blue-500 mt-2"></div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between">
+                        <h4 className="font-semibold">
+                          {item.title}
+                        </h4>
+                        <span className="text-sm text-gray-500">
+                          {new Date(date).toLocaleDateString()}
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {item.description}
+                      </p>
                     </div>
-                    <p className="text-sm text-gray-600 mt-1">
-                      {'description' in item ? item.description : item.description}
-                    </p>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

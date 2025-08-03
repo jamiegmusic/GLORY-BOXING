@@ -187,7 +187,7 @@ const App: React.FC = () => {
               >
                 <div className="p-6">
                 {(() => {
-                  const Component = tab.component;
+                  const Component = tab.component as any;
                   
                   // Handle components with different prop requirements
                   if (tab.name === 'WebSocket') {

@@ -1,0 +1,653 @@
+glory-ui/src/app/celebrity-demo/page.tsx(195,73): error TS2339: Property 'nationality' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(196,70): error TS2339: Property 'hometown' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(204,77): error TS2339: Property 'physical_health' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(205,75): error TS2339: Property 'mental_health' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(206,74): error TS2339: Property 'energy_level' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(207,74): error TS2339: Property 'stress_level' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(269,34): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(273,55): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(284,34): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(288,55): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/MultiIndustryCareerPanel.tsx(129,68): error TS2345: Argument of type '{ celebrity_id: string; industry: CelebrityIndustryValue; status: "planning"; start_date: Date; budget: number; revenue_potential: number; risk_level: "low" | "medium" | "high"; ... 9 more ...; updated_at?: Date; }' is not assignable to parameter of type 'Omit<Project, "id" | "created_at" | "updated_at">'.
+  Property 'title' is optional in type '{ celebrity_id: string; industry: CelebrityIndustryValue; status: "planning"; start_date: Date; budget: number; revenue_potential: number; risk_level: "low" | "medium" | "high"; ... 9 more ...; updated_at?: Date; }' but required in type 'Omit<Project, "id" | "created_at" | "updated_at">'.
+glory-ui/src/components/CelebrityManagement/MultiIndustryCareerPanel.tsx(281,85): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/MultiIndustryCareerPanel.tsx(317,53): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(27,8): error TS2307: Cannot find module '@/lib/celebrity-data' or its corresponding type declarations.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(106,19): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(128,19): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(129,27): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(129,51): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(129,85): error TS2365: Operator '+' cannot be applied to types 'unknown' and 'unknown'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(152,46): error TS2322: Type '{ children: Element[]; value: CelebrityIndustryValue; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(183,52): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(330,71): error TS2339: Property 'nationality' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(331,68): error TS2339: Property 'hometown' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(394,36): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(398,57): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(401,65): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(413,70): error TS2339: Property 'debut_date' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(414,68): error TS2339: Property 'ranking' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(415,77): error TS2339: Property 'industry_ranking' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(418,36): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(422,57): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(425,65): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(436,74): error TS2339: Property 'physical_health' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(440,74): error TS2339: Property 'mental_health' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(444,74): error TS2339: Property 'energy_level' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(448,74): error TS2339: Property 'stress_level' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(456,46): error TS2339: Property 'public_image' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(458,54): error TS2339: Property 'public_image' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(9,1): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(11,27): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(12,29): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(13,28): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(14,28): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(15,17): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(16,20): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(17,31): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(56,5): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(59,61): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(60,63): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(61,62): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(62,65): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(66,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(75,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(76,40): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(77,46): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(78,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(82,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(91,36): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(92,38): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(93,43): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(94,36): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(98,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(107,40): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(108,39): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(109,46): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(113,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(124,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(127,49): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(130,57): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(133,51): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(137,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(149,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(150,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(151,46): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(152,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(153,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(157,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(169,54): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(170,53): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(171,52): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(175,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(176,51): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(177,53): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(202,52): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(233,61): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(235,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(247,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(248,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(249,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(250,47): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(273,54): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(275,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(305,55): error TS2339: Property 'toHaveBeenCalled' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(320,62): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(322,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(334,58): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(335,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(336,39): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(337,57): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(356,63): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(358,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(370,50): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(371,66): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(372,44): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(376,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(377,62): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(378,53): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(394,63): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(399,35): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(410,52): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(414,60): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(418,60): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(424,55): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(425,75): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(210,28): error TS2339: Property 'fighter_a_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(210,54): error TS2339: Property 'fighter_b_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(213,68): error TS2322: Type 'FightResult' is not assignable to type 'ReactNode'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(217,68): error TS2339: Property 'match_date' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(217,89): error TS2339: Property 'venue_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(220,41): error TS2339: Property 'weight_class' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(223,41): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(223,79): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(228,51): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+glory-ui/src/components/Tabs/MatchesTab.tsx(228,51): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(232,26): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+glory-ui/src/components/Tabs/MatchesTab.tsx(237,16): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+glory-ui/src/components/Tabs/MatchesTab.tsx(241,79): error TS2339: Property 'fighter_a_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(242,92): error TS2339: Property 'weight_class' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(243,86): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(244,41): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(245,92): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(249,78): error TS2339: Property 'fighter_b_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(250,92): error TS2339: Property 'weight_class' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(251,86): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(252,41): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(253,92): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/PressTab.tsx(137,40): error TS2339: Property 'name' does not exist on type 'string'.
+glory-ui/src/components/Tabs/PressTab.tsx(137,66): error TS2339: Property 'name' does not exist on type 'string'.
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(120,38): error TS2551: Property 'fighter_a_id' does not exist on type 'Match'. Did you mean 'fighter_a'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(121,38): error TS2551: Property 'fighter_b_id' does not exist on type 'Match'. Did you mean 'fighter_b'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(204,23): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(270,25): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(293,25): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(454,54): error TS2339: Property 'date' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/RankingsTabEnhanced.tsx(187,51): error TS2322: Type '{ children: Element[]; value: string; onValueChange: Dispatch<SetStateAction<string>>; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/RankingsTabEnhanced.tsx(204,52): error TS2322: Type '{ children: Element[]; value: string; onValueChange: Dispatch<SetStateAction<string>>; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/RankingsTabEnhanced.tsx(222,40): error TS2322: Type '{ children: Element[]; value: "name" | "record" | "rank"; onValueChange: (value: "name" | "record" | "rank") => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTab.tsx(106,69): error TS2339: Property 'record' does not exist on type 'Fighter'.
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(161,21): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(185,21): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(225,37): error TS2322: Type '{ children: Element; asChild: true; }' is not assignable to type 'IntrinsicAttributes & PopoverTriggerProps'.
+  Property 'asChild' does not exist on type 'IntrinsicAttributes & PopoverTriggerProps'.
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(240,25): error TS2322: Type '{ mode: string; selected: Date; onSelect: Dispatch<SetStateAction<Date>>; initialFocus: true; disabled: (date: any) => boolean; }' is not assignable to type 'IntrinsicAttributes & CalendarProps'.
+  Property 'mode' does not exist on type 'IntrinsicAttributes & CalendarProps'.
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(260,21): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(279,23): error TS2322: Type '{ id: string; checked: boolean; onCheckedChange: (checked: boolean) => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps'.
+  Property 'id' does not exist on type 'IntrinsicAttributes & SwitchProps'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(21,1): error TS2304: Cannot find name 'beforeAll'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(33,47): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(34,59): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(35,64): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(44,50): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(45,78): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(46,52): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(64,25): error TS2339: Property 'toHaveBeenCalledWith' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(69,22): error TS2339: Property 'stringContaining' does not exist on type 'ExpectStatic'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(88,52): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(89,80): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(108,49): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(113,15): error TS2339: Property 'mockImplementation' does not exist on type 'FetchMock'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(126,47): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(135,55): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(136,49): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(145,55): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(146,49): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(156,46): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(163,46): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(169,50): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(170,71): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(171,54): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(36,1): error TS2304: Cannot find name 'beforeAll'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(46,13): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(48,50): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(49,61): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(50,56): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(56,13): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(62,64): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(68,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(79,62): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(86,43): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(91,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(98,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(99,81): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(100,75): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(105,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(112,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(113,57): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(118,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(125,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(126,55): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(127,61): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(128,67): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(133,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(139,35): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(140,35): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(141,35): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(142,36): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(147,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(154,41): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(159,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(166,24): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(171,60): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(175,28): error TS2708: Cannot use namespace 'jest' as a value.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(178,8): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(187,28): error TS2339: Property 'toHaveBeenCalledTimes' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(193,13): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(200,58): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(205,15): error TS2339: Property 'mockImplementation' does not exist on type 'FetchMock'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(207,13): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(213,47): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+glory-ui/src/components/ui/popover.tsx(39,48): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'onClick' does not exist in type 'Partial<unknown> & Attributes'.
+glory-ui/src/lib/advanced-matchmaking.ts(266,25): error TS2802: Type 'Set<string>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+glory-ui/src/lib/api-client.ts(5,10): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+glory-ui/src/lib/api-client.ts(5,19): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+glory-ui/src/lib/fighter-psychology-system.ts(230,22): error TS2339: Property 'confidence' does not exist on type 'MentalState'.
+glory-ui/src/lib/fighter-psychology-system.ts(230,53): error TS2339: Property 'anxiety' does not exist on type 'MentalState'.
+glory-ui/src/lib/fighter-psychology-system.ts(239,22): error TS2339: Property 'aggression' does not exist on type 'MentalState'.
+glory-ui/src/lib/governing-body-politics.ts(571,9): error TS2741: Property 'transparency' is missing in type '{ factions: { id: string; name: string; leader: string; members: string[]; influence: number; agenda: string[]; conflicts: string[]; }[]; powerBalance: { dominantFaction: string; oppositionFaction: string; balanceOfPower: number; recentShifts: undefined[]; }; decisionMaking: { ...; }; }' but required in type 'InternalPolitics'.
+glory-ui/src/lib/governing-body-politics.ts(638,9): error TS2741: Property 'transparency' is missing in type '{ factions: { id: string; name: string; leader: string; members: string[]; influence: number; agenda: string[]; conflicts: string[]; }[]; powerBalance: { dominantFaction: string; oppositionFaction: string; balanceOfPower: number; recentShifts: undefined[]; }; decisionMaking: { ...; }; }' but required in type 'InternalPolitics'.
+glory-ui/src/lib/media-narrative-engine.ts(395,11): error TS2393: Duplicate function implementation.
+glory-ui/src/lib/media-narrative-engine.ts(774,11): error TS2393: Duplicate function implementation.
+glory-ui/src/lib/project-portfolio-engine.ts(193,9): error TS2367: This comparison appears to be unintentional because the types 'ProjectStatusValue' and '"delayed"' have no overlap.
+glory-ui/src/lib/project-portfolio-engine.ts(430,12): error TS2678: Type '"in_progress"' is not comparable to type 'ProjectStatusValue'.
+glory-ui/src/lib/project-portfolio-engine.ts(432,12): error TS2678: Type '"delayed"' is not comparable to type 'ProjectStatusValue'.
+glory-ui/src/lib/project-portfolio-engine.ts(524,29): error TS2802: Type 'MapIterator<ProjectPortfolio>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+glory-ui/src/lib/real-world-rankings-api.ts(238,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+glory-ui/src/lib/real-world-rankings-api.ts(275,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+glory-ui/src/lib/real-world-rankings-api.ts(276,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+glory-ui/src/lib/real-world-rankings-api.ts(289,11): error TS2353: Object literal may only specify known properties, and 'fighter_name' does not exist in type 'OfficialRecord'.
+glory-ui/src/lib/replay-system.ts(171,7): error TS2322: Type '"action"' is not assignable to type '"knockdown" | "foul" | "round_start" | "round_end" | "timeout" | "knockout"'.
+glory-ui/src/lib/replay-system.ts(375,23): error TS2339: Property 'title' does not exist on type 'Partial<ReplayMetadata>'.
+glory-ui/src/lib/replay-system.ts(376,29): error TS2339: Property 'description' does not exist on type 'Partial<ReplayMetadata>'.
+glory-ui/src/lib/replay-system.ts(440,26): error TS2367: This comparison appears to be unintentional because the types '"knockdown" | "foul" | "round_start" | "round_end" | "timeout" | "knockout"' and '"action"' have no overlap.
+glory-ui/src/lib/replay-system.ts(441,26): error TS2367: This comparison appears to be unintentional because the types '"knockdown" | "foul" | "round_start" | "round_end" | "timeout" | "knockout"' and '"action"' have no overlap.
+glory-ui/src/lib/script-song-engine.ts(615,28): error TS2802: Type 'MapIterator<ContentTemplate>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+glory-ui/src/main.tsx(6,17): error TS5097: An import path can only end with a '.tsx' extension when 'allowImportingTsExtensions' is enabled.
+glory-ui/src/main.tsx(9,4): error TS2786: 'StrictMode' cannot be used as a JSX component.
+  Its type 'ExoticComponent<{ children?: ReactNode; }>' is not a valid JSX element type.
+    Type 'ExoticComponent<{ children?: ReactNode; }>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'import("/workspace/glory-ui/node_modules/@types/react/index").ReactNode' is not assignable to type 'React.ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/main.tsx(10,6): error TS2786: 'ApolloProvider' cannot be used as a JSX component.
+  Its type 'FC<ApolloProviderProps<any>>' is not a valid JSX element type.
+    Type 'FunctionComponent<ApolloProviderProps<any>>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/main.tsx(11,8): error TS2786: 'App' cannot be used as a JSX component.
+  Its type 'FC<{}>' is not a valid JSX element type.
+    Type 'FunctionComponent<{}>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+glory-ui/src/setupTests.ts(5,1): error TS2322: Type 'typeof IntersectionObserver' is not assignable to type '{ new (callback: IntersectionObserverCallback, options?: IntersectionObserverInit): IntersectionObserver; prototype: IntersectionObserver; }'.
+  Types of property 'prototype' are incompatible.
+    Type 'IntersectionObserver' is missing the following properties from type 'IntersectionObserver': root, rootMargin, thresholds, takeRecords
+glory-ui/src/setupTests.ts(45,1): error TS2552: Cannot find name 'beforeAll'. Did you mean 'before'?
+glory-ui/src/setupTests.ts(68,1): error TS2304: Cannot find name 'afterAll'.
+src/app/api/__tests__/commentary.test.ts(58,3): error TS1117: An object literal cannot have multiple properties with the same name.
+src/app/api/__tests__/commentary.test.ts(105,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(106,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(107,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(108,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(109,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(110,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(112,36): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(113,44): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(114,46): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(115,34): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(116,32): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(138,31): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(139,31): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(140,31): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(163,31): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(164,38): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+src/app/api/__tests__/commentary.test.ts(184,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(185,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(186,24): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(204,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(205,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(220,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(221,18): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/app/api/__tests__/commentary.test.ts(256,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(257,29): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(258,64): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(295,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(296,29): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(297,66): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(316,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(317,25): error TS2339: Property 'toBeGreaterThanOrEqual' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(318,25): error TS2339: Property 'toBeLessThanOrEqual' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(337,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(338,29): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(339,29): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(340,29): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(341,29): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/app/api/__tests__/commentary.test.ts(360,29): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(361,46): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(362,38): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+src/app/api/__tests__/commentary.test.ts(365,28): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/app/api/__tests__/commentary.test.ts(366,28): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+src/app/page-refactored.tsx(118,32): error TS2304: Cannot find name 'setShowFighterCreation'.
+src/app/page-refactored.tsx(124,32): error TS2304: Cannot find name 'setShowFightScheduler'.
+src/app/page-refactored.tsx(160,23): error TS2322: Type '{ fighter: Fighter; onTriggerCutScene: () => void; }' is not assignable to type 'IntrinsicAttributes & FighterPsychologyPanelProps'.
+  Property 'onTriggerCutScene' does not exist on type 'IntrinsicAttributes & FighterPsychologyPanelProps'.
+src/app/page-refactored.tsx(182,15): error TS2322: Type '{ fights: Fight[]; fighters: Fighter[]; onFightSelect: any; }' is not assignable to type 'IntrinsicAttributes & FightManagerProps'.
+  Property 'fights' does not exist on type 'IntrinsicAttributes & FightManagerProps'.
+src/app/page-refactored.tsx(184,30): error TS2304: Cannot find name 'setSelectedFight'.
+src/app/page-refactored.tsx(294,11): error TS2322: Type '{ fighter: Fighter; onComplete: (contractData: any) => Promise<void>; onClose: () => void; }' is not assignable to type 'IntrinsicAttributes & ContractNegotiationProps'.
+  Property 'onComplete' does not exist on type 'IntrinsicAttributes & ContractNegotiationProps'.
+src/app/page-refactored.tsx(302,27): error TS2304: Cannot find name 'setShowFighterCreation'.
+src/app/page-refactored.tsx(308,11): error TS2322: Type '{ fighter: Fighter; onClose: () => any; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'fighter' does not exist on type 'IntrinsicAttributes'.
+src/app/page-refactored.tsx(309,26): error TS2304: Cannot find name 'setShowPortraitGenerator'.
+src/app/page-refactored.tsx(315,11): error TS2322: Type '{ fight: Fight; onClose: () => any; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'fight' does not exist on type 'IntrinsicAttributes'.
+src/app/page-refactored.tsx(316,26): error TS2304: Cannot find name 'setShowAdvancedFightEngine'.
+src/app/page-refactored.tsx(322,11): error TS2322: Type '{ matchData: Fight; onClose: () => any; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/app/page-refactored.tsx(323,26): error TS2304: Cannot find name 'setShowCommentary'.
+src/app/test-simulation/page.tsx(4,10): error TS2305: Module '"@/lib/match-simulator"' has no exported member 'EnhancedMatchSimulator'.
+src/app/test-simulation/page.tsx(208,12): error TS2786: 'CommentaryPanel' cannot be used as a JSX component.
+  Its type 'FC<CommentaryPanelProps>' is not a valid JSX element type.
+    Type 'FunctionComponent<CommentaryPanelProps>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'ReactNode | Promise<ReactNode>' is not assignable to type 'ReactNode'.
+        Type 'ReactElement<unknown, string | JSXElementConstructor<any>>' is not assignable to type 'ReactNode'.
+          Property 'children' is missing in type 'ReactElement<unknown, string | JSXElementConstructor<any>>' but required in type 'ReactPortal'.
+src/components/AdvancedAnalyticsDashboard.tsx(2,37): error TS2305: Module '"../lib/unified-types"' has no exported member 'FinancialMetrics'.
+src/components/AdvancedAnalyticsDashboard.tsx(85,59): error TS2339: Property 'status' does not exist on type 'Fighter'.
+src/components/AdvancedAnalyticsDashboard.tsx(510,51): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+src/components/EnhancedFightSimulator.tsx(477,74): error TS2339: Property 'text' does not exist on type 'string'.
+src/components/FightManagement/FightManager.tsx(52,31): error TS2367: This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.
+src/components/FightManagement/FightManager.tsx(63,37): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(64,37): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(81,7): error TS2322: Type 'string' is not assignable to type 'number'.
+src/components/FightManagement/FightManager.tsx(85,7): error TS2322: Type 'string' is not assignable to type 'number'.
+src/components/FightManagement/FightManager.tsx(155,30): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/components/FightManagement/FightManager.tsx(197,35): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(281,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(282,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(344,23): error TS2322: Type '"primary"' is not assignable to type '"default" | "link" | "destructive" | "outline" | "secondary" | "ghost"'.
+src/components/FightManagement/FightManager.tsx(401,61): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(411,61): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(32,24): error TS2554: Expected 1 arguments, but got 0.
+src/components/FightManagement/MatchSchedulingSystem.tsx(139,9): error TS2322: Type 'string' is not assignable to type 'Venue'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(144,9): error TS2322: Type 'Date' is not assignable to type 'string'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(145,9): error TS2322: Type 'Date' is not assignable to type 'string'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(214,31): error TS2693: 'WeightClass' only refers to a type, but is being used as a value here.
+src/components/FightManagement/MatchSchedulingSystem.tsx(215,25): error TS2322: Type 'unknown' is not assignable to type 'Key'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(215,37): error TS2322: Type 'unknown' is not assignable to type 'string | number | readonly string[]'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(350,13): error TS2322: Type '{ children: string; onClick: () => Promise<void>; disabled: boolean; loading: boolean; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+src/components/FightScheduling/FightScheduler.tsx(51,31): error TS2367: This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.
+src/components/FightScheduling/FightScheduler.tsx(56,34): error TS2367: This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.
+src/components/FightScheduling/FightScheduler.tsx(237,13): error TS2322: Type '{ children: (Element | Element[])[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(250,13): error TS2322: Type '{ children: (Element | Element[])[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(338,13): error TS2322: Type '{ children: Element[]; label: string; value: number; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(363,15): error TS2322: Type '{ children: Element[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(410,11): error TS2322: Type '{ children: string; onClick: () => Promise<void>; disabled: boolean; loading: boolean; className: string; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+src/components/FightSimulation/AdvancedFightEngine.tsx(64,37): error TS2304: Cannot find name 'supabase'.
+src/components/FighterManagement/TrainingCampManager.tsx(5,92): error TS2305: Module '"lucide-react"' has no exported member 'Chef'.
+src/components/FighterManagement/TrainingCampManager.tsx(104,53): error TS2304: Cannot find name 'Brain'.
+src/components/FighterManagement/TrainingSystem.tsx(55,40): error TS2365: Operator '+' cannot be applied to types 'string | number | boolean | string[]' and 'number'.
+src/components/FighterManagement/TrainingSystem.tsx(106,15): error TS2322: Type '{ children: (Element | Element[])[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FighterManagement/TrainingSystem.tsx(121,15): error TS2322: Type '{ children: Element[]; label: string; value: number; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FighterManagement/TrainingSystem.tsx(136,11): error TS2322: Type 'Dispatch<SetStateAction<number>>' is not assignable to type 'ChangeEventHandler<HTMLInputElement>'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'ChangeEvent<HTMLInputElement>' is not assignable to type 'SetStateAction<number>'.
+src/components/FighterManagement/TrainingSystem.tsx(158,20): error TS2365: Operator '+' cannot be applied to types 'string | number | boolean | string[]' and 'number'.
+src/components/FighterManagement/TrainingSystem.tsx(227,11): error TS2322: Type '{ children: string; onClick: () => Promise<void>; disabled: boolean; loading: boolean; className: string; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+src/components/MatchCard.tsx(70,33): error TS2551: Property 'commentary' does not exist on type 'Match'. Did you mean 'ai_commentary'?
+src/components/MatchCard.tsx(116,18): error TS2339: Property 'total_punches_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(116,43): error TS2339: Property 'total_punches_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(118,34): error TS2551: Property 'fighter_a' does not exist on type 'Match'. Did you mean 'fighter_a_id'?
+src/components/MatchCard.tsx(118,52): error TS2339: Property 'total_punches_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(118,78): error TS2551: Property 'fighter_b' does not exist on type 'Match'. Did you mean 'fighter_b_id'?
+src/components/MatchCard.tsx(118,96): error TS2339: Property 'total_punches_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(119,22): error TS2339: Property 'total_power_shots_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(119,51): error TS2339: Property 'total_power_shots_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(120,40): error TS2551: Property 'fighter_a' does not exist on type 'Match'. Did you mean 'fighter_a_id'?
+src/components/MatchCard.tsx(120,58): error TS2339: Property 'total_power_shots_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(120,88): error TS2551: Property 'fighter_b' does not exist on type 'Match'. Did you mean 'fighter_b_id'?
+src/components/MatchCard.tsx(120,106): error TS2339: Property 'total_power_shots_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(122,22): error TS2551: Property 'knockdowns_a' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchCard.tsx(122,44): error TS2551: Property 'knockdowns_b' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchCard.tsx(123,32): error TS2551: Property 'fighter_a' does not exist on type 'Match'. Did you mean 'fighter_a_id'?
+src/components/MatchCard.tsx(123,50): error TS2551: Property 'knockdowns_a' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchCard.tsx(123,73): error TS2551: Property 'fighter_b' does not exist on type 'Match'. Did you mean 'fighter_b_id'?
+src/components/MatchCard.tsx(123,91): error TS2551: Property 'knockdowns_b' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchForm.tsx(26,7): error TS2353: Object literal may only specify known properties, and 'date' does not exist in type 'Partial<Match>'.
+src/components/PremiumFeatures/DeploymentReadyPanel.tsx(20,3): error TS2305: Module '"lucide-react"' has no exported member 'Memory'.
+src/components/PremiumFeatures/PremiumFeaturesNavigation.tsx(7,3): error TS2305: Module '"lucide-react"' has no exported member 'Museum'.
+src/components/Tournament/TournamentSystem.tsx(352,11): error TS2322: Type '"primary"' is not assignable to type '"default" | "link" | "destructive" | "outline" | "secondary" | "ghost"'.
+src/components/__tests__/CommentaryPanel.test.tsx(1,52): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+src/components/__tests__/CommentaryPanel.test.tsx(2,23): error TS2307: Cannot find module '@testing-library/user-event' or its corresponding type declarations.
+src/components/__tests__/CommentaryPanel.test.tsx(4,23): error TS2307: Cannot find module 'jest-fetch-mock' or its corresponding type declarations.
+src/components/__tests__/CommentaryPanel.test.tsx(36,1): error TS2304: Cannot find name 'beforeAll'.
+src/components/__tests__/CommentaryPanel.test.tsx(46,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(48,50): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(49,61): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(50,56): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(56,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(62,64): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(70,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(79,62): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(86,43): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(93,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(98,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(99,81): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(100,75): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(107,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(112,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(113,57): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(120,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(125,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(126,55): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(127,61): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(128,67): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(135,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(139,35): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(140,35): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(141,35): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(142,36): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(149,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(154,41): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(161,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(166,24): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(171,60): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(175,28): error TS2708: Cannot use namespace 'jest' as a value.
+src/components/__tests__/CommentaryPanel.test.tsx(179,9): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; onGenerateCommentary: any; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(187,28): error TS2339: Property 'toHaveBeenCalledTimes' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(193,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(200,58): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(207,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(213,47): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(220,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(224,59): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(225,50): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(226,51): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(238,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(240,50): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(241,56): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(248,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(256,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(257,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(258,48): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/__tests__/CommentaryPanel.test.tsx(265,61): error TS2339: Property 'toBeInTheDocument' does not exist on type 'Assertion'.
+src/components/ui/popover.tsx(39,48): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'onClick' does not exist in type 'Partial<unknown> & Attributes'.
+src/lib/__tests__/match-simulator.test.ts(1,10): error TS2305: Module '"../match-simulator"' has no exported member 'EnhancedMatchSimulator'.
+src/lib/__tests__/match-simulator.test.ts(42,23): error TS2551: Property 'toBeInstanceOf' does not exist on type 'Assertion'. Did you mean 'instanceOf'?
+src/lib/__tests__/match-simulator.test.ts(48,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(49,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(50,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(51,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(52,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(53,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(54,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(55,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(56,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(57,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(58,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(59,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(60,20): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(66,42): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(67,34): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+src/lib/__tests__/match-simulator.test.ts(70,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(71,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(72,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(73,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(74,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(75,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(78,129): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/lib/__tests__/match-simulator.test.ts(81,50): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/lib/__tests__/match-simulator.test.ts(84,54): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/lib/__tests__/match-simulator.test.ts(91,42): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(92,34): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+src/lib/__tests__/match-simulator.test.ts(95,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(96,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(97,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(98,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(100,37): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(101,37): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(102,47): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(109,27): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(110,27): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(113,26): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/lib/__tests__/match-simulator.test.ts(117,26): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/lib/__tests__/match-simulator.test.ts(123,46): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(130,68): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(134,70): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(138,67): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(145,41): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(146,34): error TS2339: Property 'toBeGreaterThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(147,34): error TS2339: Property 'toBeLessThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(149,39): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(150,32): error TS2339: Property 'toBeGreaterThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(151,32): error TS2339: Property 'toBeLessThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(164,27): error TS2339: Property 'toBeLessThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(177,27): error TS2339: Property 'toBeLessThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(186,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(187,56): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/lib/__tests__/match-simulator.test.ts(188,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(189,48): error TS2551: Property 'toContain' does not exist on type 'Assertion'. Did you mean 'contain'?
+src/lib/__tests__/match-simulator.test.ts(199,21): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(200,39): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(201,32): error TS2339: Property 'toBeGreaterThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(202,32): error TS2339: Property 'toBeLessThanOrEqual' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(213,24): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(214,43): error TS2339: Property 'toBe' does not exist on type 'Assertion'.
+src/lib/__tests__/match-simulator.test.ts(215,43): error TS2551: Property 'toBeGreaterThan' does not exist on type 'Assertion'. Did you mean 'greaterThan'?
+src/lib/__tests__/match-simulator.test.ts(224,39): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(225,39): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(226,39): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(228,46): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(229,46): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(230,46): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(231,46): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(232,46): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/__tests__/match-simulator.test.ts(233,46): error TS2551: Property 'toHaveProperty' does not exist on type 'Assertion'. Did you mean 'haveOwnProperty'?
+src/lib/accessibility/audit.ts(47,32): error TS2345: Argument of type '{ violations: undefined[]; passes: undefined[]; }' is not assignable to parameter of type 'AxeResults'.
+  Type '{ violations: undefined[]; passes: undefined[]; }' is missing the following properties from type 'AxeResults': toolOptions, incomplete, inapplicable, testEngine, and 4 more.
+src/lib/analytics/rating.ts(83,49): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/lib/analytics/rating.ts(84,14): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/lib/analytics/rating.ts(88,49): error TS2339: Property 'va' does not exist on type 'Window & typeof globalThis'.
+src/lib/analytics/rating.ts(89,14): error TS2339: Property 'va' does not exist on type 'Window & typeof globalThis'.
+src/lib/combat-engine.ts(132,7): error TS2353: Object literal may only specify known properties, and 'analysis' does not exist in type 'FightResult'.
+src/lib/combat-engine.ts(425,27): error TS2345: Argument of type '{ fighter: any; round: any; timeInRound: any; type: "knockdown" | "flash"; recovery_time: number; }' is not assignable to parameter of type 'KnockdownEvent'.
+  Property 'time' is missing in type '{ fighter: any; round: any; timeInRound: any; type: "knockdown" | "flash"; recovery_time: number; }' but required in type 'KnockdownEvent'.
+src/lib/monitoring/sentry.ts(9,18): error TS2339: Property 'BrowserTracing' does not exist on type 'typeof import("/workspace/node_modules/@sentry/nextjs/build/types/index.types")'.
+src/lib/monitoring/sentry.ts(34,10): error TS2339: Property 'metrics' does not exist on type 'typeof import("/workspace/node_modules/@sentry/nextjs/build/types/index.types")'.
+src/lib/monitoring/sentry.ts(38,10): error TS2339: Property 'metrics' does not exist on type 'typeof import("/workspace/node_modules/@sentry/nextjs/build/types/index.types")'.
+src/lib/real-world-rankings-api.ts(380,7): error TS2353: Object literal may only specify known properties, and 'organization' does not exist in type 'Fighter'.
+src/lib/real-world-rankings-api.ts(412,9): error TS2353: Object literal may only specify known properties, and 'losses' does not exist in type 'OfficialRecord'.
+src/lib/real-world-rankings-api.ts(430,5): error TS2322: Type '{ fighter_name: string; weight_class: string; organization: string; rank: number; record: string; country: string; points: number; movement: "up" | "down" | "unchanged"; last_fight: string; next_fight: string; verified: true; source: string; last_updated: string; }[]' is not assignable to type 'InternationalRanking[]'.
+  Type '{ fighter_name: string; weight_class: string; organization: string; rank: number; record: string; country: string; points: number; movement: "up" | "down" | "unchanged"; last_fight: string; next_fight: string; verified: true; source: string; last_updated: string; }' is missing the following properties from type 'InternationalRanking': id, fighter_id, created_at
+src/lib/security/rateLimiter.ts(119,39): error TS2532: Object is possibly 'undefined'.
+supabase/functions/generate-commentary/index.ts(1,23): error TS2307: Cannot find module 'https://deno.land/std@0.168.0/http/server.ts' or its corresponding type declarations.
+supabase/functions/generate-commentary/index.ts(2,30): error TS2307: Cannot find module 'https://esm.sh/@supabase/supabase-js@2' or its corresponding type declarations.
+supabase/functions/generate-commentary/index.ts(39,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-commentary/index.ts(40,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-commentary/index.ts(60,36): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-commentary/index.ts(99,36): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-portrait/index.ts(1,23): error TS2307: Cannot find module 'https://deno.land/std@0.168.0/http/server.ts' or its corresponding type declarations.
+supabase/functions/generate-portrait/index.ts(2,30): error TS2307: Cannot find module 'https://esm.sh/@supabase/supabase-js@2' or its corresponding type declarations.
+supabase/functions/generate-portrait/index.ts(35,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-portrait/index.ts(36,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-portrait/index.ts(43,35): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-voice/index.ts(1,23): error TS2307: Cannot find module 'https://deno.land/std@0.168.0/http/server.ts' or its corresponding type declarations.
+supabase/functions/generate-voice/index.ts(2,30): error TS2307: Cannot find module 'https://esm.sh/@supabase/supabase-js@2' or its corresponding type declarations.
+supabase/functions/generate-voice/index.ts(31,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-voice/index.ts(32,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-voice/index.ts(48,36): error TS2304: Cannot find name 'Deno'.

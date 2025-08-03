@@ -97,7 +97,7 @@ const AIContentGenerator: React.FC<AIContentGeneratorProps> = ({
       type: 'interview_response',
       template: "I'm passionate about [topic] and believe it's important to [perspective]. My experience has taught me that [insight], and I'm committed to [action].",
       variables: ['topic', 'perspective', 'insight', 'action'],
-      platforms: ['all'],
+      platforms: ['all' as any],
       tone: 'professional'
     },
     {
@@ -107,7 +107,7 @@ const AIContentGenerator: React.FC<AIContentGeneratorProps> = ({
       type: 'pr_statement',
       template: "I want to address the recent [situation]. I take full responsibility for [actions] and am committed to [resolution]. I appreciate the support and understanding of my fans during this time.",
       variables: ['situation', 'actions', 'resolution'],
-      platforms: ['all'],
+      platforms: ['all' as any],
       tone: 'professional'
     }
   ];

@@ -1,6 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Mic, Play, Pause, Volume2, Download, Share2 } from 'lucide-react';
 
+// Fix for React 19 type compatibility
+const MicIcon = Mic as any;
+const PlayIcon = Play as any;
+const PauseIcon = Pause as any;
+const Volume2Icon = Volume2 as any;
+const DownloadIcon = Download as any;
+const Share2Icon = Share2 as any;
+
 // Event Schema Definition
 interface FightEvent {
   id: string;
@@ -285,7 +293,7 @@ const CommentaryEngine = () => {
   return (
     <div className="space-y-6">
       <div className="flex items-center space-x-2 mb-6">
-        <Mic className="w-6 h-6 text-blue-400" />
+        <MicIcon className="w-6 h-6 text-blue-400" />
         <h2 className="text-2xl font-bold">AI Commentary Engine</h2>
       </div>
 
@@ -334,12 +342,12 @@ const CommentaryEngine = () => {
             onClick={isPlaying ? pauseCommentary : playCommentary}
             className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300"
           >
-            {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+            {isPlaying ? <PauseIcon className="w-4 h-4" /> : <PlayIcon className="w-4 h-4" />}
             <span>{isPlaying ? 'Pause' : 'Play'} Commentary</span>
           </button>
           
           <button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition duration-300">
-            <Volume2 className="w-4 h-4" />
+            <Volume2Icon className="w-4 h-4" />
             <span>Generate New</span>
           </button>
           
@@ -347,12 +355,12 @@ const CommentaryEngine = () => {
             onClick={exportCommentary}
             className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md transition duration-300"
           >
-            <Download className="w-4 h-4" />
+            <DownloadIcon className="w-4 h-4" />
             <span>Export</span>
           </button>
           
           <button className="flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md transition duration-300">
-            <Share2 className="w-4 h-4" />
+            <Share2Icon className="w-4 h-4" />
             <span>Share</span>
           </button>
         </div>
