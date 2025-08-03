@@ -61,15 +61,19 @@ A lucid dreaming side mission that activates when fighters get knocked out or ma
 
 ### State Management
 ```typescript
-useDreamworld() hook provides:
-- enterDreamworld()
-- exitDreamworld()
-- updateLucidMeter()
-- generateDreamEvent()
-- resolveDreamEvent()
-- claimLegacyUnlock()
-- changeEra()
-- manageTalent()
+Zustand Store with Supabase Sync:
+- lucidMeter, currentEra, dreamLevel tracking
+- addDreamEvent() - persists to database
+- updateLucidMeter() - real-time sync
+- recruitTalent() - manage dream roster
+- progressEra() - time travel mechanics
+- wakeUpFromDream() - calculate legacy rewards
+
+DreamEventGenerator:
+- Intelligent dream type selection
+- Era-specific content generation
+- Career path themed events
+- Dynamic choice generation
 ```
 
 ### Trigger Conditions
@@ -107,6 +111,13 @@ Access at: `/dreamworld-demo`
 - Legacy unlock examples
 - Integration guide
 - Test all entry points
+
+### 3. **Dreamworld Store & Generator Example**
+Access at: `/dreamworld-example`
+- Live Zustand store with Supabase sync
+- Dynamic event generation
+- Real-time state management
+- Interactive talent recruitment
 
 ## 🔧 Integration Steps
 
