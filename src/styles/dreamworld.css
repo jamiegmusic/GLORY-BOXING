@@ -1,0 +1,313 @@
+/* Dreamworld Vintage 1920s Styles */
+
+/* Base vintage theme */
+.dreamworld-active {
+  position: relative;
+}
+
+.dreamworld-active::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at center, transparent 0%, rgba(139, 69, 19, 0.1) 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(139, 69, 19, 0.03) 2px,
+      rgba(139, 69, 19, 0.03) 4px
+    );
+  pointer-events: none;
+  z-index: 9999;
+  animation: film-grain 8s steps(10) infinite;
+}
+
+@keyframes film-grain {
+  0%, 100% { transform: translate(0, 0) }
+  10% { transform: translate(-1%, -1%) }
+  20% { transform: translate(1%, 1%) }
+  30% { transform: translate(-1%, 1%) }
+  40% { transform: translate(1%, -1%) }
+  50% { transform: translate(-1%, 0%) }
+  60% { transform: translate(1%, 0%) }
+  70% { transform: translate(0%, 1%) }
+  80% { transform: translate(0%, -1%) }
+  90% { transform: translate(1%, 1%) }
+}
+
+/* Vintage overlay effect */
+.vintage-overlay {
+  background: 
+    radial-gradient(ellipse at center, transparent 0%, rgba(139, 69, 19, 0.2) 100%);
+  mix-blend-mode: multiply;
+  animation: flicker 4s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.85; }
+  75% { opacity: 0.75; }
+}
+
+/* Dreamworld container */
+.dreamworld-container {
+  background: linear-gradient(135deg, #f5e6d3 0%, #e6d4b8 100%);
+  color: #3e2723;
+  min-height: 100vh;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Vintage cards */
+.vintage-card {
+  background: #faf8f3;
+  border: 2px solid #d2b48c;
+  box-shadow: 
+    0 4px 6px rgba(139, 69, 19, 0.1),
+    0 1px 3px rgba(139, 69, 19, 0.08);
+  position: relative;
+}
+
+.vintage-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #d2b48c, #daa520, #d2b48c);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.vintage-card:hover::before {
+  opacity: 0.3;
+}
+
+/* Vintage talent cards */
+.vintage-talent-card {
+  background: linear-gradient(135deg, #fdfcf8 0%, #f5e6d3 100%);
+  border: 3px solid #8b6914;
+  position: relative;
+  overflow: hidden;
+}
+
+.vintage-talent-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(139, 105, 20, 0.03) 10px,
+    rgba(139, 105, 20, 0.03) 20px
+  );
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+/* Vintage buttons */
+.vintage-button {
+  background: linear-gradient(135deg, #d2b48c 0%, #daa520 100%);
+  border: 2px solid #8b6914;
+  color: #3e2723;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.vintage-button:hover {
+  background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+}
+
+.vintage-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+.vintage-button:active::before {
+  width: 200px;
+  height: 200px;
+}
+
+/* Vintage badges */
+.vintage-badge {
+  background: #8b6914;
+  color: #fdfcf8;
+  border: none;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Vintage tabs */
+.vintage-tabs [role="tablist"] {
+  background: rgba(139, 69, 19, 0.1);
+  border: 2px solid #d2b48c;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.vintage-tabs [role="tab"] {
+  color: #8b6914;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.vintage-tabs [role="tab"][aria-selected="true"] {
+  background: #8b6914;
+  color: #fdfcf8;
+}
+
+/* Vintage HUD */
+.vintage-hud-container {
+  backdrop-filter: blur(4px);
+  font-family: 'Courier New', monospace;
+}
+
+/* Vintage modal */
+.vintage-modal {
+  background: linear-gradient(135deg, #fdfcf8 0%, #f5e6d3 100%);
+  border: 3px solid #8b6914;
+  box-shadow: 
+    0 20px 40px rgba(139, 69, 19, 0.3),
+    0 0 80px rgba(139, 69, 19, 0.1);
+}
+
+/* Vintage choice button */
+.vintage-choice-button {
+  background: #faf8f3;
+  border: 2px solid #d2b48c;
+  transition: all 0.3s;
+}
+
+.vintage-choice-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #f5e6d3 0%, #e6d4b8 100%);
+  border-color: #8b6914;
+  transform: translateX(4px);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+/* Vintage venue card */
+.vintage-venue-card {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23faf8f3"/><circle cx="50" cy="50" r="40" fill="none" stroke="%23d2b48c" stroke-width="0.5" opacity="0.3"/></svg>');
+  background-size: 100px 100px;
+}
+
+/* Vintage unlock card */
+.vintage-unlock-card {
+  background: linear-gradient(135deg, #fff8dc 0%, #faebd7 100%);
+  border: 2px solid #daa520;
+  position: relative;
+}
+
+.vintage-unlock-card::before {
+  content: '★';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #daa520;
+  opacity: 0.3;
+}
+
+/* Timeline slider */
+.vintage-slider {
+  --slider-track-color: #d2b48c;
+  --slider-thumb-color: #8b6914;
+}
+
+.vintage-slider [data-orientation="horizontal"] {
+  height: 8px;
+  background: var(--slider-track-color);
+  border-radius: 4px;
+}
+
+.vintage-slider [role="slider"] {
+  width: 20px;
+  height: 20px;
+  background: var(--slider-thumb-color);
+  border: 3px solid #fdfcf8;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3);
+  transition: all 0.2s;
+}
+
+.vintage-slider [role="slider"]:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.4);
+}
+
+/* Sepia color utilities */
+.text-sepia-50 { color: rgb(254 252 232); }
+.text-sepia-100 { color: rgb(254 249 195); }
+.text-sepia-200 { color: rgb(254 240 138); }
+.text-sepia-300 { color: rgb(253 224 71); }
+.text-sepia-400 { color: rgb(250 204 21); }
+.text-sepia-500 { color: rgb(234 179 8); }
+.text-sepia-600 { color: rgb(202 138 4); }
+.text-sepia-700 { color: rgb(161 98 7); }
+.text-sepia-800 { color: rgb(133 77 14); }
+.text-sepia-900 { color: rgb(113 63 18); }
+
+.bg-sepia-50 { background-color: rgb(254 252 232); }
+.bg-sepia-100 { background-color: rgb(254 249 195); }
+.bg-sepia-200 { background-color: rgb(254 240 138); }
+.bg-sepia-300 { background-color: rgb(253 224 71); }
+.bg-sepia-400 { background-color: rgb(250 204 21); }
+.bg-sepia-500 { background-color: rgb(234 179 8); }
+.bg-sepia-600 { background-color: rgb(202 138 4); }
+.bg-sepia-700 { background-color: rgb(161 98 7); }
+.bg-sepia-800 { background-color: rgb(133 77 14); }
+.bg-sepia-900 { background-color: rgb(113 63 18); }
+
+.border-sepia-200 { border-color: rgb(254 240 138); }
+.border-sepia-300 { border-color: rgb(253 224 71); }
+.border-sepia-400 { border-color: rgb(250 204 21); }
+.border-sepia-500 { border-color: rgb(234 179 8); }
+.border-sepia-600 { border-color: rgb(202 138 4); }
+.border-sepia-700 { border-color: rgb(161 98 7); }

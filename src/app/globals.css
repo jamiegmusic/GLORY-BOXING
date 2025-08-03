@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Dreamworld styles */
+@import url('../styles/dreamworld.css');
+
 /* Custom styles for Glory Boxing Manager */
 @layer base {
   html {
