@@ -515,6 +515,7 @@ export interface Fighter {
   name: string;
   age?: number;
   nationality?: string;
+  country?: string;  // Added for component compatibility
   division: string;
   weight_class?: string;
   stance: string;
@@ -620,6 +621,8 @@ export interface Title {
   division: string;
   sanctioning_body: string;
   current_holder?: string;
+  belt?: string;  // Added for component compatibility
+  champion?: string;  // Added for component compatibility
   is_lineal: boolean;
   created_at: Date;
   updated_at: Date;
@@ -636,6 +639,19 @@ export interface PressConference {
   updated_at: Date;
 }
 
+// Press question interface
+export interface PressQuestion {
+  id: string;
+  match_id?: string;  // Added for component compatibility
+  press_conference_id?: string;  // Made optional for flexibility
+  question: string;
+  target?: string;
+  category?: string;
+  importance: number;
+  journalist?: string;
+  created_at: Date | string;
+}
+
 // Ranking interface
 export interface Ranking {
   id: string;
@@ -644,6 +660,11 @@ export interface Ranking {
   rank: number;
   fighter_id: string;
   updated_at: Date;
+  
+  // Record properties (required by various components)
+  record_wins: number;
+  record_losses: number;
+  record_draws: number;
 }
 
 // Weight class constants

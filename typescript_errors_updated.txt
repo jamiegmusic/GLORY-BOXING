@@ -1,0 +1,764 @@
+glory-ui/cypress.config.ts(1,30): error TS2307: Cannot find module 'cypress' or its corresponding type declarations.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(1,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(2,3): error TS2304: Cannot find name 'beforeEach'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(4,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(22,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(25,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(27,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(30,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(33,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(36,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(39,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(40,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(41,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(44,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(46,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(58,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(59,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(60,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(61,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(64,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(66,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(67,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(70,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(72,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(77,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(78,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(79,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(80,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(82,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(85,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(88,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(89,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(90,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(91,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(92,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(94,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(97,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(98,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(99,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(100,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(101,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(104,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(105,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(106,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(107,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(110,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(111,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(112,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(113,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(114,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(116,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(119,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(122,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(125,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(128,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(131,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(134,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(135,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(136,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(137,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(138,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(140,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(143,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(146,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(147,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(148,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(149,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(150,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(152,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(155,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(158,5): error TS2304: Cannot find name 'cy'.
+glory-ui/cypress/e2e/commentary-generation.cy.ts(161,5): error TS2304: Cannot find name 'cy'.
+glory-ui/src/App.tsx(2,21): error TS2307: Cannot find module '@headlessui/react' or its corresponding type declarations.
+glory-ui/src/App.tsx(194,39): error TS2322: Type '{ userId: string; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'userId' does not exist on type 'IntrinsicAttributes'.
+glory-ui/src/App.tsx(196,39): error TS2322: Type '{ currentUserId: string; currentUsername: string; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'currentUserId' does not exist on type 'IntrinsicAttributes'.
+glory-ui/src/App.tsx(205,39): error TS2322: Type '{ currentUserId: string; currentUsername: string; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'currentUserId' does not exist on type 'IntrinsicAttributes'.
+glory-ui/src/app/celebrity-demo/page.tsx(195,73): error TS2339: Property 'nationality' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(196,70): error TS2339: Property 'hometown' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(204,77): error TS2339: Property 'physical_health' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(205,75): error TS2339: Property 'mental_health' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(206,74): error TS2339: Property 'energy_level' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(207,74): error TS2339: Property 'stress_level' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(269,34): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(273,55): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(276,69): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/app/celebrity-demo/page.tsx(284,34): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(288,55): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/app/celebrity-demo/page.tsx(291,69): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/AdvancedSystems/TrainingCampPanel.tsx(2,21): error TS2307: Cannot find module '@headlessui/react' or its corresponding type declarations.
+glory-ui/src/components/CelebrityManagement/AIContentGenerator.tsx(100,19): error TS2322: Type '"all"' is not assignable to type 'SocialMediaPlatformValue'.
+glory-ui/src/components/CelebrityManagement/AIContentGenerator.tsx(110,19): error TS2322: Type '"all"' is not assignable to type 'SocialMediaPlatformValue'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(455,28): error TS2339: Property 'deadline' does not exist on type 'CareerMilestone | CareerGoal'.
+  Property 'deadline' does not exist on type 'CareerMilestone'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(455,42): error TS2339: Property 'achieved_date' does not exist on type 'CareerMilestone | CareerGoal'.
+  Property 'achieved_date' does not exist on type 'CareerGoal'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(455,80): error TS2339: Property 'deadline' does not exist on type 'CareerMilestone | CareerGoal'.
+  Property 'deadline' does not exist on type 'CareerMilestone'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(455,94): error TS2339: Property 'achieved_date' does not exist on type 'CareerMilestone | CareerGoal'.
+  Property 'achieved_date' does not exist on type 'CareerGoal'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(462,62): error TS2339: Property 'milestone_type' does not exist on type 'never'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(465,40): error TS2339: Property 'deadline' does not exist on type 'CareerMilestone | CareerGoal'.
+  Property 'deadline' does not exist on type 'CareerMilestone'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(465,57): error TS2339: Property 'achieved_date' does not exist on type 'CareerMilestone | CareerGoal'.
+  Property 'achieved_date' does not exist on type 'CareerGoal'.
+glory-ui/src/components/CelebrityManagement/CareerPlanner.tsx(469,72): error TS2339: Property 'description' does not exist on type 'never'.
+glory-ui/src/components/CelebrityManagement/EnhancedCelebrityDashboard.tsx(14,3): error TS2305: Module '"lucide-react"' has no exported member 'ChartLineUp'.
+glory-ui/src/components/CelebrityManagement/MultiIndustryCareerPanel.tsx(129,68): error TS2345: Argument of type '{ celebrity_id: string; industry: CelebrityIndustryValue; status: "planning"; start_date: Date; budget: number; revenue_potential: number; risk_level: "low" | "medium" | "high"; ... 9 more ...; updated_at?: Date; }' is not assignable to parameter of type 'Omit<Project, "id" | "created_at" | "updated_at">'.
+  Property 'title' is optional in type '{ celebrity_id: string; industry: CelebrityIndustryValue; status: "planning"; start_date: Date; budget: number; revenue_potential: number; risk_level: "low" | "medium" | "high"; ... 9 more ...; updated_at?: Date; }' but required in type 'Omit<Project, "id" | "created_at" | "updated_at">'.
+glory-ui/src/components/CelebrityManagement/MultiIndustryCareerPanel.tsx(281,85): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/MultiIndustryCareerPanel.tsx(317,53): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(27,8): error TS2307: Cannot find module '@/lib/celebrity-data' or its corresponding type declarations.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(106,19): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(128,19): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(129,27): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(129,51): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(129,85): error TS2365: Operator '+' cannot be applied to types 'unknown' and 'unknown'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(152,46): error TS2322: Type '{ children: Element[]; value: CelebrityIndustryValue; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(183,52): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(330,71): error TS2339: Property 'nationality' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(331,68): error TS2339: Property 'hometown' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(394,36): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(398,57): error TS2339: Property 'business_skills' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(401,65): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(413,70): error TS2339: Property 'debut_date' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(414,68): error TS2339: Property 'ranking' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(415,77): error TS2339: Property 'industry_ranking' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(418,36): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(422,57): error TS2339: Property 'personality_traits' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(425,65): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(436,74): error TS2339: Property 'physical_health' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(440,74): error TS2339: Property 'mental_health' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(444,74): error TS2339: Property 'energy_level' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(448,74): error TS2339: Property 'stress_level' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(456,46): error TS2339: Property 'public_image' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/RealCelebrityDemo.tsx(458,54): error TS2339: Property 'public_image' does not exist on type 'Celebrity'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(2,52): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(9,1): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(11,27): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(12,29): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(13,28): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(14,28): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(15,17): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(16,20): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(17,31): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(54,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(55,3): error TS2304: Cannot find name 'beforeEach'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(56,5): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(59,56): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(60,58): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(61,57): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(62,60): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(65,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(66,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(75,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(76,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(77,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(78,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(81,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(82,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(91,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(92,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(93,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(94,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(97,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(98,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(107,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(108,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(109,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(112,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(113,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(124,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(127,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(130,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(133,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(136,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(137,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(149,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(150,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(151,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(152,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(153,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(156,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(157,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(169,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(170,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(171,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(174,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(175,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(176,46): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(177,48): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(202,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(211,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(233,56): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(235,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(247,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(248,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(249,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(250,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(253,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(273,49): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(275,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(305,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(309,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(320,57): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(322,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(334,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(335,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(336,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(337,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(340,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(356,58): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(358,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(370,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(371,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(372,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(375,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(376,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(377,57): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(378,48): error TS2503: Cannot find namespace 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(394,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(398,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(399,35): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(410,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(414,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(418,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(421,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(424,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/CelebrityManagement/__tests__/MultiIndustryCareerPanel.test.tsx(425,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/FightersTab.tsx(2,29): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/components/Tabs/MatchesTab.tsx(3,39): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/components/Tabs/MatchesTab.tsx(210,28): error TS2339: Property 'fighter_a_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(210,54): error TS2339: Property 'fighter_b_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(213,68): error TS2322: Type 'FightResult' is not assignable to type 'ReactNode'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(217,68): error TS2339: Property 'match_date' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(217,89): error TS2339: Property 'venue_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(220,41): error TS2339: Property 'weight_class' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(223,41): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(223,79): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(228,51): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+glory-ui/src/components/Tabs/MatchesTab.tsx(228,51): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(232,26): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+glory-ui/src/components/Tabs/MatchesTab.tsx(237,16): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+glory-ui/src/components/Tabs/MatchesTab.tsx(241,79): error TS2339: Property 'fighter_a_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(242,92): error TS2339: Property 'weight_class' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(243,86): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(244,41): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(245,92): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(249,78): error TS2339: Property 'fighter_b_name' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(250,92): error TS2339: Property 'weight_class' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(251,86): error TS2339: Property 'record' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(252,41): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/MatchesTab.tsx(253,92): error TS2339: Property 'nationality' does not exist on type 'string'.
+glory-ui/src/components/Tabs/PressTab.tsx(2,29): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/components/Tabs/PressTab.tsx(137,40): error TS2339: Property 'name' does not exist on type 'string'.
+glory-ui/src/components/Tabs/PressTab.tsx(137,66): error TS2339: Property 'name' does not exist on type 'string'.
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(120,38): error TS2551: Property 'fighter_a_id' does not exist on type 'Match'. Did you mean 'fighter_a'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(121,38): error TS2551: Property 'fighter_b_id' does not exist on type 'Match'. Did you mean 'fighter_b'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(204,23): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(270,25): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(293,25): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/PressTabEnhanced.tsx(454,54): error TS2339: Property 'date' does not exist on type 'Match'.
+glory-ui/src/components/Tabs/RankingsTabEnhanced.tsx(187,51): error TS2322: Type '{ children: Element[]; value: string; onValueChange: Dispatch<SetStateAction<string>>; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/RankingsTabEnhanced.tsx(204,52): error TS2322: Type '{ children: Element[]; value: string; onValueChange: Dispatch<SetStateAction<string>>; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/RankingsTabEnhanced.tsx(222,40): error TS2322: Type '{ children: Element[]; value: "name" | "record" | "rank"; onValueChange: (value: "name" | "record" | "rank") => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTab.tsx(3,39): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/components/Tabs/ScheduleTab.tsx(106,69): error TS2339: Property 'record' does not exist on type 'Fighter'.
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(161,21): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(185,21): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(225,37): error TS2322: Type '{ children: Element; asChild: true; }' is not assignable to type 'IntrinsicAttributes & PopoverTriggerProps'.
+  Property 'asChild' does not exist on type 'IntrinsicAttributes & PopoverTriggerProps'.
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(240,25): error TS2322: Type '{ mode: string; selected: Date; onSelect: Dispatch<SetStateAction<Date>>; initialFocus: true; disabled: (date: any) => boolean; }' is not assignable to type 'IntrinsicAttributes & CalendarProps'.
+  Property 'mode' does not exist on type 'IntrinsicAttributes & CalendarProps'.
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(260,21): error TS2322: Type '{ children: Element[]; value: string; onValueChange: (value: any) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'onValueChange' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'. Did you mean 'onVolumeChange'?
+glory-ui/src/components/Tabs/ScheduleTabEnhanced.tsx(279,23): error TS2322: Type '{ id: string; checked: boolean; onCheckedChange: (checked: boolean) => void; }' is not assignable to type 'IntrinsicAttributes & SwitchProps'.
+  Property 'id' does not exist on type 'IntrinsicAttributes & SwitchProps'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(1,41): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(2,23): error TS2307: Cannot find module '@testing-library/user-event' or its corresponding type declarations.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(4,23): error TS2307: Cannot find module 'jest-fetch-mock' or its corresponding type declarations.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(21,1): error TS2304: Cannot find name 'beforeAll'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(25,1): error TS2304: Cannot find name 'beforeEach'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(29,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(30,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(33,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(34,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(35,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(38,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(44,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(45,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(46,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(49,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(64,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(69,15): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(74,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(88,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(89,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(93,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(108,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(112,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(126,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(129,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(135,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(136,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(139,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(145,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(146,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(149,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(156,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(163,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(166,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(169,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(170,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/Tabs/__tests__/MatchesTab.test.tsx(171,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(1,52): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(2,23): error TS2307: Cannot find module '@testing-library/user-event' or its corresponding type declarations.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(4,23): error TS2307: Cannot find module 'jest-fetch-mock' or its corresponding type declarations.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(36,1): error TS2304: Cannot find name 'beforeAll'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(40,1): error TS2304: Cannot find name 'beforeEach'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(44,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(45,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(48,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(49,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(50,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(53,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(62,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(66,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(79,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(86,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(89,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(98,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(99,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(100,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(103,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(112,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(113,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(116,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(125,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(126,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(127,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(128,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(131,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(139,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(140,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(141,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(142,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(145,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(154,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(157,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(166,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(171,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(174,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(175,28): error TS2304: Cannot find name 'jest'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(187,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(190,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(200,7): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(204,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+glory-ui/src/components/__tests__/CommentaryPanel.test.tsx(213,5): error TS2304: Cannot find name 'expect'.
+glory-ui/src/components/ui/popover.tsx(39,48): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'onClick' does not exist in type 'Partial<unknown> & Attributes'.
+glory-ui/src/graphql/mutations.ts(1,21): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/graphql/queries.ts(1,21): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/hooks/useApolloMutations.ts(1,44): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/hooks/useApolloMutationsEnhanced.ts(1,44): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/hooks/useApolloMutationsSimple.ts(1,44): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/lib/advanced-matchmaking.ts(266,25): error TS2802: Type 'Set<string>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+glory-ui/src/lib/api-client.ts(5,10): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+glory-ui/src/lib/api-client.ts(5,19): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+glory-ui/src/lib/apolloClient.ts(1,61): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/lib/apolloClient.ts(2,28): error TS2307: Cannot find module '@apollo/client/link/context' or its corresponding type declarations.
+glory-ui/src/lib/fighter-psychology-system.ts(230,22): error TS2339: Property 'confidence' does not exist on type 'MentalState'.
+glory-ui/src/lib/fighter-psychology-system.ts(230,53): error TS2339: Property 'anxiety' does not exist on type 'MentalState'.
+glory-ui/src/lib/fighter-psychology-system.ts(239,22): error TS2339: Property 'aggression' does not exist on type 'MentalState'.
+glory-ui/src/lib/governing-body-politics.ts(571,9): error TS2741: Property 'transparency' is missing in type '{ factions: { id: string; name: string; leader: string; members: string[]; influence: number; agenda: string[]; conflicts: string[]; }[]; powerBalance: { dominantFaction: string; oppositionFaction: string; balanceOfPower: number; recentShifts: undefined[]; }; decisionMaking: { ...; }; }' but required in type 'InternalPolitics'.
+glory-ui/src/lib/governing-body-politics.ts(638,9): error TS2741: Property 'transparency' is missing in type '{ factions: { id: string; name: string; leader: string; members: string[]; influence: number; agenda: string[]; conflicts: string[]; }[]; powerBalance: { dominantFaction: string; oppositionFaction: string; balanceOfPower: number; recentShifts: undefined[]; }; decisionMaking: { ...; }; }' but required in type 'InternalPolitics'.
+glory-ui/src/lib/graphql-client.ts(1,31): error TS2307: Cannot find module 'graphql-request' or its corresponding type declarations.
+glory-ui/src/lib/media-narrative-engine.ts(395,11): error TS2393: Duplicate function implementation.
+glory-ui/src/lib/media-narrative-engine.ts(774,11): error TS2393: Duplicate function implementation.
+glory-ui/src/lib/project-portfolio-engine.ts(193,9): error TS2367: This comparison appears to be unintentional because the types 'ProjectStatusValue' and '"delayed"' have no overlap.
+glory-ui/src/lib/project-portfolio-engine.ts(430,12): error TS2678: Type '"in_progress"' is not comparable to type 'ProjectStatusValue'.
+glory-ui/src/lib/project-portfolio-engine.ts(432,12): error TS2678: Type '"delayed"' is not comparable to type 'ProjectStatusValue'.
+glory-ui/src/lib/project-portfolio-engine.ts(524,29): error TS2802: Type 'MapIterator<ProjectPortfolio>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+glory-ui/src/lib/real-world-rankings-api.ts(238,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+glory-ui/src/lib/real-world-rankings-api.ts(275,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+glory-ui/src/lib/real-world-rankings-api.ts(276,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+glory-ui/src/lib/real-world-rankings-api.ts(289,11): error TS2353: Object literal may only specify known properties, and 'fighter_name' does not exist in type 'OfficialRecord'.
+glory-ui/src/lib/replay-system.ts(171,7): error TS2322: Type '"action"' is not assignable to type '"knockdown" | "foul" | "round_start" | "round_end" | "timeout" | "knockout"'.
+glory-ui/src/lib/replay-system.ts(375,23): error TS2339: Property 'title' does not exist on type 'Partial<ReplayMetadata>'.
+glory-ui/src/lib/replay-system.ts(376,29): error TS2339: Property 'description' does not exist on type 'Partial<ReplayMetadata>'.
+glory-ui/src/lib/replay-system.ts(440,26): error TS2367: This comparison appears to be unintentional because the types '"knockdown" | "foul" | "round_start" | "round_end" | "timeout" | "knockout"' and '"action"' have no overlap.
+glory-ui/src/lib/replay-system.ts(441,26): error TS2367: This comparison appears to be unintentional because the types '"knockdown" | "foul" | "round_start" | "round_end" | "timeout" | "knockout"' and '"action"' have no overlap.
+glory-ui/src/lib/script-song-engine.ts(615,28): error TS2802: Type 'MapIterator<ContentTemplate>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+glory-ui/src/lib/supabase.ts(15,33): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+glory-ui/src/lib/supabase.ts(16,37): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+glory-ui/src/main.tsx(3,32): error TS2307: Cannot find module '@apollo/client' or its corresponding type declarations.
+glory-ui/src/main.tsx(6,17): error TS5097: An import path can only end with a '.tsx' extension when 'allowImportingTsExtensions' is enabled.
+glory-ui/src/setupTests.ts(5,1): error TS2322: Type 'typeof IntersectionObserver' is not assignable to type '{ new (callback: IntersectionObserverCallback, options?: IntersectionObserverInit): IntersectionObserver; prototype: IntersectionObserver; }'.
+  Types of property 'prototype' are incompatible.
+    Type 'IntersectionObserver' is missing the following properties from type 'IntersectionObserver': root, rootMargin, thresholds, takeRecords
+glory-ui/src/setupTests.ts(45,1): error TS2304: Cannot find name 'beforeAll'.
+glory-ui/src/setupTests.ts(68,1): error TS2304: Cannot find name 'afterAll'.
+glory-ui/vite.config.ts(1,30): error TS2307: Cannot find module 'vite' or its corresponding type declarations.
+glory-ui/vite.config.ts(2,19): error TS2307: Cannot find module '@vitejs/plugin-react' or its corresponding type declarations.
+src/app/api/__tests__/commentary.test.ts(58,3): error TS1117: An object literal cannot have multiple properties with the same name.
+src/app/api/__tests__/commentary.test.ts(88,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(89,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(105,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(106,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(107,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(108,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(109,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(110,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(112,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(113,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(114,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(115,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(116,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(119,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(138,7): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(139,7): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(140,7): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(144,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(163,7): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(164,7): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(168,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(184,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(185,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(186,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(189,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(204,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(205,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(208,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(220,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(221,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(224,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(256,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(257,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(258,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(261,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(295,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(296,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(297,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(300,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(316,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(317,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(318,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(321,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(337,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(338,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(339,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(340,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(341,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(344,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app/api/__tests__/commentary.test.ts(360,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(361,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(362,5): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(365,7): error TS2304: Cannot find name 'expect'.
+src/app/api/__tests__/commentary.test.ts(366,7): error TS2304: Cannot find name 'expect'.
+src/app/page-refactored.tsx(118,32): error TS2552: Cannot find name 'setShowFighterCreation'. Did you mean 'showFighterCreation'?
+src/app/page-refactored.tsx(124,32): error TS2552: Cannot find name 'setShowFightScheduler'. Did you mean 'showFightScheduler'?
+src/app/page-refactored.tsx(160,23): error TS2322: Type '{ fighter: Fighter; onTriggerCutScene: () => void; }' is not assignable to type 'IntrinsicAttributes & FighterPsychologyPanelProps'.
+  Property 'onTriggerCutScene' does not exist on type 'IntrinsicAttributes & FighterPsychologyPanelProps'.
+src/app/page-refactored.tsx(182,15): error TS2322: Type '{ fights: Fight[]; fighters: Fighter[]; onFightSelect: any; }' is not assignable to type 'IntrinsicAttributes & FightManagerProps'.
+  Property 'fights' does not exist on type 'IntrinsicAttributes & FightManagerProps'.
+src/app/page-refactored.tsx(184,30): error TS2552: Cannot find name 'setSelectedFight'. Did you mean 'setSelectedFighter'?
+src/app/page-refactored.tsx(294,11): error TS2322: Type '{ fighter: Fighter; onComplete: (contractData: any) => Promise<void>; onClose: () => void; }' is not assignable to type 'IntrinsicAttributes & ContractNegotiationProps'.
+  Property 'onComplete' does not exist on type 'IntrinsicAttributes & ContractNegotiationProps'.
+src/app/page-refactored.tsx(302,27): error TS2552: Cannot find name 'setShowFighterCreation'. Did you mean 'showFighterCreation'?
+src/app/page-refactored.tsx(308,11): error TS2322: Type '{ fighter: Fighter; onClose: () => any; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'fighter' does not exist on type 'IntrinsicAttributes'.
+src/app/page-refactored.tsx(309,26): error TS2552: Cannot find name 'setShowPortraitGenerator'. Did you mean 'showPortraitGenerator'?
+src/app/page-refactored.tsx(315,11): error TS2322: Type '{ fight: Fight; onClose: () => any; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'fight' does not exist on type 'IntrinsicAttributes'.
+src/app/page-refactored.tsx(316,26): error TS2552: Cannot find name 'setShowAdvancedFightEngine'. Did you mean 'showAdvancedFightEngine'?
+src/app/page-refactored.tsx(322,11): error TS2322: Type '{ matchData: Fight; onClose: () => any; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/app/page-refactored.tsx(323,26): error TS2552: Cannot find name 'setShowCommentary'. Did you mean 'showCommentary'?
+src/app/test-simulation/page.tsx(4,10): error TS2305: Module '"@/lib/match-simulator"' has no exported member 'EnhancedMatchSimulator'.
+src/components/AdvancedAnalyticsDashboard.tsx(2,37): error TS2305: Module '"../lib/unified-types"' has no exported member 'FinancialMetrics'.
+src/components/AdvancedAnalyticsDashboard.tsx(85,59): error TS2339: Property 'status' does not exist on type 'Fighter'.
+src/components/AdvancedAnalyticsDashboard.tsx(510,51): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+src/components/EnhancedFightSimulator.tsx(477,74): error TS2339: Property 'text' does not exist on type 'string'.
+src/components/FightManagement/FightManager.tsx(52,31): error TS2367: This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.
+src/components/FightManagement/FightManager.tsx(63,37): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(64,37): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(81,7): error TS2322: Type 'string' is not assignable to type 'number'.
+src/components/FightManagement/FightManager.tsx(85,7): error TS2322: Type 'string' is not assignable to type 'number'.
+src/components/FightManagement/FightManager.tsx(155,30): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/components/FightManagement/FightManager.tsx(197,35): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(281,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(282,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(344,23): error TS2322: Type '"primary"' is not assignable to type '"default" | "link" | "destructive" | "outline" | "secondary" | "ghost"'.
+src/components/FightManagement/FightManager.tsx(401,61): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/FightManager.tsx(411,61): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(32,24): error TS2554: Expected 1 arguments, but got 0.
+src/components/FightManagement/MatchSchedulingSystem.tsx(139,9): error TS2322: Type 'string' is not assignable to type 'Venue'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(144,9): error TS2322: Type 'Date' is not assignable to type 'string'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(145,9): error TS2322: Type 'Date' is not assignable to type 'string'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(214,31): error TS2693: 'WeightClass' only refers to a type, but is being used as a value here.
+src/components/FightManagement/MatchSchedulingSystem.tsx(215,25): error TS2322: Type 'unknown' is not assignable to type 'Key'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(215,37): error TS2322: Type 'unknown' is not assignable to type 'string | number | readonly string[]'.
+src/components/FightManagement/MatchSchedulingSystem.tsx(350,13): error TS2322: Type '{ children: string; onClick: () => Promise<void>; disabled: boolean; loading: boolean; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+src/components/FightScheduling/FightScheduler.tsx(51,31): error TS2367: This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.
+src/components/FightScheduling/FightScheduler.tsx(56,34): error TS2367: This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.
+src/components/FightScheduling/FightScheduler.tsx(237,13): error TS2322: Type '{ children: (Element | Element[])[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(250,13): error TS2322: Type '{ children: (Element | Element[])[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(338,13): error TS2322: Type '{ children: Element[]; label: string; value: number; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(363,15): error TS2322: Type '{ children: Element[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FightScheduling/FightScheduler.tsx(410,11): error TS2322: Type '{ children: string; onClick: () => Promise<void>; disabled: boolean; loading: boolean; className: string; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+src/components/FightSimulation/AdvancedFightEngine.tsx(64,37): error TS2304: Cannot find name 'supabase'.
+src/components/FighterManagement/TrainingCampManager.tsx(5,92): error TS2305: Module '"lucide-react"' has no exported member 'Chef'.
+src/components/FighterManagement/TrainingCampManager.tsx(104,53): error TS2304: Cannot find name 'Brain'.
+src/components/FighterManagement/TrainingSystem.tsx(55,40): error TS2365: Operator '+' cannot be applied to types 'string | number | boolean | string[]' and 'number'.
+src/components/FighterManagement/TrainingSystem.tsx(106,15): error TS2322: Type '{ children: (Element | Element[])[]; label: string; value: string; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FighterManagement/TrainingSystem.tsx(121,15): error TS2322: Type '{ children: Element[]; label: string; value: number; onChange: (e: ChangeEvent<HTMLSelectElement>) => void; }' is not assignable to type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+  Property 'label' does not exist on type 'IntrinsicAttributes & SelectProps & RefAttributes<HTMLSelectElement>'.
+src/components/FighterManagement/TrainingSystem.tsx(136,11): error TS2322: Type 'Dispatch<SetStateAction<number>>' is not assignable to type 'ChangeEventHandler<HTMLInputElement>'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'ChangeEvent<HTMLInputElement>' is not assignable to type 'SetStateAction<number>'.
+src/components/FighterManagement/TrainingSystem.tsx(158,20): error TS2365: Operator '+' cannot be applied to types 'string | number | boolean | string[]' and 'number'.
+src/components/FighterManagement/TrainingSystem.tsx(227,11): error TS2322: Type '{ children: string; onClick: () => Promise<void>; disabled: boolean; loading: boolean; className: string; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+src/components/MatchCard.tsx(70,33): error TS2551: Property 'commentary' does not exist on type 'Match'. Did you mean 'ai_commentary'?
+src/components/MatchCard.tsx(116,18): error TS2339: Property 'total_punches_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(116,43): error TS2339: Property 'total_punches_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(118,34): error TS2551: Property 'fighter_a' does not exist on type 'Match'. Did you mean 'fighter_a_id'?
+src/components/MatchCard.tsx(118,52): error TS2339: Property 'total_punches_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(118,78): error TS2551: Property 'fighter_b' does not exist on type 'Match'. Did you mean 'fighter_b_id'?
+src/components/MatchCard.tsx(118,96): error TS2339: Property 'total_punches_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(119,22): error TS2339: Property 'total_power_shots_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(119,51): error TS2339: Property 'total_power_shots_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(120,40): error TS2551: Property 'fighter_a' does not exist on type 'Match'. Did you mean 'fighter_a_id'?
+src/components/MatchCard.tsx(120,58): error TS2339: Property 'total_power_shots_a' does not exist on type 'Match'.
+src/components/MatchCard.tsx(120,88): error TS2551: Property 'fighter_b' does not exist on type 'Match'. Did you mean 'fighter_b_id'?
+src/components/MatchCard.tsx(120,106): error TS2339: Property 'total_power_shots_b' does not exist on type 'Match'.
+src/components/MatchCard.tsx(122,22): error TS2551: Property 'knockdowns_a' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchCard.tsx(122,44): error TS2551: Property 'knockdowns_b' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchCard.tsx(123,32): error TS2551: Property 'fighter_a' does not exist on type 'Match'. Did you mean 'fighter_a_id'?
+src/components/MatchCard.tsx(123,50): error TS2551: Property 'knockdowns_a' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchCard.tsx(123,73): error TS2551: Property 'fighter_b' does not exist on type 'Match'. Did you mean 'fighter_b_id'?
+src/components/MatchCard.tsx(123,91): error TS2551: Property 'knockdowns_b' does not exist on type 'Match'. Did you mean 'knockdowns'?
+src/components/MatchForm.tsx(26,7): error TS2353: Object literal may only specify known properties, and 'date' does not exist in type 'Partial<Match>'.
+src/components/PremiumFeatures/DeploymentReadyPanel.tsx(20,3): error TS2305: Module '"lucide-react"' has no exported member 'Memory'.
+src/components/PremiumFeatures/PremiumFeaturesNavigation.tsx(7,3): error TS2305: Module '"lucide-react"' has no exported member 'Museum'.
+src/components/Tournament/TournamentSystem.tsx(352,11): error TS2322: Type '"primary"' is not assignable to type '"default" | "link" | "destructive" | "outline" | "secondary" | "ghost"'.
+src/components/__tests__/CommentaryPanel.test.tsx(1,52): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+src/components/__tests__/CommentaryPanel.test.tsx(2,23): error TS2307: Cannot find module '@testing-library/user-event' or its corresponding type declarations.
+src/components/__tests__/CommentaryPanel.test.tsx(4,23): error TS2307: Cannot find module 'jest-fetch-mock' or its corresponding type declarations.
+src/components/__tests__/CommentaryPanel.test.tsx(36,1): error TS2304: Cannot find name 'beforeAll'.
+src/components/__tests__/CommentaryPanel.test.tsx(40,1): error TS2304: Cannot find name 'beforeEach'.
+src/components/__tests__/CommentaryPanel.test.tsx(44,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(45,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(46,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(48,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(49,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(50,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(53,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(56,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(62,7): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(66,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(70,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(79,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(86,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(89,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(93,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(98,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(99,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(100,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(103,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(107,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(112,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(113,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(116,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(120,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(125,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(126,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(127,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(128,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(131,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(135,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(139,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(140,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(141,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(142,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(145,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(149,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(154,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(157,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(161,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(166,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(171,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(174,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(175,28): error TS2304: Cannot find name 'jest'.
+src/components/__tests__/CommentaryPanel.test.tsx(179,9): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; onGenerateCommentary: any; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(187,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(190,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(193,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(200,7): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(204,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(207,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; rounds: number; result: { winner: string; method: string; round: number; timeInRound: string; }; events: ({ ...; } | { ...; })[]; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(213,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(216,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(220,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(224,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(225,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(226,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(229,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(238,29): error TS2322: Type '{ matchData: { id: string; fighter_a: string; fighter_b: string; venue: string; weight_class: string; }; }' is not assignable to type 'IntrinsicAttributes & CommentaryPanelProps'.
+  Property 'matchData' does not exist on type 'IntrinsicAttributes & CommentaryPanelProps'.
+src/components/__tests__/CommentaryPanel.test.tsx(240,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(241,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(244,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/__tests__/CommentaryPanel.test.tsx(248,9): error TS2322: Type 'string' is not assignable to type 'string[]'.
+src/components/__tests__/CommentaryPanel.test.tsx(256,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(257,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(258,5): error TS2304: Cannot find name 'expect'.
+src/components/__tests__/CommentaryPanel.test.tsx(265,5): error TS2304: Cannot find name 'expect'.
+src/components/ui/popover.tsx(39,48): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'onClick' does not exist in type 'Partial<unknown> & Attributes'.
+src/lib/__tests__/match-simulator.test.ts(1,10): error TS2305: Module '"../match-simulator"' has no exported member 'EnhancedMatchSimulator'.
+src/lib/__tests__/match-simulator.test.ts(27,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(30,3): error TS2304: Cannot find name 'beforeEach'.
+src/lib/__tests__/match-simulator.test.ts(41,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(42,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(45,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(48,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(49,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(50,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(51,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(52,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(53,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(54,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(55,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(56,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(57,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(58,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(59,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(60,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(63,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(66,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(67,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(70,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(71,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(72,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(73,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(74,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(75,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(78,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(81,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(84,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(88,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(91,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(92,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(95,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(96,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(97,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(98,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(100,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(101,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(102,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(106,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(109,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(110,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(113,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(117,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(120,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(123,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(130,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(134,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(138,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(142,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(145,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(146,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(147,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(149,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(150,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(151,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(154,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(164,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(167,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(177,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(180,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(186,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(187,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(188,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(189,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(193,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(199,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(200,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(201,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(202,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(206,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(213,9): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(214,9): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(215,9): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(220,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/match-simulator.test.ts(224,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(225,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(226,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(228,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(229,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(230,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(231,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(232,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/match-simulator.test.ts(233,7): error TS2304: Cannot find name 'expect'.
+src/lib/accessibility/audit.ts(47,32): error TS2345: Argument of type '{ violations: undefined[]; passes: undefined[]; }' is not assignable to parameter of type 'AxeResults'.
+  Type '{ violations: undefined[]; passes: undefined[]; }' is missing the following properties from type 'AxeResults': toolOptions, incomplete, inapplicable, testEngine, and 4 more.
+src/lib/analytics/rating.ts(83,49): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/lib/analytics/rating.ts(84,14): error TS2339: Property 'gtag' does not exist on type 'Window & typeof globalThis'.
+src/lib/analytics/rating.ts(88,49): error TS2339: Property 'va' does not exist on type 'Window & typeof globalThis'.
+src/lib/analytics/rating.ts(89,14): error TS2339: Property 'va' does not exist on type 'Window & typeof globalThis'.
+src/lib/combat-engine.ts(132,7): error TS2353: Object literal may only specify known properties, and 'analysis' does not exist in type 'FightResult'.
+src/lib/combat-engine.ts(425,27): error TS2345: Argument of type '{ fighter: any; round: any; timeInRound: any; type: "flash" | "knockdown"; recovery_time: number; }' is not assignable to parameter of type 'KnockdownEvent'.
+  Property 'time' is missing in type '{ fighter: any; round: any; timeInRound: any; type: "flash" | "knockdown"; recovery_time: number; }' but required in type 'KnockdownEvent'.
+src/lib/monitoring/sentry.ts(9,18): error TS2339: Property 'BrowserTracing' does not exist on type 'typeof import("/workspace/node_modules/@sentry/nextjs/build/types/index.types")'.
+src/lib/monitoring/sentry.ts(34,10): error TS2339: Property 'metrics' does not exist on type 'typeof import("/workspace/node_modules/@sentry/nextjs/build/types/index.types")'.
+src/lib/monitoring/sentry.ts(38,10): error TS2339: Property 'metrics' does not exist on type 'typeof import("/workspace/node_modules/@sentry/nextjs/build/types/index.types")'.
+src/lib/real-world-rankings-api.ts(380,7): error TS2353: Object literal may only specify known properties, and 'organization' does not exist in type 'Fighter'.
+src/lib/real-world-rankings-api.ts(412,9): error TS2353: Object literal may only specify known properties, and 'losses' does not exist in type 'OfficialRecord'.
+src/lib/real-world-rankings-api.ts(430,5): error TS2322: Type '{ fighter_name: string; weight_class: string; organization: string; rank: number; record: string; country: string; points: number; movement: "up" | "down" | "unchanged"; last_fight: string; next_fight: string; verified: true; source: string; last_updated: string; }[]' is not assignable to type 'InternationalRanking[]'.
+  Type '{ fighter_name: string; weight_class: string; organization: string; rank: number; record: string; country: string; points: number; movement: "up" | "down" | "unchanged"; last_fight: string; next_fight: string; verified: true; source: string; last_updated: string; }' is missing the following properties from type 'InternationalRanking': id, fighter_id, created_at
+src/lib/security/rateLimiter.ts(119,39): error TS2532: Object is possibly 'undefined'.
+supabase/functions/generate-commentary/index.ts(1,23): error TS2307: Cannot find module 'https://deno.land/std@0.168.0/http/server.ts' or its corresponding type declarations.
+supabase/functions/generate-commentary/index.ts(2,30): error TS2307: Cannot find module 'https://esm.sh/@supabase/supabase-js@2' or its corresponding type declarations.
+supabase/functions/generate-commentary/index.ts(39,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-commentary/index.ts(40,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-commentary/index.ts(60,36): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-commentary/index.ts(99,36): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-portrait/index.ts(1,23): error TS2307: Cannot find module 'https://deno.land/std@0.168.0/http/server.ts' or its corresponding type declarations.
+supabase/functions/generate-portrait/index.ts(2,30): error TS2307: Cannot find module 'https://esm.sh/@supabase/supabase-js@2' or its corresponding type declarations.
+supabase/functions/generate-portrait/index.ts(35,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-portrait/index.ts(36,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-portrait/index.ts(43,35): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-voice/index.ts(1,23): error TS2307: Cannot find module 'https://deno.land/std@0.168.0/http/server.ts' or its corresponding type declarations.
+supabase/functions/generate-voice/index.ts(2,30): error TS2307: Cannot find module 'https://esm.sh/@supabase/supabase-js@2' or its corresponding type declarations.
+supabase/functions/generate-voice/index.ts(31,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-voice/index.ts(32,7): error TS2304: Cannot find name 'Deno'.
+supabase/functions/generate-voice/index.ts(48,36): error TS2304: Cannot find name 'Deno'.

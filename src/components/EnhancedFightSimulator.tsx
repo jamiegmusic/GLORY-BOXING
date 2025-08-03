@@ -359,7 +359,7 @@ const EnhancedFightSimulator: React.FC<EnhancedFightSimulatorProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">Winner</h4>
-              <p className="text-2xl font-bold text-green-600">{fightResult.winner}</p>
+              <p className="text-2xl font-bold text-green-600">{fightResult.winner?.name}</p>
               <p className="text-sm text-gray-600 mt-1">
                 {fightResult.timeInRound} in round {fightResult.round}
               </p>

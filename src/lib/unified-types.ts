@@ -17,6 +17,7 @@ export interface Fighter {
   age: number
   weight_class: string
   nationality?: string
+  country?: string  // Added for component compatibility
   hometown?: string
   
   // Physical Attributes
@@ -99,6 +100,9 @@ export interface Fighter {
   trainer_id?: string
   promoter_id?: string
   manager_id?: string
+  
+  // Contract information
+  contract?: Contract
   
   // Additional properties for real-world integration
   last_updated?: string
@@ -296,6 +300,11 @@ export interface Ranking {
   last_fight_date?: string
   activity_score: number
   
+  // Record properties (required by various components)
+  record_wins: number
+  record_losses: number
+  record_draws: number
+  
   // Real-World Integration
   real_world_ranking?: number
   real_world_points?: number
@@ -310,6 +319,8 @@ export interface Title {
   id: string
   organization: string
   weight_class: string
+  belt?: string  // Added for component compatibility
+  champion?: string  // Added for component compatibility
   champion_id?: string
   champion_name?: string
   date_won?: string
@@ -364,7 +375,8 @@ export interface MediaReaction {
 
 export interface PressQuestion {
   id: string
-  press_conference_id: string
+  match_id?: string  // Added for component compatibility
+  press_conference_id?: string  // Made optional for flexibility
   question: string
   target?: string
   category?: string
@@ -542,6 +554,7 @@ export interface OfficialRecord {
   fighter_name?: string
   weight_class?: string
   record?: string
+  wins?: number  // Added for component compatibility
   created_at: string
 }
 
@@ -862,6 +875,11 @@ export interface FightResult {
   fighterA?: Fighter
   fighterB?: Fighter
   timeInRound?: string
+  
+  // Properties for EnhancedFightSimulator
+  rating?: number
+  highlights?: string[]
+  roundData?: RoundData[]
 }
 
 // Contract Negotiation Types

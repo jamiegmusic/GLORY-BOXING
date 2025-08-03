@@ -237,9 +237,9 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
               value={fighterData.weight_class}
               onChange={(e) => handleInputChange('weight_class', e.target.value)}
             >
-              {Object.entries(WeightClass).map(([key, value]) => (
-                <option key={value} value={value}>
-                  {key.replace('_', ' ').toUpperCase()}
+              {WEIGHT_CLASSES.map((weightClass) => (
+                <option key={weightClass} value={weightClass}>
+                  {weightClass.replace(/_/g, ' ').toUpperCase()}
                 </option>
               ))}
             </Select>
@@ -248,9 +248,9 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
               value={fighterData.stance}
               onChange={(e) => handleInputChange('stance', e.target.value)}
             >
-              {Object.entries(Stance).map(([key, value]) => (
-                <option key={value} value={value}>
-                  {key.charAt(0).toUpperCase() + key.slice(1)}
+              {STANCES.map((stance) => (
+                <option key={stance} value={stance}>
+                  {stance.charAt(0).toUpperCase() + stance.slice(1)}
                 </option>
               ))}
             </Select>
@@ -281,99 +281,85 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
             <Slider
               label="Punching Power"
               value={fighterData.punching_power}
-              onChange={(value) => handleInputChange('punching_power', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('punching_power', value)}
             />
 
             <Slider
               label="Speed"
               value={fighterData.speed}
-              onChange={(value) => handleInputChange('speed', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('speed', value)}
             />
 
             <Slider
               label="Defense"
               value={fighterData.defense}
-              onChange={(value) => handleInputChange('defense', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('defense', value)}
             />
 
             <Slider
               label="Stamina"
               value={fighterData.stamina}
-              onChange={(value) => handleInputChange('stamina', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('stamina', value)}
             />
 
             <Slider
               label="Chin"
               value={fighterData.chin}
-              onChange={(value) => handleInputChange('chin', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('chin', value)}
             />
 
             <Slider
               label="Heart"
               value={fighterData.heart}
-              onChange={(value) => handleInputChange('heart', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('heart', value)}
             />
 
             <Slider
               label="Ring IQ"
               value={fighterData.ring_iq}
-              onChange={(value) => handleInputChange('ring_iq', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('ring_iq', value)}
             />
 
             <Slider
               label="Adaptability"
               value={fighterData.adaptability}
-              onChange={(value) => handleInputChange('adaptability', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('adaptability', value)}
             />
 
             <Slider
               label="Mental Toughness"
               value={fighterData.mental_toughness}
-              onChange={(value) => handleInputChange('mental_toughness', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('mental_toughness', value)}
             />
 
             <Slider
               label="Recovery Time"
               value={fighterData.recovery_time}
-              onChange={(value) => handleInputChange('recovery_time', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('recovery_time', value)}
             />
 
             <Slider
               label="Experience Level"
               value={fighterData.experience_level}
-              onChange={(value) => handleInputChange('experience_level', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('experience_level', value)}
             />
 
             <Slider
               label="Confidence"
               value={fighterData.confidence}
-              onChange={(value) => handleInputChange('confidence', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('confidence', value)}
             />
 
             <Slider
               label="Motivation"
               value={fighterData.motivation}
-              onChange={(value) => handleInputChange('motivation', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('motivation', value)}
             />
 
             <Slider
               label="Stress Level"
               value={fighterData.stress_level}
-              onChange={(value) => handleInputChange('stress_level', value)}
-              showValue
+              onValueChange={(value) => handleInputChange('stress_level', value)}
             />
           </div>
         </div>
@@ -446,10 +432,9 @@ export const FighterCreationSystem: React.FC<FighterCreationSystemProps> = ({
           <Button
             onClick={createFighter}
             disabled={loading || !fighterData.name.trim()}
-            loading={loading}
             className="flex-1"
           >
-            Create Fighter
+            {loading ? 'Creating...' : 'Create Fighter'}
           </Button>
         </div>
       </Card>
