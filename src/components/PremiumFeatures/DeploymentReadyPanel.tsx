@@ -17,7 +17,7 @@ import {
   Wifi,
   HardDrive,
   Cpu,
-  Memory,
+  MemoryStick,
   Network,
   Lock
 } from 'lucide-react';
@@ -105,7 +105,7 @@ export default function DeploymentReadyPanel({
     {
       name: 'Memory',
       status: 'online',
-      icon: Memory,
+      icon: MemoryStick,
       description: 'Optimized memory usage and garbage collection',
       metrics: { value: '68%', unit: 'utilization', trend: 'stable' }
     },

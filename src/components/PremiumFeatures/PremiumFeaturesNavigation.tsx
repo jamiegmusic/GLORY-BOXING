@@ -4,7 +4,7 @@ import {
   Archive, 
   Trophy, 
   Building2, 
-  Museum, 
+  Landmark, 
   Accessibility, 
   Activity, 
   Coins, 
@@ -73,7 +73,7 @@ export default function PremiumFeaturesNavigation({
     {
       id: 'museum-hall-of-fame',
       name: 'Glory Hall of Fame',
-      icon: Museum,
+      icon: Landmark,
       description: 'Interactive legacy museum',
       status: 'OPEN',
       color: 'text-gold-500'
