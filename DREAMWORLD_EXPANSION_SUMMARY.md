@@ -32,12 +32,20 @@ Access at: `/dream-modal-demo`
 - Soft focus effects and large fonts
 - Choice system demonstration
 
+### 5. **Jazz Singer's Secret Quest**
+Access at: `/dreamworld-quest`
+- Full-stack quest implementation
+- 3-phase narrative with choices
+- Lucid vs Logic decision system
+- Legacy rewards for main game
+
 ## 📁 Core Files Created
 
 ### Database
 - `supabase/migrations/008_dreamworld_core_tables.sql` - Initial tables
 - `supabase/migrations/009_dreamworld_core_tables_clean.sql` - Clean recreation
 - `supabase/migrations/010_dreamworld_sample_data.sql` - Sample data
+- `supabase/migrations/011_dreamworld_quests.sql` - Quest & legacy unlock tables
 - `supabase/seeds/dreamworld_talents_1920s.sql` - 5 iconic talents with relationships
 - `supabase/seeds/dreamworld_talents_1920s_simple.sql` - Simple INSERT version
 
@@ -47,16 +55,24 @@ Access at: `/dream-modal-demo`
 - `src/components/DreamworldStoreDemo.tsx` - Focused store demo
 - `src/components/Dreamworld/DreamEventModal.tsx` - Vintage dream modal
 - `src/components/Dreamworld/DreamEventModalDemo.tsx` - Modal showcase
+- `src/components/Dreamworld/JazzSingersSecretQuest.tsx` - Quest component
+- `src/components/Dreamworld/QuestModal.tsx` - Quest phase UI
+- `src/components/MainGame/LegacyUnlocksDisplay.tsx` - Main game rewards
 
 ### State Management
-- `src/stores/dreamworldStore.ts` - Zustand store with Supabase sync
+- `src/stores/dreamworldStore.ts` - Zustand store with Supabase sync (with quest support)
 - `src/lib/dreamworld/DreamEventGenerator.ts` - Dynamic event generation
+- `src/hooks/useDreamworldQuest.ts` - Quest management hook
+
+### Backend
+- `backend/api/dreamworld_quest.py` - FastAPI quest endpoints
 
 ### Pages
 - `src/app/dreamworld/page.tsx` - Dashboard route
 - `src/app/dreamworld-example/page.tsx` - Example route
 - `src/app/dreamworld-store/page.tsx` - Store demo route
 - `src/app/dream-modal-demo/page.tsx` - Modal demo route
+- `src/app/dreamworld-quest/page.tsx` - Quest demo route
 
 ### Documentation
 - `DREAMWORLD_INTEGRATION_GUIDE.md` - Integration patterns
@@ -67,6 +83,7 @@ Access at: `/dream-modal-demo`
 - `DREAMWORLD_TALENTS_SEED_GUIDE.md` - Talent seeding guide
 - `1920S_TALENTS_RELATIONSHIP_MAP.md` - Visual relationship network
 - `DREAMEVENTMODAL_COMPONENT_GUIDE.md` - Modal component guide
+- `JAZZ_SINGERS_SECRET_QUEST_GUIDE.md` - Quest implementation guide
 
 ## 🗄️ Database Schema
 
@@ -84,6 +101,16 @@ Access at: `/dream-modal-demo`
 - Current era and lucid meter
 - Reality glitches tracking
 - Return conditions
+
+### dreamworld_quests
+- Quest progress tracking
+- Phases completed and clues
+- Lucid/logic choice tracking
+
+### legacy_unlocks
+- Rewards from dreamworld
+- Applied to main game status
+- Effect data and rarity
 
 ## 🎨 UI Features
 
@@ -115,6 +142,12 @@ Access at: `/dream-modal-demo`
    - Dream achievements affect main game
    - Unlock bonuses and abilities
    - Persistent effects
+
+5. **Quest System**
+   - Multi-phase narrative quests
+   - Choice between lucid power and logic
+   - Dynamic rewards based on decisions
+   - Integration with main game via legacy unlocks
 
 ## 🔌 Integration Points
 
@@ -156,6 +189,7 @@ supabase db seed -f supabase/seeds/dreamworld_talents_1920s_simple.sql
 - /dreamworld - Full dashboard
 - /dreamworld-store - State management
 - /dream-modal-demo - Modal showcase
+- /dreamworld-quest - Jazz Singer's Secret quest
 ```
 
 ---

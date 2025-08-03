@@ -32,6 +32,15 @@ interface Talent {
   status: string
 }
 
+interface QuestInfo {
+  quest_id: string
+  current_phase: string
+  phases_completed: string[]
+  clues_discovered: string[]
+  lucid_used: number
+  logic_used: number
+}
+
 interface DreamworldStore {
   // State
   lucidMeter: number
@@ -39,6 +48,9 @@ interface DreamworldStore {
   dreamLevel: number
   dreamEvents: DreamEvent[]
   talents: Talent[]
+  
+  // Quest state
+  activeQuests: QuestInfo[]
   
   // Player ID for Supabase sync
   playerId: string | null
@@ -54,6 +66,10 @@ interface DreamworldStore {
   progressEra: () => Promise<void>
   wakeUpFromDream: () => Promise<{ success: boolean; legacyItems: any[] }>
   
+  // Quest methods
+  updateQuestInfo: (questInfo: QuestInfo) => void
+  completeQuest: (questId: string) => void
+  
   // Initialization
   initializeStore: (playerId: string) => Promise<void>
   
@@ -68,6 +84,7 @@ const useDreamworldStore = create<DreamworldStore>((set, get) => ({
   currentEra: '1920s',
   dreamLevel: 1,
   dreamEvents: [],
+  activeQuests: [],
   talents: [],
   playerId: null,
   isLoading: false,
@@ -388,6 +405,25 @@ const useDreamworldStore = create<DreamworldStore>((set, get) => ({
       set({ error: error.message || 'Failed to wake up from dream' })
       return { success: false, legacyItems: [] }
     }
+  },
+  
+  // Quest methods
+  updateQuestInfo: (questInfo: QuestInfo) => {
+    set(state => ({
+      activeQuests: state.activeQuests.map(q => 
+        q.quest_id === questInfo.quest_id ? questInfo : q
+      ).concat(
+        state.activeQuests.find(q => q.quest_id === questInfo.quest_id) 
+          ? [] 
+          : [questInfo]
+      )
+    }))
+  },
+  
+  completeQuest: (questId: string) => {
+    set(state => ({
+      activeQuests: state.activeQuests.filter(q => q.quest_id !== questId)
+    }))
   },
 
   // Sync from Supabase
